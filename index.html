@@ -1,0 +1,1866 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="color-scheme" content="light">
+  <!-- Wird nach Einrichtung des zentralen Datenspeichers automatisch befüllt. -->
+  <meta name="release-data-url" content="./releases.json">
+  <title>Release Radar</title>
+  <style>
+    :root {
+      --canvas: #faf9f7;
+      --surface: #ffffff;
+      --text: #1b1b1b;
+      --muted: #66615d;
+      --line: #e4dfda;
+      --line-strong: #d3ccc6;
+      --accent: #d71920;
+      --accent-soft: #fff0f0;
+      --badge: #f3f1ee;
+      --focus: rgba(215, 25, 32, 0.2);
+      --shadow: 0 18px 60px rgba(30, 24, 20, 0.12);
+      --radius: 5px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--canvas);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { min-width: 320px; background: var(--canvas); }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 48% -20%, rgba(255, 255, 255, 0.96), transparent 48%),
+        var(--canvas);
+    }
+
+    button, input, select { font: inherit; }
+
+    button, select { cursor: pointer; }
+
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 2px;
+    }
+
+    .app {
+      width: min(100% - 72px, 1420px);
+      margin: 0 auto;
+      padding: 28px 0 52px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+      min-height: 58px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      display: flex;
+      align-items: baseline;
+      gap: 24px;
+      min-width: 0;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Arial Narrow", "Roboto Condensed", Impact, sans-serif;
+      font-size: clamp(2rem, 3vw, 2.65rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .subtitle,
+    .updated {
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    .updated { white-space: nowrap; }
+
+    .section-title {
+      margin: 24px 0 14px;
+      font-size: 1.15rem;
+      line-height: 1.35;
+    }
+
+    .timeline-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      margin: 24px 0 14px;
+    }
+
+    .timeline-head .section-title { margin: 0; }
+
+    .timeline-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .view-switch {
+      display: inline-flex;
+      padding: 3px;
+      border: 1px solid var(--line-strong);
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.68);
+    }
+
+    .view-button {
+      min-height: 34px;
+      padding: 0 13px;
+      border: 0;
+      border-radius: 3px;
+      color: var(--muted);
+      background: transparent;
+      font-size: 0.86rem;
+      font-weight: 600;
+    }
+
+    .view-button.active {
+      color: #fff;
+      background: var(--accent);
+    }
+
+    .timeline-nav {
+      display: inline-flex;
+      gap: 5px;
+    }
+
+    .timeline-nav button {
+      width: 36px;
+      height: 36px;
+      border: 1px solid var(--line-strong);
+      border-radius: 50%;
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.72);
+      font-size: 1rem;
+    }
+
+    .timeline-shell {
+      overflow-x: auto;
+      overscroll-behavior-inline: contain;
+      scrollbar-color: #b8b2ac transparent;
+      scrollbar-width: thin;
+      border-bottom: 1px solid var(--line);
+      scroll-behavior: smooth;
+    }
+
+    .timeline-shell::-webkit-scrollbar { height: 7px; }
+    .timeline-shell::-webkit-scrollbar-track { background: transparent; }
+    .timeline-shell::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background: #b8b2ac;
+    }
+
+    .timeline {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: 168px;
+      min-width: max-content;
+      height: 390px;
+    }
+
+    .day {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 168px;
+      height: 100%;
+      min-height: 0;
+      padding: 14px 12px 18px;
+      overflow: hidden;
+      border: 0;
+      border-left: 1px solid var(--line);
+      color: var(--text);
+      background: transparent;
+      text-align: center;
+      transition: background 160ms ease-out, color 160ms ease-out;
+    }
+
+    .day:first-child { border-left: 0; }
+
+    .day::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 2px;
+      background: transparent;
+    }
+
+    .day:hover { background: rgba(255, 255, 255, 0.64); }
+
+    .day.active {
+      color: var(--accent);
+      background: linear-gradient(180deg, var(--accent-soft), rgba(255, 240, 240, 0.42));
+    }
+
+    .day.active::before { background: var(--accent); }
+
+    .day-date {
+      font-weight: 600;
+      font-size: 0.94rem;
+    }
+
+    .day-count {
+      margin-top: 10px;
+      font-family: Georgia, serif;
+      font-size: 2.05rem;
+      line-height: 1;
+    }
+
+    .day-marker {
+      width: 18px;
+      height: 2px;
+      margin: 12px 0 18px;
+      background: #c9c5c1;
+    }
+
+    .day.has-items .day-marker,
+    .day.active .day-marker { background: var(--accent); }
+
+    .day-titles {
+      display: grid;
+      flex: 0 0 auto;
+      width: 100%;
+      min-height: 0;
+      padding-right: 6px;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      align-content: start;
+      gap: 8px;
+      color: var(--text);
+      font-size: 0.8rem;
+      line-height: 1.25;
+      scrollbar-color: #b8b2ac transparent;
+      scrollbar-width: thin;
+    }
+
+    .timeline:not(.week-view) .day-titles {
+      flex: 0 0 232px;
+      height: 232px;
+      min-height: 232px;
+    }
+
+    .day-titles::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    .day-titles::-webkit-scrollbar-track {
+      border-radius: 8px;
+      background: transparent;
+    }
+
+    .day-titles::-webkit-scrollbar-thumb {
+      border-radius: 8px;
+      background: #b8b2ac;
+    }
+
+    .day-title {
+      display: block;
+      padding-bottom: 7px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      overflow-wrap: anywhere;
+      white-space: normal;
+    }
+
+    .day-title:last-child { border-bottom: 0; }
+
+    .timeline.week-view {
+      grid-auto-columns: minmax(280px, 320px);
+      height: 370px;
+    }
+
+    .timeline.week-view .day {
+      min-width: 280px;
+      align-items: stretch;
+      text-align: left;
+    }
+
+    .timeline.week-view .day-count {
+      margin-top: 14px;
+      font-size: 2.45rem;
+    }
+
+    .timeline.week-view .day-marker { margin-bottom: 14px; }
+
+    .timeline.week-view .day-titles {
+      flex: 0 0 210px;
+      height: 210px;
+      min-height: 210px;
+    }
+
+    .week-range {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 400;
+    }
+
+    .filters {
+      display: grid;
+      grid-template-columns:
+        repeat(3, minmax(140px, 1fr))
+        minmax(280px, 1.6fr)
+        minmax(230px, 2.2fr)
+        auto;
+      align-items: center;
+      gap: 16px;
+      padding: 24px 0;
+    }
+
+    .control {
+      width: 100%;
+      height: 48px;
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius);
+      color: var(--text);
+      background: rgba(255, 255, 255, 0.72);
+    }
+
+    select.control {
+      padding: 0 38px 0 14px;
+    }
+
+    .date-range {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .date-range[hidden] { display: none; }
+
+    .date-field {
+      position: relative;
+      min-width: 0;
+    }
+
+    .date-field span {
+      position: absolute;
+      top: 5px;
+      left: 10px;
+      z-index: 1;
+      color: var(--muted);
+      font-size: 0.68rem;
+      pointer-events: none;
+    }
+
+    .date-input {
+      min-width: 0;
+      padding: 15px 8px 0;
+      font-size: 0.84rem;
+    }
+
+    .date-input:disabled {
+      color: #918b86;
+      background: #f1efec;
+      cursor: not-allowed;
+    }
+
+    .search-wrap { position: relative; }
+
+    .search-wrap::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      width: 14px;
+      height: 14px;
+      border: 1.7px solid #77716c;
+      border-radius: 50%;
+      transform: translateY(-58%);
+      pointer-events: none;
+    }
+
+    .search-wrap::after {
+      content: "";
+      position: absolute;
+      top: calc(50% + 6px);
+      left: 27px;
+      width: 7px;
+      height: 1.7px;
+      background: #77716c;
+      transform: rotate(45deg);
+      transform-origin: left center;
+      pointer-events: none;
+    }
+
+    .search {
+      padding: 0 15px 0 44px;
+    }
+
+    .reset {
+      border: 0;
+      color: var(--accent);
+      background: transparent;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .reset:disabled {
+      opacity: 0.35;
+      cursor: default;
+    }
+
+    .results-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 24px;
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
+
+    .table-wrap { overflow-x: auto; }
+
+    table {
+      width: 100%;
+      min-width: 940px;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    th {
+      padding: 10px 8px 12px;
+      border-bottom: 1px solid #aaa39d;
+      text-align: left;
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    th:first-child,
+    td:first-child { padding-left: 6px; }
+
+    th:nth-child(1) { width: 29%; }
+    th:nth-child(2) { width: 30%; }
+    th:nth-child(3) { width: 17%; }
+    th:nth-child(4) { width: 12%; }
+    th:nth-child(5) { width: 12%; }
+
+    .sort {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      border: 0;
+      padding: 0;
+      color: inherit;
+      background: transparent;
+      font-weight: inherit;
+    }
+
+    .sort-icon {
+      color: #8d8782;
+      font-size: 0.75rem;
+    }
+
+    td {
+      padding: 14px 8px;
+      border-bottom: 1px solid var(--line);
+      color: #4f4a47;
+      line-height: 1.35;
+      vertical-align: top;
+    }
+
+    tbody tr {
+      transition: background 140ms ease-out;
+      cursor: pointer;
+    }
+
+    tbody tr:hover { background: rgba(255, 255, 255, 0.74); }
+
+    .task-name {
+      color: var(--text);
+      font-weight: 650;
+    }
+
+    .platform {
+      display: inline-flex;
+      max-width: 100%;
+      padding: 4px 9px;
+      overflow: hidden;
+      border: 1px solid #d8d2cc;
+      border-radius: 4px;
+      color: #3e3936;
+      background: var(--badge);
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .empty {
+      padding: 46px 12px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    dialog {
+      width: min(560px, calc(100% - 36px));
+      max-height: calc(100vh - 60px);
+      padding: 0;
+      overflow: auto;
+      border: 0;
+      border-radius: 8px;
+      color: var(--text);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    dialog::backdrop { background: rgba(27, 24, 22, 0.42); }
+
+    .detail {
+      padding: 28px;
+    }
+
+    .detail-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .detail h2 {
+      margin: 0;
+      font-size: 1.35rem;
+      line-height: 1.25;
+    }
+
+    .close {
+      width: 36px;
+      height: 36px;
+      flex: 0 0 auto;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      color: var(--text);
+      background: var(--canvas);
+      font-size: 1.2rem;
+    }
+
+    .detail-description {
+      margin: 20px 0;
+      color: #4f4a47;
+      line-height: 1.55;
+    }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 12px 18px;
+      margin: 0;
+      font-size: 0.92rem;
+    }
+
+    .detail-grid dt { color: var(--muted); }
+    .detail-grid dd { margin: 0; }
+
+    .source-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .source-link,
+    .source-label {
+      display: inline-flex;
+      padding: 5px 9px;
+      border: 1px solid var(--line-strong);
+      border-radius: 4px;
+      color: var(--text);
+      background: var(--badge);
+      text-decoration: none;
+    }
+
+    .source-link:hover { border-color: var(--accent); color: var(--accent); }
+
+    @media (max-width: 1100px) {
+      .app { width: min(100% - 40px, 1420px); }
+      .filters { grid-template-columns: repeat(3, minmax(140px, 1fr)); }
+      .date-range { grid-column: span 2; }
+      .search-wrap { grid-column: span 2; }
+      .reset { justify-self: end; }
+    }
+
+    @media (max-width: 760px) {
+      .app { width: min(100% - 28px, 1420px); padding-top: 18px; }
+      .topbar { align-items: flex-start; }
+      .brand { display: block; }
+      .subtitle { display: block; margin-top: 8px; }
+      .updated { font-size: 0.78rem; text-align: right; }
+      .filters { grid-template-columns: 1fr 1fr; gap: 10px; }
+      .date-range,
+      .search-wrap { grid-column: 1 / -1; }
+      .reset { grid-column: 1 / -1; justify-self: start; padding: 8px 0; }
+      .results-meta { align-items: flex-start; flex-direction: column; }
+      .timeline-head { align-items: flex-start; }
+    }
+
+    @media (max-width: 520px) {
+      .topbar { display: block; }
+      .updated { margin-top: 12px; text-align: left; }
+      .filters { grid-template-columns: 1fr; }
+      .date-range,
+      .search-wrap,
+      .reset { grid-column: auto; }
+      .detail { padding: 20px; }
+      .detail-grid { grid-template-columns: 1fr; gap: 4px; }
+      .detail-grid dd { margin-bottom: 10px; }
+      .timeline-head { display: block; }
+      .timeline-actions { justify-content: space-between; margin-top: 12px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">
+        <h1>Release Radar</h1>
+        <span class="subtitle">Produkt- und Releaseübersicht</span>
+      </div>
+      <span class="updated" id="updatedAt"></span>
+    </header>
+
+    <section aria-labelledby="timelineTitle">
+      <div class="timeline-head">
+        <h2 class="section-title" id="timelineTitle">Releases im Zeitverlauf</h2>
+        <div class="timeline-actions">
+          <div class="view-switch" role="group" aria-label="Zeitachsenansicht">
+            <button class="view-button active" id="dayView" type="button" aria-pressed="true">Tage</button>
+            <button class="view-button" id="weekView" type="button" aria-pressed="false">Wochen</button>
+          </div>
+          <div class="timeline-nav" aria-label="Zeitachse verschieben">
+            <button id="timelinePrevious" type="button" aria-label="Frühere Zeiträume anzeigen">←</button>
+            <button id="timelineNext" type="button" aria-label="Spätere Zeiträume anzeigen">→</button>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-shell" id="timelineShell" tabindex="0" aria-label="Scrollbare Release-Zeitachse">
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <section aria-label="Release-Filter">
+      <div class="filters">
+        <select class="control" id="periodFilter" aria-label="Zeitraum">
+          <option value="all">Alle Zeiträume</option>
+          <option value="7">Letzte 7 Tage</option>
+          <option value="30" selected>Letzte 30 Tage</option>
+          <option value="month">Dieser Monat</option>
+          <option value="custom">Freier Zeitraum …</option>
+        </select>
+        <select class="control" id="platformFilter" aria-label="Plattform">
+          <option value="">Alle Plattformen</option>
+        </select>
+        <select class="control" id="developerFilter" aria-label="Entwickler">
+          <option value="">Alle Entwickler</option>
+        </select>
+        <div class="date-range" id="customDateRange">
+          <label class="date-field">
+            <span>Von</span>
+            <input class="control date-input" id="dateFrom" type="date" aria-label="Zeitraum von">
+          </label>
+          <label class="date-field">
+            <span>Bis</span>
+            <input class="control date-input" id="dateTo" type="date" aria-label="Zeitraum bis">
+          </label>
+        </div>
+        <label class="search-wrap">
+          <span hidden>Releases durchsuchen</span>
+          <input class="control search" id="searchFilter" type="search" placeholder="Releases durchsuchen">
+        </label>
+        <button class="reset" id="resetFilters" type="button">Filter zurücksetzen</button>
+      </div>
+    </section>
+
+    <section aria-label="Release-Tabelle">
+      <div class="results-meta">
+        <span id="resultCount"></span>
+        <span>Native Apps nur nach Store-Bestätigung</span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th><button class="sort" data-sort="task">Task <span class="sort-icon">↕</span></button></th>
+              <th><button class="sort" data-sort="description">Beschreibung <span class="sort-icon">↕</span></button></th>
+              <th><button class="sort" data-sort="platform">Plattform <span class="sort-icon">↕</span></button></th>
+              <th><button class="sort" data-sort="developer">Entwickler <span class="sort-icon">↕</span></button></th>
+              <th><button class="sort" data-sort="date">Datum <span class="sort-icon">↓</span></button></th>
+            </tr>
+          </thead>
+          <tbody id="releaseRows"></tbody>
+        </table>
+      </div>
+      <div class="empty" id="emptyState" hidden>Für diese Filter wurden keine Releases gefunden.</div>
+    </section>
+  </main>
+
+  <dialog id="detailDialog">
+    <article class="detail">
+      <header class="detail-head">
+        <h2 id="detailTitle"></h2>
+        <button class="close" id="closeDialog" type="button" aria-label="Details schließen">×</button>
+      </header>
+      <p class="detail-description" id="detailDescription"></p>
+      <dl class="detail-grid">
+        <dt>Plattform</dt><dd id="detailPlatform"></dd>
+        <dt>Entwickler</dt><dd id="detailDeveloper"></dd>
+        <dt>Datum</dt><dd id="detailDate"></dd>
+        <dt>Referenz</dt><dd id="detailReference"></dd>
+        <dt>Quellen</dt><dd class="source-links" id="detailSources"></dd>
+      </dl>
+    </article>
+  </dialog>
+
+  <!-- Dieser Datenblock wird vom täglichen Aktualisierungslauf ersetzt. -->
+  <script id="release-data" type="application/json">
+  {
+    "lastUpdated": "2026-07-31T10:05:00+02:00",
+    "releases": [
+      {
+        "id": "google-play-vol-at-2026-07-01",
+        "task": "VOL.AT Android-App aktualisiert",
+        "description": "Die im Google Play Store verfügbare Produktionsversion wurde aktualisiert.",
+        "platform": "Native Apps",
+        "developer": "App-Team",
+        "date": "2026-07-01",
+        "reference": "Google Play · Produktionsstand 01.07.2026",
+        "sources": [
+          "Google Play"
+        ],
+        "links": [
+          {
+            "label": "Google Play",
+            "url": "https://play.google.com/store/apps/details?id=at.vol.android&hl=de_AT"
+          }
+        ]
+      },
+      {
+        "id": "app-store-vol-at-4.19.6",
+        "task": "VOL.AT iOS 4.19.6 veröffentlicht",
+        "description": "Die neue Produktionsversion enthält allgemeine Fehlerbehebungen und Verbesserungen.",
+        "platform": "Native Apps",
+        "developer": "App-Team",
+        "date": "2026-07-03",
+        "reference": "App Store · Version 4.19.6",
+        "sources": [
+          "App Store"
+        ],
+        "links": [
+          {
+            "label": "App Store",
+            "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"
+          }
+        ]
+      },
+      {
+        "id": "google-play-vol-at-2026-07-14",
+        "task": "VOL.AT Android-App aktualisiert",
+        "description": "Die am 14. Juli im Google Play Store veröffentlichte Produktionsversion steht für Nutzer bereit.",
+        "platform": "Native Apps",
+        "developer": "App-Team",
+        "date": "2026-07-14",
+        "reference": "Google Play · Produktionsstand 14.07.2026",
+        "sources": [
+          "Google Play"
+        ],
+        "links": [
+          {
+            "label": "Google Play",
+            "url": "https://play.google.com/store/apps/details?id=at.vol.android&hl=de_AT"
+          }
+        ]
+      },
+      {
+        "id": "russmedia-frontend-nuxt3#1244",
+        "task": "Paywall-Abschlüsse besser messbar",
+        "description": "Erfasst Checkout-Schritte beim Piano-Paywall-Kauf und verbessert damit die Auswertung von Abo-Abschlüssen.",
+        "platform": "VOL.AT",
+        "developer": "martinj",
+        "date": "2026-07-14",
+        "reference": "russmedia-frontend-nuxt3 · MR 1244",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "russmedia-frontend-nuxt3#1262",
+        "task": "Geschützte Inhalte zuverlässiger erkannt",
+        "description": "Verbessert die serverseitige Erkennung eingeschränkter Artikel und sorgt für eine konsistente Paywall.",
+        "platform": "VOL.AT",
+        "developer": "illmerl",
+        "date": "2026-07-14",
+        "reference": "russmedia-frontend-nuxt3 · MR 1262",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "russmedia-frontend-nuxt3#1265+#1268",
+        "task": "Wetter-Einstieg in der App verbessert",
+        "description": "Führt Nutzer verständlicher durch die Ortsauswahl und verbindet den neuen Wetter-Einstieg mit der nativen App.",
+        "platform": "VOL.AT",
+        "developer": "illmerl · fbittner",
+        "date": "2026-07-14",
+        "reference": "russmedia-frontend-nuxt3 · MR 1265, 1268",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "russmedia-frontend-nuxt3#1266",
+        "task": "Staging-Bereitstellung stabilisiert",
+        "description": "Bereinigt die Staging-Konfiguration und macht Test-Bereitstellungen sowie deren Zugriff zuverlässiger.",
+        "platform": "VOL.AT",
+        "developer": "martinj",
+        "date": "2026-07-14",
+        "reference": "russmedia-frontend-nuxt3 · MR 1266",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "wordpress-webpapers#960+#961+#962",
+        "task": "Nordstern-Inhalte robuster ausgeliefert",
+        "description": "Verbessert den Zugriff auf freie Inhalte und stellt Bilder auch bei fehlenden Konfigurationswerten zuverlässig bereit.",
+        "platform": "Nordstern",
+        "developer": "fbittner",
+        "date": "2026-07-14",
+        "reference": "wordpress-webpapers · MR 960, 961, 962",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "russmedia-fat#10",
+        "task": "E-Mail-Versand auf SMTP umgestellt",
+        "description": "Ersetzt SendGrid durch konfigurierbaren SMTP-Versand und verbessert mehrsprachige Benachrichtigungen.",
+        "platform": "VOL.AT",
+        "developer": "mwidmann",
+        "date": "2026-07-15",
+        "reference": "russmedia-fat · MR 10",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "profile-name-fallback#11+#1271+#1272",
+        "task": "Profile ohne vollständigen Namen unterstützt",
+        "description": "Zeigt Profile auch bei fehlendem Vor- oder Nachnamen korrekt an und nutzt einen verlässlichen Ersatznamen.",
+        "platform": "VOL.AT",
+        "developer": "mwidmann · martinj",
+        "date": "2026-07-15",
+        "reference": "russmedia-fat · MR 11; russmedia-frontend-nuxt3 · MR 1271, 1272",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "russmedia-frontend-nuxt3#1269",
+        "task": "Editor-Bilder zuverlässiger geladen",
+        "description": "Leitet Bilder aus dem Editor über den Bilddienst aus und verbessert damit Ladezeit und Verfügbarkeit.",
+        "platform": "VOL.AT",
+        "developer": "illmerl",
+        "date": "2026-07-15",
+        "reference": "russmedia-frontend-nuxt3 · MR 1269",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "russmedia-frontend-nuxt3#1274",
+        "task": "In-App-Angebote zuverlässig verarbeitet",
+        "description": "Speichert frühe Kaufanfragen zwischen, damit Angebote auch bei verzögertem App-Start korrekt angezeigt werden.",
+        "platform": "VOL.AT",
+        "developer": "illmerl",
+        "date": "2026-07-15",
+        "reference": "russmedia-frontend-nuxt3 · MR 1274",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "app-store-vol-at-4.19.7",
+        "task": "VOL.AT iOS 4.19.7 veröffentlicht",
+        "description": "Die neue Produktionsversion enthält allgemeine Fehlerbehebungen und Verbesserungen.",
+        "platform": "Native Apps",
+        "developer": "App-Team",
+        "date": "2026-07-15",
+        "reference": "App Store · Version 4.19.7",
+        "sources": [
+          "App Store"
+        ],
+        "links": [
+          {
+            "label": "App Store",
+            "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"
+          }
+        ]
+      },
+      {
+        "id": "content-voice-api#15",
+        "task": "Audio-Inhalte länger verfügbar",
+        "description": "Bewahrt erzeugte Audio-Inhalte standardmäßig 90 Tage auf und hält damit auch ältere Beiträge in Playlists verfügbar.",
+        "platform": "VOL.AT",
+        "developer": "fbittner",
+        "date": "2026-07-16",
+        "reference": "content-voice-api · MR 15",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "russmedia-frontend-nuxt3#1270",
+        "task": "Audio-Player erweitert",
+        "description": "Unterstützt ElevenLabs-Audio und Streaming, damit vertonte Artikel stabil und ohne lange Wartezeit starten.",
+        "platform": "VOL.AT",
+        "developer": "fbittner",
+        "date": "2026-07-18",
+        "reference": "russmedia-frontend-nuxt3 · MR 1270",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "russmedia-frontend-nuxt3#1278",
+        "task": "Paywall-Darstellung verbessert",
+        "description": "Entfernt störende Überlagerungen und vereinheitlicht die Darstellung der Video-Paywall.",
+        "platform": "VOL.AT",
+        "developer": "illmerl",
+        "date": "2026-07-18",
+        "reference": "russmedia-frontend-nuxt3 · MR 1278",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "epaper-service#24",
+        "task": "E-Paper-Import stabilisiert",
+        "description": "Verlängert Zeitlimits, wiederholt kurzfristig fehlgeschlagene Abrufe und verhindert unnötige Importabbrüche.",
+        "platform": "Nordstern",
+        "developer": "mwidmann",
+        "date": "2026-07-20",
+        "reference": "epaper-service · MR 24",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "russmedia-frontend-nuxt3#1279",
+        "task": "Standardlogo im Seitenkopf vereinheitlicht",
+        "description": "Verwendet im VOL.AT-Seitenkopf wieder das vorgesehene Standardlogo und sorgt für einen konsistenten Markenauftritt.",
+        "platform": "VOL.AT",
+        "developer": "fbittner",
+        "date": "2026-07-20",
+        "reference": "russmedia-frontend-nuxt3 · MR 1279",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "russmedia-frontend-nuxt3#1281",
+        "task": "Forum-Sperren klarer umgesetzt",
+        "description": "Berücksichtigt gesperrte Nutzer zuverlässig und zeigt den Sperrstatus im Forum verständlich an.",
+        "platform": "VOL.AT",
+        "developer": "mwidmann",
+        "date": "2026-07-20",
+        "reference": "russmedia-frontend-nuxt3 · MR 1281",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "wordpress-webpapers#963",
+        "task": "E-Paper-Beilagen besser auffindbar",
+        "description": "Liefert die Daten für Beilagen-Seiten und verbessert deren Navigation im Nordstern-Angebot.",
+        "platform": "Nordstern",
+        "developer": "mwidmann",
+        "date": "2026-07-20",
+        "reference": "wordpress-webpapers · MR 963",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "wordpress-webpapers#964",
+        "task": "Newsletter-Builder um Artikel erweitert",
+        "description": "Macht redaktionelle Artikel im Newsletter-Builder verfügbar und vereinfacht die Zusammenstellung von Aussendungen.",
+        "platform": "Nordstern",
+        "developer": "baldaufp",
+        "date": "2026-07-20",
+        "reference": "wordpress-webpapers · MR 964",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "docker-base-images#103",
+        "task": "PHP-8.5-Basisimages bereitgestellt",
+        "description": "Ergänzt aktuelle PHP-8.5-Container und erweitert Laufzeitoptionen für kommende Systemaktualisierungen.",
+        "platform": "Andere",
+        "developer": "martinj",
+        "date": "2026-07-21",
+        "reference": "docker-base-images · MR 103",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "russmedia-frontend-nuxt3#1282+#1283",
+        "task": "Artikelansicht in der App vereinheitlicht",
+        "description": "Erkennt native App-Aufrufe zuverlässig und verwendet die passende Darstellung sowie Zwischenspeicherung.",
+        "platform": "VOL.AT",
+        "developer": "martinj",
+        "date": "2026-07-21",
+        "reference": "russmedia-frontend-nuxt3 · MR 1282, 1283",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "russmedia-frontend-nuxt3#1286",
+        "task": "Blackout-Darstellung korrigiert",
+        "description": "Behebt fehlerhafte Abstände und Darstellung bei gesperrten oder ausgeblendeten Inhalten.",
+        "platform": "VOL.AT",
+        "developer": "martinj",
+        "date": "2026-07-21",
+        "reference": "russmedia-frontend-nuxt3 · MR 1286",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "russmedia-frontend-nuxt3#1287",
+        "task": "Artikel-Editor abgesichert",
+        "description": "Erlaubt den Zugriff auf den Artikel-Editor nur angemeldeten Nutzern und verbessert damit die Zugriffskontrolle.",
+        "platform": "VOL.AT",
+        "developer": "mwidmann",
+        "date": "2026-07-21",
+        "reference": "russmedia-frontend-nuxt3 · MR 1287",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "russmedia-frontend-nuxt3#1288",
+        "task": "Paywall-Messung bereinigt",
+        "description": "Verbessert die Messung des Abo-Abschlusses und entfernt eine nicht mehr benötigte Wetter-Überlagerung.",
+        "platform": "VOL.AT",
+        "developer": "martinj",
+        "date": "2026-07-21",
+        "reference": "russmedia-frontend-nuxt3 · MR 1288",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "wordpress-webpapers#965",
+        "task": "Webanalyse-Pfad aktualisiert",
+        "description": "Bindet das Analytics-Skript über den neuen vorgesehenen Pfad ein und hält die Reichweitenmessung funktionsfähig.",
+        "platform": "Nordstern",
+        "developer": "martinj",
+        "date": "2026-07-21",
+        "reference": "wordpress-webpapers · MR 965",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "docker-base-images#105",
+        "task": "Sichere FTP-Verbindungen vorbereitet",
+        "description": "Ergänzt die nötige SSL-Unterstützung in den PHP-8.5-Images für sichere FTP-Verbindungen.",
+        "platform": "Andere",
+        "developer": "martinj",
+        "date": "2026-07-22",
+        "reference": "docker-base-images · MR 105",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "epaper-service#25",
+        "task": "E-Paper-Dateien sicher ausgeliefert",
+        "description": "Stellt Bilder und PDF-Dateien über geschützte Endpunkte bereit und verbessert die Zugriffskontrolle.",
+        "platform": "Nordstern",
+        "developer": "mwidmann",
+        "date": "2026-07-22",
+        "reference": "epaper-service · MR 25",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "russmedia-frontend-nuxt3#1289",
+        "task": "Android-Artikelansicht verbessert",
+        "description": "Unterstützt den Dunkelmodus besser, behandelt ungültige Artikel sauber und reduziert unnötig große Datenpakete.",
+        "platform": "VOL.AT",
+        "developer": "martinj",
+        "date": "2026-07-22",
+        "reference": "russmedia-frontend-nuxt3 · MR 1289",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "russmedia-frontend-nuxt3#1290",
+        "task": "Fehlerseiten verständlicher gemacht",
+        "description": "Verbessert die Behandlung nicht gefundener Inhalte und verhindert irreführende Fehlermeldungen.",
+        "platform": "VOL.AT",
+        "developer": "martinj",
+        "date": "2026-07-22",
+        "reference": "russmedia-frontend-nuxt3 · MR 1290",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "russmedia-frontend-nuxt3#1291",
+        "task": "E-Paper für VN und OBWO erweitert",
+        "description": "Ergänzt die neue E-Paper-Oberfläche und Bereitstellung für VN und OBWO.",
+        "platform": "Nordstern",
+        "developer": "mwidmann",
+        "date": "2026-07-22",
+        "reference": "russmedia-frontend-nuxt3 · MR 1291",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "app-store-vol-at-4.19.8",
+        "task": "VOL.AT iOS 4.19.8 veröffentlicht",
+        "description": "Behebt die Artikel-Freischaltung für TEE-Tagespässe und verhindert ungewollte Ortswechsel im Wetter-Widget.",
+        "platform": "Native Apps",
+        "developer": "Michal Senk",
+        "date": "2026-07-22",
+        "reference": "App Store · Version 4.19.8",
+        "sources": [
+          "App Store",
+          "Teams"
+        ],
+        "links": [
+          {
+            "label": "App Store",
+            "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"
+          },
+          {
+            "label": "Teams",
+            "url": "https://teams.microsoft.com/l/message/19%3aca5f854e422543239ad3937236210bf7%40thread.tacv2/1784484158826?groupId=81c4fd73-5c4c-4fca-b1a1-c85ac521f063&createdTime=1784484159000"
+          }
+        ]
+      },
+      {
+        "id": "russmedia-frontend-nuxt3#1293",
+        "task": "Tippspiel-Weiterleitung aktualisiert",
+        "description": "Leitet die bisherige Tippspiel-Adresse automatisch zur Eliteliga-Seite weiter.",
+        "platform": "VOL.AT",
+        "developer": "rfischl",
+        "date": "2026-07-24",
+        "reference": "russmedia-frontend-nuxt3 · MR 1293",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "wordpress-webpapers#966",
+        "task": "Composer-Zugriff aktualisiert",
+        "description": "Erneuert die Zugangsdaten für zuverlässige automatische Abhängigkeitsupdates.",
+        "platform": "Nordstern",
+        "developer": "fbittner",
+        "date": "2026-07-24",
+        "reference": "wordpress-webpapers · MR 966",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "wp-plugins#144",
+        "task": "Media Pocket für WordPress angepasst",
+        "description": "Verbessert die Editor-Darstellung und lokale Tests für einen stabileren Betrieb.",
+        "platform": "Nordstern",
+        "developer": "fbittner",
+        "date": "2026-07-24",
+        "reference": "wp-plugins · MR 144",
+        "sources": [
+          "CodeRabbit"
+        ]
+      },
+      {
+        "id": "epaper-service#26",
+        "task": "Push-Texte für Sonderausgaben korrigiert",
+        "description": "Verwendet bei Sonderausgaben den passenden Publikationstitel und verbessert die Verarbeitung älterer OBWO-Ausgaben.",
+        "platform": "Nordstern",
+        "developer": "mwidmann",
+        "date": "2026-07-27",
+        "reference": "epaper-service · MR 26",
+        "sources": [
+          "CodeRabbit",
+          "Teams"
+        ],
+        "links": [
+          {
+            "label": "Merge Request",
+            "url": "https://gitlab.russmedia.com/DEVV/epaper-service/-/merge_requests/26"
+          },
+          {
+            "label": "Teams",
+            "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785129661705?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
+          }
+        ]
+      },
+      {
+        "id": "russmedia-fat#13",
+        "task": "T-Shirt-Größe in Bestätigungen ergänzt",
+        "description": "Übernimmt die gewählte T-Shirt-Größe in redaktionelle Bestätigungsmails und macht Bestellungen leichter nachvollziehbar.",
+        "platform": "VOL.AT",
+        "developer": "mwidmann",
+        "date": "2026-07-27",
+        "reference": "russmedia-fat · MR 13",
+        "sources": [
+          "CodeRabbit",
+          "Teams"
+        ],
+        "links": [
+          {
+            "label": "Merge Request",
+            "url": "https://gitlab.russmedia.com/DEVV/russmedia-fat/-/merge_requests/13"
+          },
+          {
+            "label": "Teams",
+            "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785149366175?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
+          }
+        ]
+      },
+      {
+        "id": "russmedia-frontend-nuxt3#1294",
+        "task": "E-Paper-Navigation verbessert",
+        "description": "Ergänzt flexible Zoomstufen, eine Rückkehr-nach-oben-Funktion und eine übersichtlichere Sortierung im E-Paper.",
+        "platform": "Nordstern",
+        "developer": "mwidmann",
+        "date": "2026-07-27",
+        "reference": "russmedia-frontend-nuxt3 · MR 1294",
+        "sources": [
+          "CodeRabbit",
+          "Teams"
+        ],
+        "links": [
+          {
+            "label": "Merge Request",
+            "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1294"
+          },
+          {
+            "label": "Teams",
+            "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785132620859?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
+          }
+        ]
+      },
+      {
+        "id": "russmedia-frontend-nuxt3#1295",
+        "task": "Abo- und Inhaltsmessung erweitert",
+        "description": "Erfasst aussichtsreiche Inhalte und Abo-Abschlüsse genauer und verbessert damit die Bewertung der Paywall-Performance.",
+        "platform": "VOL.AT",
+        "developer": "martinj",
+        "date": "2026-07-28",
+        "reference": "russmedia-frontend-nuxt3 · MR 1295",
+        "sources": [
+          "CodeRabbit",
+          "Teams"
+        ],
+        "links": [
+          {
+            "label": "Merge Request",
+            "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1295"
+          },
+          {
+            "label": "Teams",
+            "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785245795655?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
+          }
+        ]
+      },
+      {
+        "id": "russmedia-frontend-nuxt3#1296",
+        "task": "Google-Quellenhinweis besser gesteuert",
+        "description": "Verhindert zu häufige Hinweise zur Google-Quellenregistrierung und berücksichtigt bereits erfolgte Bestätigungen langfristig.",
+        "platform": "VOL.AT",
+        "developer": "rfischl",
+        "date": "2026-07-28",
+        "reference": "russmedia-frontend-nuxt3 · MR 1296",
+        "sources": [
+          "CodeRabbit",
+          "Teams"
+        ],
+        "links": [
+          {
+            "label": "Merge Request",
+            "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1296"
+          },
+          {
+            "label": "Teams",
+            "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785244892370?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
+          }
+        ]
+      },
+      {
+        "id": "epaper-service#27",
+        "task": "E-Paper-Ausschnitte sicher bereitgestellt",
+        "description": "Ermöglicht geschützte Downloads und erzeugt einzelne Seitenausschnitte als zwischengespeicherte Bilder.",
+        "platform": "Nordstern",
+        "developer": "mwidmann",
+        "date": "2026-07-29",
+        "reference": "epaper-service · MR 27",
+        "sources": [
+          "CodeRabbit",
+          "Teams"
+        ],
+        "links": [
+          {
+            "label": "Merge Request",
+            "url": "https://gitlab.russmedia.com/DEVV/epaper-service/-/merge_requests/27"
+          },
+          {
+            "label": "Teams",
+            "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785323871746?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
+          }
+        ]
+      },
+      {
+        "id": "russmedia-frontend-nuxt3#1297",
+        "task": "E-Paper-Werkzeuge erweitert",
+        "description": "Ergänzt Bildausschnitte, Downloads und konfigurierbare E-Paper-Widgets für eine flexiblere Nutzung.",
+        "platform": "Nordstern",
+        "developer": "mwidmann",
+        "date": "2026-07-29",
+        "reference": "russmedia-frontend-nuxt3 · MR 1297",
+        "sources": [
+          "CodeRabbit",
+          "Teams"
+        ],
+        "links": [
+          {
+            "label": "Merge Request",
+            "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1297"
+          },
+          {
+            "label": "Teams",
+            "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785329286409?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
+          }
+        ]
+      },
+      {
+        "id": "wp-plugins#145",
+        "task": "App-Menü in WordPress korrigiert",
+        "description": "Behebt die Darstellung des App-Erweiterungsmenüs unter WordPress 6.6.5 und sorgt für konsistente Dropdown-Breiten.",
+        "platform": "Nordstern",
+        "developer": "fbittner",
+        "date": "2026-07-29",
+        "reference": "wp-plugins · MR 145",
+        "sources": [
+          "CodeRabbit",
+          "Teams"
+        ],
+        "links": [
+          {
+            "label": "Merge Request",
+            "url": "https://gitlab.russmedia.com/DEVV/wp-plugins/-/merge_requests/145"
+          },
+          {
+            "label": "Teams",
+            "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785251492807?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
+          }
+        ]
+      },
+      {
+        "id": "nnp#2046",
+        "task": "Abo-Prüfung um Abo-Nummer ergänzt",
+        "description": "Übermittelt die Abo-Nummer nun auch an den Subscription-Service und verbessert damit die korrekte Zuordnung von Abos.",
+        "platform": "VOL.AT",
+        "developer": "Julian Martin",
+        "date": "2026-07-30",
+        "reference": "nnp · MR 2046",
+        "sources": [
+          "Teams"
+        ],
+        "links": [
+          {
+            "label": "Merge Request",
+            "url": "https://gitlab.russmedia.com/nnp-dev/nnp/-/merge_requests/2046"
+          },
+          {
+            "label": "Teams",
+            "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785406761841?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de&tenantId=6b84c5a7-5528-4071-b5b2-49e3cf5f2208"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <script>
+    (async () => {
+      let payload = JSON.parse(document.getElementById("release-data").textContent);
+      const remoteDataUrl = document.querySelector('meta[name="release-data-url"]').content.trim();
+
+      if (remoteDataUrl) {
+        try {
+          const response = await fetch(`${remoteDataUrl}${remoteDataUrl.includes("?") ? "&" : "?"}t=${Date.now()}`, {
+            cache: "no-store"
+          });
+          if (!response.ok) throw new Error(`Datenabruf fehlgeschlagen: ${response.status}`);
+          const remotePayload = await response.json();
+          if (!Array.isArray(remotePayload.releases)) throw new Error("Ungültiges Datenformat");
+          payload = remotePayload;
+        } catch (error) {
+          console.warn("Zentrale Releasedaten konnten nicht geladen werden; lokale Daten werden verwendet.", error);
+        }
+      }
+
+      const releases = payload.releases.map((release) => ({ ...release }));
+      const state = {
+        selectedDay: "",
+        selectedWeek: "",
+        timelineView: "day",
+        sortKey: "date",
+        sortDirection: "desc"
+      };
+
+      const elements = {
+        updatedAt: document.getElementById("updatedAt"),
+        timeline: document.getElementById("timeline"),
+        timelineShell: document.getElementById("timelineShell"),
+        dayView: document.getElementById("dayView"),
+        weekView: document.getElementById("weekView"),
+        timelinePrevious: document.getElementById("timelinePrevious"),
+        timelineNext: document.getElementById("timelineNext"),
+        period: document.getElementById("periodFilter"),
+        platform: document.getElementById("platformFilter"),
+        developer: document.getElementById("developerFilter"),
+        customDateRange: document.getElementById("customDateRange"),
+        dateFrom: document.getElementById("dateFrom"),
+        dateTo: document.getElementById("dateTo"),
+        search: document.getElementById("searchFilter"),
+        reset: document.getElementById("resetFilters"),
+        rows: document.getElementById("releaseRows"),
+        empty: document.getElementById("emptyState"),
+        count: document.getElementById("resultCount"),
+        dialog: document.getElementById("detailDialog")
+      };
+
+      const escapeHtml = (value) => String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+
+      const parseLocalDate = (isoDate) => new Date(`${isoDate}T12:00:00`);
+      const toIsoDate = (date) => {
+        const year = date.getFullYear();
+        const month = String(date.getMonth() + 1).padStart(2, "0");
+        const day = String(date.getDate()).padStart(2, "0");
+        return `${year}-${month}-${day}`;
+      };
+
+      const formatDate = (isoDate) => new Intl.DateTimeFormat("de-AT", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric"
+      }).format(parseLocalDate(isoDate));
+
+      const formatTimelineDate = (isoDate) => new Intl.DateTimeFormat("de-AT", {
+        day: "2-digit",
+        month: "short"
+      }).format(parseLocalDate(isoDate)).replace(".", ".");
+
+      const formatShortDate = (isoDate) => new Intl.DateTimeFormat("de-AT", {
+        day: "2-digit",
+        month: "2-digit"
+      }).format(parseLocalDate(isoDate));
+
+      const startOfWeek = (date) => {
+        const result = new Date(date);
+        const weekday = result.getDay() || 7;
+        result.setDate(result.getDate() - weekday + 1);
+        result.setHours(12, 0, 0, 0);
+        return result;
+      };
+
+      const endOfWeek = (date) => {
+        const result = startOfWeek(date);
+        result.setDate(result.getDate() + 6);
+        return result;
+      };
+
+      const weekNumber = (date) => {
+        const current = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
+        const day = current.getUTCDay() || 7;
+        current.setUTCDate(current.getUTCDate() + 4 - day);
+        const yearStart = new Date(Date.UTC(current.getUTCFullYear(), 0, 1));
+        return Math.ceil((((current - yearStart) / 86400000) + 1) / 7);
+      };
+
+      const formatUpdated = (value) => new Intl.DateTimeFormat("de-AT", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+        hour: "2-digit",
+        minute: "2-digit"
+      }).format(new Date(value));
+
+      const uniqueSorted = (items) => [...new Set(items)].sort((a, b) => a.localeCompare(b, "de"));
+
+      const addOptions = (select, values) => {
+        values.forEach((value) => {
+          const option = document.createElement("option");
+          option.value = value;
+          option.textContent = value;
+          select.append(option);
+        });
+      };
+
+      const getReferenceDate = () => {
+        const updated = new Date(payload.lastUpdated);
+        if (!Number.isNaN(updated.valueOf())) return updated;
+        return releases.reduce((latest, release) => {
+          const current = parseLocalDate(release.date);
+          return current > latest ? current : latest;
+        }, new Date());
+      };
+
+      const periodMatches = (release) => {
+        if (elements.period.value === "all") return true;
+        const date = parseLocalDate(release.date);
+        const reference = getReferenceDate();
+        reference.setHours(12, 0, 0, 0);
+
+        if (elements.period.value === "custom") {
+          const from = elements.dateFrom.value ? parseLocalDate(elements.dateFrom.value) : null;
+          const to = elements.dateTo.value ? parseLocalDate(elements.dateTo.value) : null;
+          return (!from || date >= from) && (!to || date <= to);
+        }
+
+        if (elements.period.value === "month") {
+          return date.getFullYear() === reference.getFullYear()
+            && date.getMonth() === reference.getMonth();
+        }
+
+        const days = Number(elements.period.value);
+        const start = new Date(reference);
+        start.setDate(reference.getDate() - days + 1);
+        return date >= start && date <= reference;
+      };
+
+      const filteredReleases = () => {
+        const query = elements.search.value.trim().toLocaleLowerCase("de");
+        const filtered = releases.filter((release) => {
+          const haystack = [
+            release.task,
+            release.description,
+            release.platform,
+            release.developer,
+            release.reference,
+            ...(release.sources || [])
+          ].join(" ").toLocaleLowerCase("de");
+          const releaseDate = parseLocalDate(release.date);
+          const selectedWeekStart = state.selectedWeek ? parseLocalDate(state.selectedWeek) : null;
+          const selectedWeekEnd = selectedWeekStart ? endOfWeek(selectedWeekStart) : null;
+
+          return periodMatches(release)
+            && (!elements.platform.value || release.platform === elements.platform.value)
+            && (!elements.developer.value || release.developer === elements.developer.value)
+            && (!state.selectedDay || release.date === state.selectedDay)
+            && (!selectedWeekStart || (releaseDate >= selectedWeekStart && releaseDate <= selectedWeekEnd))
+            && (!query || haystack.includes(query));
+        });
+
+        return filtered.sort((a, b) => {
+          const first = String(a[state.sortKey] ?? "");
+          const second = String(b[state.sortKey] ?? "");
+          const comparison = first.localeCompare(second, "de", { numeric: true });
+          return state.sortDirection === "asc" ? comparison : -comparison;
+        });
+      };
+
+      const timelineDates = () => {
+        const reference = getReferenceDate();
+        reference.setHours(12, 0, 0, 0);
+        const earliestRelease = releases.reduce((earliest, release) => {
+          const date = parseLocalDate(release.date);
+          return date < earliest ? date : earliest;
+        }, new Date(reference));
+        const monthStart = new Date(reference.getFullYear(), reference.getMonth(), 1, 12);
+        const start = earliestRelease < monthStart ? earliestRelease : monthStart;
+        const dates = [];
+        for (const date = new Date(start); date <= reference; date.setDate(date.getDate() + 1)) {
+          dates.push(toIsoDate(date));
+        }
+        return dates;
+      };
+
+      const timelineWeeks = () => {
+        const dates = timelineDates();
+        const first = startOfWeek(parseLocalDate(dates[0]));
+        const last = startOfWeek(parseLocalDate(dates.at(-1)));
+        const weeks = [];
+        for (const date = new Date(first); date <= last; date.setDate(date.getDate() + 7)) {
+          weeks.push(toIsoDate(date));
+        }
+        return weeks;
+      };
+
+      const renderTimeline = () => {
+        const platform = elements.platform.value;
+        const developer = elements.developer.value;
+        const query = elements.search.value.trim().toLocaleLowerCase("de");
+
+        const timelineItems = releases.filter((release) => {
+          const haystack = [
+            release.task,
+            release.description,
+            release.platform,
+            release.developer,
+            release.reference,
+            ...(release.sources || [])
+          ].join(" ").toLocaleLowerCase("de");
+
+          return (!platform || release.platform === platform)
+            && (!developer || release.developer === developer)
+            && (!query || haystack.includes(query));
+        });
+
+        const timelinePeriods = state.timelineView === "week" ? timelineWeeks() : timelineDates();
+        elements.timeline.classList.toggle("week-view", state.timelineView === "week");
+        elements.dayView.classList.toggle("active", state.timelineView === "day");
+        elements.weekView.classList.toggle("active", state.timelineView === "week");
+        elements.dayView.setAttribute("aria-pressed", String(state.timelineView === "day"));
+        elements.weekView.setAttribute("aria-pressed", String(state.timelineView === "week"));
+
+        elements.timeline.innerHTML = timelinePeriods.map((date) => {
+          const periodStart = parseLocalDate(date);
+          const periodEnd = state.timelineView === "week" ? endOfWeek(periodStart) : periodStart;
+          const items = timelineItems
+            .filter((release) => {
+              const releaseDate = parseLocalDate(release.date);
+              return releaseDate >= periodStart && releaseDate <= periodEnd;
+            })
+            .sort((a, b) => a.date.localeCompare(b.date) || a.task.localeCompare(b.task, "de"));
+          const selected = state.timelineView === "week" ? state.selectedWeek : state.selectedDay;
+          const active = selected === date ? " active" : "";
+          const hasItems = items.length ? " has-items" : "";
+          const titles = items.map((release) =>
+            `<span class="day-title" title="${escapeHtml(release.task)}">${
+              state.timelineView === "week" ? `${escapeHtml(formatShortDate(release.date))} · ` : ""
+            }${escapeHtml(release.task)}</span>`
+          ).join("");
+          const dateLabel = state.timelineView === "week"
+            ? `KW ${weekNumber(periodStart)}<span class="week-range">${formatShortDate(date)}–${formatShortDate(toIsoDate(periodEnd))}</span>`
+            : escapeHtml(formatTimelineDate(date));
+          const periodLabel = state.timelineView === "week"
+            ? `Kalenderwoche ${weekNumber(periodStart)}, ${formatDate(date)} bis ${formatDate(toIsoDate(periodEnd))}`
+            : formatDate(date);
+
+          return `
+            <button class="day${active}${hasItems}" type="button" data-date="${date}"
+              aria-pressed="${selected === date}" aria-label="${periodLabel}: ${items.length} Releases">
+              <span class="day-date">${dateLabel}</span>
+              <span class="day-count">${items.length}</span>
+              <span class="day-marker"></span>
+              <span class="day-titles">${titles}</span>
+            </button>
+          `;
+        }).join("");
+
+        elements.timeline.querySelectorAll(".day").forEach((button) => {
+          button.addEventListener("click", () => {
+            if (state.timelineView === "week") {
+              state.selectedWeek = state.selectedWeek === button.dataset.date ? "" : button.dataset.date;
+              state.selectedDay = "";
+            } else {
+              state.selectedDay = state.selectedDay === button.dataset.date ? "" : button.dataset.date;
+              state.selectedWeek = "";
+            }
+            render();
+          });
+        });
+
+        requestAnimationFrame(() => {
+          const active = elements.timeline.querySelector(".day.active");
+          if (active) active.scrollIntoView({ inline: "center", block: "nearest", behavior: "smooth" });
+          else elements.timelineShell.scrollLeft = elements.timelineShell.scrollWidth;
+        });
+      };
+
+      const openDetails = (release) => {
+        document.getElementById("detailTitle").textContent = release.task;
+        document.getElementById("detailDescription").textContent = release.description;
+        document.getElementById("detailPlatform").textContent = release.platform;
+        document.getElementById("detailDeveloper").textContent = release.developer;
+        document.getElementById("detailDate").textContent = formatDate(release.date);
+        document.getElementById("detailReference").textContent = release.reference || "—";
+
+        const sources = document.getElementById("detailSources");
+        const linkLabels = new Set((release.links || []).map((link) => link.label));
+        sources.innerHTML = [
+          ...(release.links || []).map((link) =>
+            `<a class="source-link" href="${escapeHtml(link.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(link.label)}</a>`
+          ),
+          ...(release.sources || [])
+            .filter((source) => !linkLabels.has(source))
+            .map((source) => `<span class="source-label">${escapeHtml(source)}</span>`)
+        ].join("");
+
+        elements.dialog.showModal();
+      };
+
+      const renderRows = () => {
+        const visible = filteredReleases();
+        elements.count.textContent = `${visible.length} ${visible.length === 1 ? "Release" : "Releases"}`;
+        elements.empty.hidden = visible.length !== 0;
+        document.querySelector(".table-wrap").hidden = visible.length === 0;
+
+        elements.rows.innerHTML = visible.map((release) => `
+          <tr data-id="${escapeHtml(release.id)}" tabindex="0" aria-label="Details zu ${escapeHtml(release.task)} öffnen">
+            <td>
+              <div class="task-name">${escapeHtml(release.task)}</div>
+            </td>
+            <td>${escapeHtml(release.description)}</td>
+            <td><span class="platform">${escapeHtml(release.platform)}</span></td>
+            <td>${escapeHtml(release.developer)}</td>
+            <td>${escapeHtml(formatDate(release.date))}</td>
+          </tr>
+        `).join("");
+
+        elements.rows.querySelectorAll("tr").forEach((row) => {
+          const activate = () => openDetails(releases.find((release) => release.id === row.dataset.id));
+          row.addEventListener("click", activate);
+          row.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+              event.preventDefault();
+              activate();
+            }
+          });
+        });
+      };
+
+      const updateSortIndicators = () => {
+        document.querySelectorAll(".sort").forEach((button) => {
+          const icon = button.querySelector(".sort-icon");
+          icon.textContent = button.dataset.sort === state.sortKey
+            ? (state.sortDirection === "asc" ? "↑" : "↓")
+            : "↕";
+        });
+      };
+
+      const updateResetState = () => {
+        elements.reset.disabled = elements.period.value === "30"
+          && !elements.platform.value
+          && !elements.developer.value
+          && !elements.search.value
+          && !state.selectedDay
+          && !state.selectedWeek;
+      };
+
+      const render = () => {
+        const customDatesEnabled = elements.period.value === "custom";
+        elements.dateFrom.disabled = !customDatesEnabled;
+        elements.dateTo.disabled = !customDatesEnabled;
+        renderTimeline();
+        renderRows();
+        updateSortIndicators();
+        updateResetState();
+      };
+
+      elements.updatedAt.textContent = `Zuletzt aktualisiert: ${formatUpdated(payload.lastUpdated)}`;
+
+      addOptions(elements.platform, uniqueSorted(releases.map((release) => release.platform)));
+      addOptions(elements.developer, uniqueSorted(releases.map((release) => release.developer)));
+
+      [elements.period, elements.platform, elements.developer].forEach((select) =>
+        select.addEventListener("change", render)
+      );
+      [elements.dateFrom, elements.dateTo].forEach((input) =>
+        input.addEventListener("change", render)
+      );
+      elements.search.addEventListener("input", render);
+
+      [elements.dayView, elements.weekView].forEach((button) => {
+        button.addEventListener("click", () => {
+          state.timelineView = button === elements.weekView ? "week" : "day";
+          state.selectedDay = "";
+          state.selectedWeek = "";
+          render();
+        });
+      });
+
+      elements.timelinePrevious.addEventListener("click", () => {
+        const amount = state.timelineView === "week" ? -320 : -672;
+        elements.timelineShell.scrollBy({ left: amount, behavior: "smooth" });
+      });
+
+      elements.timelineNext.addEventListener("click", () => {
+        const amount = state.timelineView === "week" ? 320 : 672;
+        elements.timelineShell.scrollBy({ left: amount, behavior: "smooth" });
+      });
+
+      elements.reset.addEventListener("click", () => {
+        elements.period.value = "30";
+        elements.platform.value = "";
+        elements.developer.value = "";
+        elements.dateFrom.value = "";
+        elements.dateTo.value = "";
+        elements.search.value = "";
+        state.selectedDay = "";
+        state.selectedWeek = "";
+        state.sortKey = "date";
+        state.sortDirection = "desc";
+        render();
+      });
+
+      document.querySelectorAll(".sort").forEach((button) => {
+        button.addEventListener("click", () => {
+          if (state.sortKey === button.dataset.sort) {
+            state.sortDirection = state.sortDirection === "asc" ? "desc" : "asc";
+          } else {
+            state.sortKey = button.dataset.sort;
+            state.sortDirection = "asc";
+          }
+          renderRows();
+          updateSortIndicators();
+        });
+      });
+
+      document.getElementById("closeDialog").addEventListener("click", () => elements.dialog.close());
+      elements.dialog.addEventListener("click", (event) => {
+        if (event.target === elements.dialog) elements.dialog.close();
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>

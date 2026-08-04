@@ -1,0 +1,499 @@
+{
+  "lastUpdated": "2026-07-31T10:05:00+02:00",
+  "releases": [
+    {
+      "id": "google-play-vol-at-2026-07-01",
+      "task": "VOL.AT Android-App aktualisiert",
+      "description": "Die im Google Play Store verfügbare Produktionsversion wurde aktualisiert.",
+      "platform": "Native Apps",
+      "developer": "App-Team",
+      "date": "2026-07-01",
+      "reference": "Google Play · Produktionsstand 01.07.2026",
+      "sources": ["Google Play"],
+      "links": [{"label": "Google Play", "url": "https://play.google.com/store/apps/details?id=at.vol.android&hl=de_AT"}]
+    },
+    {
+      "id": "app-store-vol-at-4.19.6",
+      "task": "VOL.AT iOS 4.19.6 veröffentlicht",
+      "description": "Die neue Produktionsversion enthält allgemeine Fehlerbehebungen und Verbesserungen.",
+      "platform": "Native Apps",
+      "developer": "App-Team",
+      "date": "2026-07-03",
+      "reference": "App Store · Version 4.19.6",
+      "sources": ["App Store"],
+      "links": [{"label": "App Store", "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"}]
+    },
+    {
+      "id": "google-play-vol-at-2026-07-14",
+      "task": "VOL.AT Android-App aktualisiert",
+      "description": "Die am 14. Juli im Google Play Store veröffentlichte Produktionsversion steht für Nutzer bereit.",
+      "platform": "Native Apps",
+      "developer": "App-Team",
+      "date": "2026-07-14",
+      "reference": "Google Play · Produktionsstand 14.07.2026",
+      "sources": ["Google Play"],
+      "links": [{"label": "Google Play", "url": "https://play.google.com/store/apps/details?id=at.vol.android&hl=de_AT"}]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1244",
+      "task": "Paywall-Abschlüsse besser messbar",
+      "description": "Erfasst Checkout-Schritte beim Piano-Paywall-Kauf und verbessert damit die Auswertung von Abo-Abschlüssen.",
+      "platform": "VOL.AT",
+      "developer": "martinj",
+      "date": "2026-07-14",
+      "reference": "russmedia-frontend-nuxt3 · MR 1244",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1262",
+      "task": "Geschützte Inhalte zuverlässiger erkannt",
+      "description": "Verbessert die serverseitige Erkennung eingeschränkter Artikel und sorgt für eine konsistente Paywall.",
+      "platform": "VOL.AT",
+      "developer": "illmerl",
+      "date": "2026-07-14",
+      "reference": "russmedia-frontend-nuxt3 · MR 1262",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1265+#1268",
+      "task": "Wetter-Einstieg in der App verbessert",
+      "description": "Führt Nutzer verständlicher durch die Ortsauswahl und verbindet den neuen Wetter-Einstieg mit der nativen App.",
+      "platform": "VOL.AT",
+      "developer": "illmerl · fbittner",
+      "date": "2026-07-14",
+      "reference": "russmedia-frontend-nuxt3 · MR 1265, 1268",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1266",
+      "task": "Staging-Bereitstellung stabilisiert",
+      "description": "Bereinigt die Staging-Konfiguration und macht Test-Bereitstellungen sowie deren Zugriff zuverlässiger.",
+      "platform": "VOL.AT",
+      "developer": "martinj",
+      "date": "2026-07-14",
+      "reference": "russmedia-frontend-nuxt3 · MR 1266",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "wordpress-webpapers#960+#961+#962",
+      "task": "Nordstern-Inhalte robuster ausgeliefert",
+      "description": "Verbessert den Zugriff auf freie Inhalte und stellt Bilder auch bei fehlenden Konfigurationswerten zuverlässig bereit.",
+      "platform": "Nordstern",
+      "developer": "fbittner",
+      "date": "2026-07-14",
+      "reference": "wordpress-webpapers · MR 960, 961, 962",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "russmedia-fat#10",
+      "task": "E-Mail-Versand auf SMTP umgestellt",
+      "description": "Ersetzt SendGrid durch konfigurierbaren SMTP-Versand und verbessert mehrsprachige Benachrichtigungen.",
+      "platform": "VOL.AT",
+      "developer": "mwidmann",
+      "date": "2026-07-15",
+      "reference": "russmedia-fat · MR 10",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "profile-name-fallback#11+#1271+#1272",
+      "task": "Profile ohne vollständigen Namen unterstützt",
+      "description": "Zeigt Profile auch bei fehlendem Vor- oder Nachnamen korrekt an und nutzt einen verlässlichen Ersatznamen.",
+      "platform": "VOL.AT",
+      "developer": "mwidmann · martinj",
+      "date": "2026-07-15",
+      "reference": "russmedia-fat · MR 11; russmedia-frontend-nuxt3 · MR 1271, 1272",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1269",
+      "task": "Editor-Bilder zuverlässiger geladen",
+      "description": "Leitet Bilder aus dem Editor über den Bilddienst aus und verbessert damit Ladezeit und Verfügbarkeit.",
+      "platform": "VOL.AT",
+      "developer": "illmerl",
+      "date": "2026-07-15",
+      "reference": "russmedia-frontend-nuxt3 · MR 1269",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1274",
+      "task": "In-App-Angebote zuverlässig verarbeitet",
+      "description": "Speichert frühe Kaufanfragen zwischen, damit Angebote auch bei verzögertem App-Start korrekt angezeigt werden.",
+      "platform": "VOL.AT",
+      "developer": "illmerl",
+      "date": "2026-07-15",
+      "reference": "russmedia-frontend-nuxt3 · MR 1274",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "app-store-vol-at-4.19.7",
+      "task": "VOL.AT iOS 4.19.7 veröffentlicht",
+      "description": "Die neue Produktionsversion enthält allgemeine Fehlerbehebungen und Verbesserungen.",
+      "platform": "Native Apps",
+      "developer": "App-Team",
+      "date": "2026-07-15",
+      "reference": "App Store · Version 4.19.7",
+      "sources": ["App Store"],
+      "links": [{"label": "App Store", "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"}]
+    },
+    {
+      "id": "content-voice-api#15",
+      "task": "Audio-Inhalte länger verfügbar",
+      "description": "Bewahrt erzeugte Audio-Inhalte standardmäßig 90 Tage auf und hält damit auch ältere Beiträge in Playlists verfügbar.",
+      "platform": "VOL.AT",
+      "developer": "fbittner",
+      "date": "2026-07-16",
+      "reference": "content-voice-api · MR 15",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1270",
+      "task": "Audio-Player erweitert",
+      "description": "Unterstützt ElevenLabs-Audio und Streaming, damit vertonte Artikel stabil und ohne lange Wartezeit starten.",
+      "platform": "VOL.AT",
+      "developer": "fbittner",
+      "date": "2026-07-18",
+      "reference": "russmedia-frontend-nuxt3 · MR 1270",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1278",
+      "task": "Paywall-Darstellung verbessert",
+      "description": "Entfernt störende Überlagerungen und vereinheitlicht die Darstellung der Video-Paywall.",
+      "platform": "VOL.AT",
+      "developer": "illmerl",
+      "date": "2026-07-18",
+      "reference": "russmedia-frontend-nuxt3 · MR 1278",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "epaper-service#24",
+      "task": "E-Paper-Import stabilisiert",
+      "description": "Verlängert Zeitlimits, wiederholt kurzfristig fehlgeschlagene Abrufe und verhindert unnötige Importabbrüche.",
+      "platform": "Nordstern",
+      "developer": "mwidmann",
+      "date": "2026-07-20",
+      "reference": "epaper-service · MR 24",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1279",
+      "task": "Standardlogo im Seitenkopf vereinheitlicht",
+      "description": "Verwendet im VOL.AT-Seitenkopf wieder das vorgesehene Standardlogo und sorgt für einen konsistenten Markenauftritt.",
+      "platform": "VOL.AT",
+      "developer": "fbittner",
+      "date": "2026-07-20",
+      "reference": "russmedia-frontend-nuxt3 · MR 1279",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1281",
+      "task": "Forum-Sperren klarer umgesetzt",
+      "description": "Berücksichtigt gesperrte Nutzer zuverlässig und zeigt den Sperrstatus im Forum verständlich an.",
+      "platform": "VOL.AT",
+      "developer": "mwidmann",
+      "date": "2026-07-20",
+      "reference": "russmedia-frontend-nuxt3 · MR 1281",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "wordpress-webpapers#963",
+      "task": "E-Paper-Beilagen besser auffindbar",
+      "description": "Liefert die Daten für Beilagen-Seiten und verbessert deren Navigation im Nordstern-Angebot.",
+      "platform": "Nordstern",
+      "developer": "mwidmann",
+      "date": "2026-07-20",
+      "reference": "wordpress-webpapers · MR 963",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "wordpress-webpapers#964",
+      "task": "Newsletter-Builder um Artikel erweitert",
+      "description": "Macht redaktionelle Artikel im Newsletter-Builder verfügbar und vereinfacht die Zusammenstellung von Aussendungen.",
+      "platform": "Nordstern",
+      "developer": "baldaufp",
+      "date": "2026-07-20",
+      "reference": "wordpress-webpapers · MR 964",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "docker-base-images#103",
+      "task": "PHP-8.5-Basisimages bereitgestellt",
+      "description": "Ergänzt aktuelle PHP-8.5-Container und erweitert Laufzeitoptionen für kommende Systemaktualisierungen.",
+      "platform": "Andere",
+      "developer": "martinj",
+      "date": "2026-07-21",
+      "reference": "docker-base-images · MR 103",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1282+#1283",
+      "task": "Artikelansicht in der App vereinheitlicht",
+      "description": "Erkennt native App-Aufrufe zuverlässig und verwendet die passende Darstellung sowie Zwischenspeicherung.",
+      "platform": "VOL.AT",
+      "developer": "martinj",
+      "date": "2026-07-21",
+      "reference": "russmedia-frontend-nuxt3 · MR 1282, 1283",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1286",
+      "task": "Blackout-Darstellung korrigiert",
+      "description": "Behebt fehlerhafte Abstände und Darstellung bei gesperrten oder ausgeblendeten Inhalten.",
+      "platform": "VOL.AT",
+      "developer": "martinj",
+      "date": "2026-07-21",
+      "reference": "russmedia-frontend-nuxt3 · MR 1286",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1287",
+      "task": "Artikel-Editor abgesichert",
+      "description": "Erlaubt den Zugriff auf den Artikel-Editor nur angemeldeten Nutzern und verbessert damit die Zugriffskontrolle.",
+      "platform": "VOL.AT",
+      "developer": "mwidmann",
+      "date": "2026-07-21",
+      "reference": "russmedia-frontend-nuxt3 · MR 1287",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1288",
+      "task": "Paywall-Messung bereinigt",
+      "description": "Verbessert die Messung des Abo-Abschlusses und entfernt eine nicht mehr benötigte Wetter-Überlagerung.",
+      "platform": "VOL.AT",
+      "developer": "martinj",
+      "date": "2026-07-21",
+      "reference": "russmedia-frontend-nuxt3 · MR 1288",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "wordpress-webpapers#965",
+      "task": "Webanalyse-Pfad aktualisiert",
+      "description": "Bindet das Analytics-Skript über den neuen vorgesehenen Pfad ein und hält die Reichweitenmessung funktionsfähig.",
+      "platform": "Nordstern",
+      "developer": "martinj",
+      "date": "2026-07-21",
+      "reference": "wordpress-webpapers · MR 965",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "docker-base-images#105",
+      "task": "Sichere FTP-Verbindungen vorbereitet",
+      "description": "Ergänzt die nötige SSL-Unterstützung in den PHP-8.5-Images für sichere FTP-Verbindungen.",
+      "platform": "Andere",
+      "developer": "martinj",
+      "date": "2026-07-22",
+      "reference": "docker-base-images · MR 105",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "epaper-service#25",
+      "task": "E-Paper-Dateien sicher ausgeliefert",
+      "description": "Stellt Bilder und PDF-Dateien über geschützte Endpunkte bereit und verbessert die Zugriffskontrolle.",
+      "platform": "Nordstern",
+      "developer": "mwidmann",
+      "date": "2026-07-22",
+      "reference": "epaper-service · MR 25",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1289",
+      "task": "Android-Artikelansicht verbessert",
+      "description": "Unterstützt den Dunkelmodus besser, behandelt ungültige Artikel sauber und reduziert unnötig große Datenpakete.",
+      "platform": "VOL.AT",
+      "developer": "martinj",
+      "date": "2026-07-22",
+      "reference": "russmedia-frontend-nuxt3 · MR 1289",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1290",
+      "task": "Fehlerseiten verständlicher gemacht",
+      "description": "Verbessert die Behandlung nicht gefundener Inhalte und verhindert irreführende Fehlermeldungen.",
+      "platform": "VOL.AT",
+      "developer": "martinj",
+      "date": "2026-07-22",
+      "reference": "russmedia-frontend-nuxt3 · MR 1290",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1291",
+      "task": "E-Paper für VN und OBWO erweitert",
+      "description": "Ergänzt die neue E-Paper-Oberfläche und Bereitstellung für VN und OBWO.",
+      "platform": "Nordstern",
+      "developer": "mwidmann",
+      "date": "2026-07-22",
+      "reference": "russmedia-frontend-nuxt3 · MR 1291",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "app-store-vol-at-4.19.8",
+      "task": "VOL.AT iOS 4.19.8 veröffentlicht",
+      "description": "Behebt die Artikel-Freischaltung für TEE-Tagespässe und verhindert ungewollte Ortswechsel im Wetter-Widget.",
+      "platform": "Native Apps",
+      "developer": "Michal Senk",
+      "date": "2026-07-22",
+      "reference": "App Store · Version 4.19.8",
+      "sources": ["App Store", "Teams"],
+      "links": [
+        {"label": "App Store", "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"},
+        {"label": "Teams", "url": "https://teams.microsoft.com/l/message/19%3aca5f854e422543239ad3937236210bf7%40thread.tacv2/1784484158826?groupId=81c4fd73-5c4c-4fca-b1a1-c85ac521f063&createdTime=1784484159000"}
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1293",
+      "task": "Tippspiel-Weiterleitung aktualisiert",
+      "description": "Leitet die bisherige Tippspiel-Adresse automatisch zur Eliteliga-Seite weiter.",
+      "platform": "VOL.AT",
+      "developer": "rfischl",
+      "date": "2026-07-24",
+      "reference": "russmedia-frontend-nuxt3 · MR 1293",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "wordpress-webpapers#966",
+      "task": "Composer-Zugriff aktualisiert",
+      "description": "Erneuert die Zugangsdaten für zuverlässige automatische Abhängigkeitsupdates.",
+      "platform": "Nordstern",
+      "developer": "fbittner",
+      "date": "2026-07-24",
+      "reference": "wordpress-webpapers · MR 966",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "wp-plugins#144",
+      "task": "Media Pocket für WordPress angepasst",
+      "description": "Verbessert die Editor-Darstellung und lokale Tests für einen stabileren Betrieb.",
+      "platform": "Nordstern",
+      "developer": "fbittner",
+      "date": "2026-07-24",
+      "reference": "wp-plugins · MR 144",
+      "sources": ["CodeRabbit"]
+    },
+    {
+      "id": "epaper-service#26",
+      "task": "Push-Texte für Sonderausgaben korrigiert",
+      "description": "Verwendet bei Sonderausgaben den passenden Publikationstitel und verbessert die Verarbeitung älterer OBWO-Ausgaben.",
+      "platform": "Nordstern",
+      "developer": "mwidmann",
+      "date": "2026-07-27",
+      "reference": "epaper-service · MR 26",
+      "sources": ["CodeRabbit", "Teams"],
+      "links": [
+        {"label": "Merge Request", "url": "https://gitlab.russmedia.com/DEVV/epaper-service/-/merge_requests/26"},
+        {"label": "Teams", "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785129661705?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"}
+      ]
+    },
+    {
+      "id": "russmedia-fat#13",
+      "task": "T-Shirt-Größe in Bestätigungen ergänzt",
+      "description": "Übernimmt die gewählte T-Shirt-Größe in redaktionelle Bestätigungsmails und macht Bestellungen leichter nachvollziehbar.",
+      "platform": "VOL.AT",
+      "developer": "mwidmann",
+      "date": "2026-07-27",
+      "reference": "russmedia-fat · MR 13",
+      "sources": ["CodeRabbit", "Teams"],
+      "links": [
+        {"label": "Merge Request", "url": "https://gitlab.russmedia.com/DEVV/russmedia-fat/-/merge_requests/13"},
+        {"label": "Teams", "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785149366175?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"}
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1294",
+      "task": "E-Paper-Navigation verbessert",
+      "description": "Ergänzt flexible Zoomstufen, eine Rückkehr-nach-oben-Funktion und eine übersichtlichere Sortierung im E-Paper.",
+      "platform": "Nordstern",
+      "developer": "mwidmann",
+      "date": "2026-07-27",
+      "reference": "russmedia-frontend-nuxt3 · MR 1294",
+      "sources": ["CodeRabbit", "Teams"],
+      "links": [
+        {"label": "Merge Request", "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1294"},
+        {"label": "Teams", "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785132620859?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"}
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1295",
+      "task": "Abo- und Inhaltsmessung erweitert",
+      "description": "Erfasst aussichtsreiche Inhalte und Abo-Abschlüsse genauer und verbessert damit die Bewertung der Paywall-Performance.",
+      "platform": "VOL.AT",
+      "developer": "martinj",
+      "date": "2026-07-28",
+      "reference": "russmedia-frontend-nuxt3 · MR 1295",
+      "sources": ["CodeRabbit", "Teams"],
+      "links": [
+        {"label": "Merge Request", "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1295"},
+        {"label": "Teams", "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785245795655?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"}
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1296",
+      "task": "Google-Quellenhinweis besser gesteuert",
+      "description": "Verhindert zu häufige Hinweise zur Google-Quellenregistrierung und berücksichtigt bereits erfolgte Bestätigungen langfristig.",
+      "platform": "VOL.AT",
+      "developer": "rfischl",
+      "date": "2026-07-28",
+      "reference": "russmedia-frontend-nuxt3 · MR 1296",
+      "sources": ["CodeRabbit", "Teams"],
+      "links": [
+        {"label": "Merge Request", "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1296"},
+        {"label": "Teams", "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785244892370?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"}
+      ]
+    },
+    {
+      "id": "epaper-service#27",
+      "task": "E-Paper-Ausschnitte sicher bereitgestellt",
+      "description": "Ermöglicht geschützte Downloads und erzeugt einzelne Seitenausschnitte als zwischengespeicherte Bilder.",
+      "platform": "Nordstern",
+      "developer": "mwidmann",
+      "date": "2026-07-29",
+      "reference": "epaper-service · MR 27",
+      "sources": ["CodeRabbit", "Teams"],
+      "links": [
+        {"label": "Merge Request", "url": "https://gitlab.russmedia.com/DEVV/epaper-service/-/merge_requests/27"},
+        {"label": "Teams", "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785323871746?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"}
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1297",
+      "task": "E-Paper-Werkzeuge erweitert",
+      "description": "Ergänzt Bildausschnitte, Downloads und konfigurierbare E-Paper-Widgets für eine flexiblere Nutzung.",
+      "platform": "Nordstern",
+      "developer": "mwidmann",
+      "date": "2026-07-29",
+      "reference": "russmedia-frontend-nuxt3 · MR 1297",
+      "sources": ["CodeRabbit", "Teams"],
+      "links": [
+        {"label": "Merge Request", "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1297"},
+        {"label": "Teams", "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785329286409?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"}
+      ]
+    },
+    {
+      "id": "wp-plugins#145",
+      "task": "App-Menü in WordPress korrigiert",
+      "description": "Behebt die Darstellung des App-Erweiterungsmenüs unter WordPress 6.6.5 und sorgt für konsistente Dropdown-Breiten.",
+      "platform": "Nordstern",
+      "developer": "fbittner",
+      "date": "2026-07-29",
+      "reference": "wp-plugins · MR 145",
+      "sources": ["CodeRabbit", "Teams"],
+      "links": [
+        {"label": "Merge Request", "url": "https://gitlab.russmedia.com/DEVV/wp-plugins/-/merge_requests/145"},
+        {"label": "Teams", "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785251492807?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"}
+      ]
+    },
+    {
+      "id": "nnp#2046",
+      "task": "Abo-Prüfung um Abo-Nummer ergänzt",
+      "description": "Übermittelt die Abo-Nummer nun auch an den Subscription-Service und verbessert damit die korrekte Zuordnung von Abos.",
+      "platform": "VOL.AT",
+      "developer": "Julian Martin",
+      "date": "2026-07-30",
+      "reference": "nnp · MR 2046",
+      "sources": ["Teams"],
+      "links": [
+        {"label": "Merge Request", "url": "https://gitlab.russmedia.com/nnp-dev/nnp/-/merge_requests/2046"},
+        {"label": "Teams", "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785406761841?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de&tenantId=6b84c5a7-5528-4071-b5b2-49e3cf5f2208"}
+      ]
+    }
+  ]
+}
