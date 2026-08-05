@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-31T10:05:00+02:00",
+  "lastUpdated": "2026-08-05T15:05:53+02:00",
   "releases": [
     {
       "id": "google-play-vol-at-2026-07-01",
@@ -9,8 +9,15 @@
       "developer": "App-Team",
       "date": "2026-07-01",
       "reference": "Google Play · Produktionsstand 01.07.2026",
-      "sources": ["Google Play"],
-      "links": [{"label": "Google Play", "url": "https://play.google.com/store/apps/details?id=at.vol.android&hl=de_AT"}]
+      "sources": [
+        "Google Play"
+      ],
+      "links": [
+        {
+          "label": "Google Play",
+          "url": "https://play.google.com/store/apps/details?id=at.vol.android&hl=de_AT"
+        }
+      ]
     },
     {
       "id": "app-store-vol-at-4.19.6",
@@ -20,8 +27,15 @@
       "developer": "App-Team",
       "date": "2026-07-03",
       "reference": "App Store · Version 4.19.6",
-      "sources": ["App Store"],
-      "links": [{"label": "App Store", "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"}]
+      "sources": [
+        "App Store"
+      ],
+      "links": [
+        {
+          "label": "App Store",
+          "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"
+        }
+      ]
     },
     {
       "id": "google-play-vol-at-2026-07-14",
@@ -31,8 +45,15 @@
       "developer": "App-Team",
       "date": "2026-07-14",
       "reference": "Google Play · Produktionsstand 14.07.2026",
-      "sources": ["Google Play"],
-      "links": [{"label": "Google Play", "url": "https://play.google.com/store/apps/details?id=at.vol.android&hl=de_AT"}]
+      "sources": [
+        "Google Play"
+      ],
+      "links": [
+        {
+          "label": "Google Play",
+          "url": "https://play.google.com/store/apps/details?id=at.vol.android&hl=de_AT"
+        }
+      ]
     },
     {
       "id": "russmedia-frontend-nuxt3#1244",
@@ -42,7 +63,9 @@
       "developer": "martinj",
       "date": "2026-07-14",
       "reference": "russmedia-frontend-nuxt3 · MR 1244",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "russmedia-frontend-nuxt3#1262",
@@ -52,7 +75,9 @@
       "developer": "illmerl",
       "date": "2026-07-14",
       "reference": "russmedia-frontend-nuxt3 · MR 1262",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "russmedia-frontend-nuxt3#1265+#1268",
@@ -62,7 +87,9 @@
       "developer": "illmerl · fbittner",
       "date": "2026-07-14",
       "reference": "russmedia-frontend-nuxt3 · MR 1265, 1268",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "russmedia-frontend-nuxt3#1266",
@@ -72,7 +99,9 @@
       "developer": "martinj",
       "date": "2026-07-14",
       "reference": "russmedia-frontend-nuxt3 · MR 1266",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "wordpress-webpapers#960+#961+#962",
@@ -82,7 +111,9 @@
       "developer": "fbittner",
       "date": "2026-07-14",
       "reference": "wordpress-webpapers · MR 960, 961, 962",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "russmedia-fat#10",
@@ -92,7 +123,9 @@
       "developer": "mwidmann",
       "date": "2026-07-15",
       "reference": "russmedia-fat · MR 10",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "profile-name-fallback#11+#1271+#1272",
@@ -102,7 +135,9 @@
       "developer": "mwidmann · martinj",
       "date": "2026-07-15",
       "reference": "russmedia-fat · MR 11; russmedia-frontend-nuxt3 · MR 1271, 1272",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "russmedia-frontend-nuxt3#1269",
@@ -112,7 +147,9 @@
       "developer": "illmerl",
       "date": "2026-07-15",
       "reference": "russmedia-frontend-nuxt3 · MR 1269",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "russmedia-frontend-nuxt3#1274",
@@ -122,7 +159,9 @@
       "developer": "illmerl",
       "date": "2026-07-15",
       "reference": "russmedia-frontend-nuxt3 · MR 1274",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "app-store-vol-at-4.19.7",
@@ -132,8 +171,15 @@
       "developer": "App-Team",
       "date": "2026-07-15",
       "reference": "App Store · Version 4.19.7",
-      "sources": ["App Store"],
-      "links": [{"label": "App Store", "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"}]
+      "sources": [
+        "App Store"
+      ],
+      "links": [
+        {
+          "label": "App Store",
+          "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"
+        }
+      ]
     },
     {
       "id": "content-voice-api#15",
@@ -143,7 +189,9 @@
       "developer": "fbittner",
       "date": "2026-07-16",
       "reference": "content-voice-api · MR 15",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "russmedia-frontend-nuxt3#1270",
@@ -153,7 +201,9 @@
       "developer": "fbittner",
       "date": "2026-07-18",
       "reference": "russmedia-frontend-nuxt3 · MR 1270",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "russmedia-frontend-nuxt3#1278",
@@ -163,7 +213,9 @@
       "developer": "illmerl",
       "date": "2026-07-18",
       "reference": "russmedia-frontend-nuxt3 · MR 1278",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "epaper-service#24",
@@ -173,7 +225,9 @@
       "developer": "mwidmann",
       "date": "2026-07-20",
       "reference": "epaper-service · MR 24",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "russmedia-frontend-nuxt3#1279",
@@ -183,7 +237,9 @@
       "developer": "fbittner",
       "date": "2026-07-20",
       "reference": "russmedia-frontend-nuxt3 · MR 1279",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "russmedia-frontend-nuxt3#1281",
@@ -193,7 +249,9 @@
       "developer": "mwidmann",
       "date": "2026-07-20",
       "reference": "russmedia-frontend-nuxt3 · MR 1281",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "wordpress-webpapers#963",
@@ -203,7 +261,9 @@
       "developer": "mwidmann",
       "date": "2026-07-20",
       "reference": "wordpress-webpapers · MR 963",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "wordpress-webpapers#964",
@@ -213,7 +273,9 @@
       "developer": "baldaufp",
       "date": "2026-07-20",
       "reference": "wordpress-webpapers · MR 964",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "docker-base-images#103",
@@ -223,7 +285,9 @@
       "developer": "martinj",
       "date": "2026-07-21",
       "reference": "docker-base-images · MR 103",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "russmedia-frontend-nuxt3#1282+#1283",
@@ -233,7 +297,9 @@
       "developer": "martinj",
       "date": "2026-07-21",
       "reference": "russmedia-frontend-nuxt3 · MR 1282, 1283",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "russmedia-frontend-nuxt3#1286",
@@ -243,7 +309,9 @@
       "developer": "martinj",
       "date": "2026-07-21",
       "reference": "russmedia-frontend-nuxt3 · MR 1286",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "russmedia-frontend-nuxt3#1287",
@@ -253,7 +321,9 @@
       "developer": "mwidmann",
       "date": "2026-07-21",
       "reference": "russmedia-frontend-nuxt3 · MR 1287",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "russmedia-frontend-nuxt3#1288",
@@ -263,7 +333,9 @@
       "developer": "martinj",
       "date": "2026-07-21",
       "reference": "russmedia-frontend-nuxt3 · MR 1288",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "wordpress-webpapers#965",
@@ -273,7 +345,9 @@
       "developer": "martinj",
       "date": "2026-07-21",
       "reference": "wordpress-webpapers · MR 965",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "docker-base-images#105",
@@ -283,7 +357,9 @@
       "developer": "martinj",
       "date": "2026-07-22",
       "reference": "docker-base-images · MR 105",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "epaper-service#25",
@@ -293,7 +369,9 @@
       "developer": "mwidmann",
       "date": "2026-07-22",
       "reference": "epaper-service · MR 25",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "russmedia-frontend-nuxt3#1289",
@@ -303,7 +381,9 @@
       "developer": "martinj",
       "date": "2026-07-22",
       "reference": "russmedia-frontend-nuxt3 · MR 1289",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "russmedia-frontend-nuxt3#1290",
@@ -313,7 +393,9 @@
       "developer": "martinj",
       "date": "2026-07-22",
       "reference": "russmedia-frontend-nuxt3 · MR 1290",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "russmedia-frontend-nuxt3#1291",
@@ -323,7 +405,9 @@
       "developer": "mwidmann",
       "date": "2026-07-22",
       "reference": "russmedia-frontend-nuxt3 · MR 1291",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "app-store-vol-at-4.19.8",
@@ -333,10 +417,19 @@
       "developer": "Michal Senk",
       "date": "2026-07-22",
       "reference": "App Store · Version 4.19.8",
-      "sources": ["App Store", "Teams"],
+      "sources": [
+        "App Store",
+        "Teams"
+      ],
       "links": [
-        {"label": "App Store", "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"},
-        {"label": "Teams", "url": "https://teams.microsoft.com/l/message/19%3aca5f854e422543239ad3937236210bf7%40thread.tacv2/1784484158826?groupId=81c4fd73-5c4c-4fca-b1a1-c85ac521f063&createdTime=1784484159000"}
+        {
+          "label": "App Store",
+          "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"
+        },
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3aca5f854e422543239ad3937236210bf7%40thread.tacv2/1784484158826?groupId=81c4fd73-5c4c-4fca-b1a1-c85ac521f063&createdTime=1784484159000"
+        }
       ]
     },
     {
@@ -347,7 +440,9 @@
       "developer": "rfischl",
       "date": "2026-07-24",
       "reference": "russmedia-frontend-nuxt3 · MR 1293",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "wordpress-webpapers#966",
@@ -357,7 +452,9 @@
       "developer": "fbittner",
       "date": "2026-07-24",
       "reference": "wordpress-webpapers · MR 966",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "wp-plugins#144",
@@ -367,7 +464,9 @@
       "developer": "fbittner",
       "date": "2026-07-24",
       "reference": "wp-plugins · MR 144",
-      "sources": ["CodeRabbit"]
+      "sources": [
+        "CodeRabbit"
+      ]
     },
     {
       "id": "epaper-service#26",
@@ -377,10 +476,19 @@
       "developer": "mwidmann",
       "date": "2026-07-27",
       "reference": "epaper-service · MR 26",
-      "sources": ["CodeRabbit", "Teams"],
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ],
       "links": [
-        {"label": "Merge Request", "url": "https://gitlab.russmedia.com/DEVV/epaper-service/-/merge_requests/26"},
-        {"label": "Teams", "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785129661705?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"}
+        {
+          "label": "Merge Request",
+          "url": "https://gitlab.russmedia.com/DEVV/epaper-service/-/merge_requests/26"
+        },
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785129661705?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
+        }
       ]
     },
     {
@@ -391,10 +499,19 @@
       "developer": "mwidmann",
       "date": "2026-07-27",
       "reference": "russmedia-fat · MR 13",
-      "sources": ["CodeRabbit", "Teams"],
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ],
       "links": [
-        {"label": "Merge Request", "url": "https://gitlab.russmedia.com/DEVV/russmedia-fat/-/merge_requests/13"},
-        {"label": "Teams", "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785149366175?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"}
+        {
+          "label": "Merge Request",
+          "url": "https://gitlab.russmedia.com/DEVV/russmedia-fat/-/merge_requests/13"
+        },
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785149366175?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
+        }
       ]
     },
     {
@@ -405,10 +522,19 @@
       "developer": "mwidmann",
       "date": "2026-07-27",
       "reference": "russmedia-frontend-nuxt3 · MR 1294",
-      "sources": ["CodeRabbit", "Teams"],
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ],
       "links": [
-        {"label": "Merge Request", "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1294"},
-        {"label": "Teams", "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785132620859?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"}
+        {
+          "label": "Merge Request",
+          "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1294"
+        },
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785132620859?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
+        }
       ]
     },
     {
@@ -419,10 +545,19 @@
       "developer": "martinj",
       "date": "2026-07-28",
       "reference": "russmedia-frontend-nuxt3 · MR 1295",
-      "sources": ["CodeRabbit", "Teams"],
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ],
       "links": [
-        {"label": "Merge Request", "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1295"},
-        {"label": "Teams", "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785245795655?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"}
+        {
+          "label": "Merge Request",
+          "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1295"
+        },
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785245795655?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
+        }
       ]
     },
     {
@@ -433,10 +568,19 @@
       "developer": "rfischl",
       "date": "2026-07-28",
       "reference": "russmedia-frontend-nuxt3 · MR 1296",
-      "sources": ["CodeRabbit", "Teams"],
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ],
       "links": [
-        {"label": "Merge Request", "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1296"},
-        {"label": "Teams", "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785244892370?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"}
+        {
+          "label": "Merge Request",
+          "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1296"
+        },
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785244892370?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
+        }
       ]
     },
     {
@@ -447,10 +591,19 @@
       "developer": "mwidmann",
       "date": "2026-07-29",
       "reference": "epaper-service · MR 27",
-      "sources": ["CodeRabbit", "Teams"],
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ],
       "links": [
-        {"label": "Merge Request", "url": "https://gitlab.russmedia.com/DEVV/epaper-service/-/merge_requests/27"},
-        {"label": "Teams", "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785323871746?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"}
+        {
+          "label": "Merge Request",
+          "url": "https://gitlab.russmedia.com/DEVV/epaper-service/-/merge_requests/27"
+        },
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785323871746?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
+        }
       ]
     },
     {
@@ -461,10 +614,19 @@
       "developer": "mwidmann",
       "date": "2026-07-29",
       "reference": "russmedia-frontend-nuxt3 · MR 1297",
-      "sources": ["CodeRabbit", "Teams"],
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ],
       "links": [
-        {"label": "Merge Request", "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1297"},
-        {"label": "Teams", "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785329286409?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"}
+        {
+          "label": "Merge Request",
+          "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1297"
+        },
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785329286409?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
+        }
       ]
     },
     {
@@ -475,10 +637,19 @@
       "developer": "fbittner",
       "date": "2026-07-29",
       "reference": "wp-plugins · MR 145",
-      "sources": ["CodeRabbit", "Teams"],
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ],
       "links": [
-        {"label": "Merge Request", "url": "https://gitlab.russmedia.com/DEVV/wp-plugins/-/merge_requests/145"},
-        {"label": "Teams", "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785251492807?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"}
+        {
+          "label": "Merge Request",
+          "url": "https://gitlab.russmedia.com/DEVV/wp-plugins/-/merge_requests/145"
+        },
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785251492807?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
+        }
       ]
     },
     {
@@ -489,10 +660,266 @@
       "developer": "Julian Martin",
       "date": "2026-07-30",
       "reference": "nnp · MR 2046",
-      "sources": ["Teams"],
+      "sources": [
+        "Teams"
+      ],
       "links": [
-        {"label": "Merge Request", "url": "https://gitlab.russmedia.com/nnp-dev/nnp/-/merge_requests/2046"},
-        {"label": "Teams", "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785406761841?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de&tenantId=6b84c5a7-5528-4071-b5b2-49e3cf5f2208"}
+        {
+          "label": "Merge Request",
+          "url": "https://gitlab.russmedia.com/nnp-dev/nnp/-/merge_requests/2046"
+        },
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785406761841?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de&tenantId=6b84c5a7-5528-4071-b5b2-49e3cf5f2208"
+        }
+      ]
+    },
+    {
+      "id": "weather-frontend#2026-08-01",
+      "task": "Wetteransicht und Vorhersage erweitert",
+      "description": "Ergänzt Tages- und Datumskennzeichnungen sowie Mitternachtsmarkierungen in Stunden-Grafiken, verbessert Scrollen und Ziehen, erweitert die Wochenvorhersage auf fünf Einträge, vereinfacht Legenden und formuliert historische Wettertexte klarer.",
+      "platform": "Sonstige",
+      "developer": "fbittner",
+      "date": "2026-08-01",
+      "reference": "Teams · Release Notes 2026-08-01",
+      "sources": [
+        "Teams"
+      ],
+      "links": [
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785622548923?groupId=ef3b045f-de29-40ea-9aae-d8048bae5146&createdTime=1785622549000"
+        }
+      ]
+    },
+    {
+      "id": "docker-base-images#106",
+      "task": "PHP-Speicherlimit zur Bereitstellungszeit konfigurierbar",
+      "description": "Ermöglicht die Konfiguration des PHP-Speicherlimits über MEMORY_LIMIT und behält 384 MB als Standardwert bei.",
+      "platform": "Andere",
+      "developer": "martinj",
+      "date": "2026-08-05",
+      "reference": "docker-base-images · MR 106",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ],
+      "links": [
+        {
+          "label": "Merge Request",
+          "url": "https://gitlab.russmedia.com/DEVV/docker-base-images/-/merge_requests/106"
+        },
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785881546201?groupId=ef3b045f-de29-40ea-9aae-d8048bae5146&createdTime=1785881546000"
+        }
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1300",
+      "task": "Storybook-Mock-Streaming verbessert",
+      "description": "Aktualisiert Mock Service Worker auf 2.15.0, erhält SSE-Streaming und ergänzt Subscription-Szenarien für Storybook.",
+      "platform": "Sonstige",
+      "developer": "martinj",
+      "date": "2026-08-05",
+      "reference": "russmedia-frontend-nuxt3 · MR 1300",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ],
+      "links": [
+        {
+          "label": "Merge Request",
+          "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1300"
+        },
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785881546201?groupId=ef3b045f-de29-40ea-9aae-d8048bae5146&createdTime=1785881546000"
+        }
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1301",
+      "task": "Checkout-Abbruch zuverlässiger navigiert",
+      "description": "Korrigiert die Navigation nach Abbruch eines Checkouts und verhindert dadurch unerwünschte Paywall-Umgehungen.",
+      "platform": "VOL.AT",
+      "developer": "martinj",
+      "date": "2026-08-05",
+      "reference": "russmedia-frontend-nuxt3 · MR 1301",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ],
+      "links": [
+        {
+          "label": "Merge Request",
+          "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1301"
+        },
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785881546201?groupId=ef3b045f-de29-40ea-9aae-d8048bae5146&createdTime=1785881546000"
+        }
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1302",
+      "task": "Ortsauswahl in der App verbessert",
+      "description": "Ergänzt das direkte Öffnen der Heimatort- und Gemeindeauswahl in der App und verbessert das Dropdown-Verhalten.",
+      "platform": "VOL.AT",
+      "developer": "martinj",
+      "date": "2026-08-05",
+      "reference": "russmedia-frontend-nuxt3 · MR 1302",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ],
+      "links": [
+        {
+          "label": "Merge Request",
+          "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1302"
+        },
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785881546201?groupId=ef3b045f-de29-40ea-9aae-d8048bae5146&createdTime=1785881546000"
+        }
+      ]
+    },
+    {
+      "id": "russmedia-fat#14",
+      "task": "Abhängigkeiten, Authentifizierung und Editor stabilisiert",
+      "description": "Aktualisiert zentrale Laufzeit- und Entwicklungsabhängigkeiten und verbessert Authentifizierungsbereinigung, Billing, Editor-Initialisierung, Artikelstart und E2E-Testzuverlässigkeit.",
+      "platform": "VOL.AT",
+      "developer": "mwidmann",
+      "date": "2026-08-05",
+      "reference": "russmedia-fat · MR 14",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ],
+      "links": [
+        {
+          "label": "Merge Request",
+          "url": "https://gitlab.russmedia.com/DEVV/russmedia-fat/-/merge_requests/14"
+        },
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785881546201?groupId=ef3b045f-de29-40ea-9aae-d8048bae5146&createdTime=1785881546000"
+        }
+      ]
+    },
+    {
+      "id": "russmedia-tee#1930",
+      "task": "E2E-Start in russmedia-tee beschleunigt",
+      "description": "Reduziert die E2E-Startverzögerung, aktiviert synchrone Migrationen und leert den Cache vor dem Start des Dienstes.",
+      "platform": "Backend/NNP",
+      "developer": "martinj",
+      "date": "2026-08-05",
+      "reference": "russmedia-tee · MR 1930",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ],
+      "links": [
+        {
+          "label": "Merge Request",
+          "url": "https://gitlab.russmedia.com/DEVV/russmedia-tee/-/merge_requests/1930"
+        },
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785881546201?groupId=ef3b045f-de29-40ea-9aae-d8048bae5146&createdTime=1785881546000"
+        }
+      ]
+    },
+    {
+      "id": "russmedia-tee#1931",
+      "task": "Produktspezifische Seeder deaktiviert",
+      "description": "Deaktiviert Baseljetzt- und Ksta-spezifische Kunden-, Inhalts-, Reward- und Tagesreward-Seeder und behält gemeinsame Testdaten bei.",
+      "platform": "Backend/NNP",
+      "developer": "martinj",
+      "date": "2026-08-05",
+      "reference": "russmedia-tee · MR 1931",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ],
+      "links": [
+        {
+          "label": "Merge Request",
+          "url": "https://gitlab.russmedia.com/DEVV/russmedia-tee/-/merge_requests/1931"
+        },
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785881546201?groupId=ef3b045f-de29-40ea-9aae-d8048bae5146&createdTime=1785881546000"
+        }
+      ]
+    },
+    {
+      "id": "vn-nordstern#824",
+      "task": "Subscription-Testweiterleitung ergänzt",
+      "description": "Ergänzt eine /doppelt-Weiterleitung auf die vorgesehene Subscription-Testseite.",
+      "platform": "Nordstern",
+      "developer": "mwidmann",
+      "date": "2026-08-05",
+      "reference": "vn-nordstern · MR 824",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ],
+      "links": [
+        {
+          "label": "Merge Request",
+          "url": "https://gitlab.russmedia.com/DEVV/vn-nordstern/-/merge_requests/824"
+        },
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785881546201?groupId=ef3b045f-de29-40ea-9aae-d8048bae5146&createdTime=1785881546000"
+        }
+      ]
+    },
+    {
+      "id": "vn-nordstern#825",
+      "task": "VN-Tippgeber im Podcast-Einstieg verlinkt",
+      "description": "Ersetzt die Podcast-Schaltfläche durch die VN-Tippgeber-Marke und verlinkt auf die passende Seite.",
+      "platform": "Nordstern",
+      "developer": "mwidmann",
+      "date": "2026-08-05",
+      "reference": "vn-nordstern · MR 825",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ],
+      "links": [
+        {
+          "label": "Merge Request",
+          "url": "https://gitlab.russmedia.com/DEVV/vn-nordstern/-/merge_requests/825"
+        },
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785881546201?groupId=ef3b045f-de29-40ea-9aae-d8048bae5146&createdTime=1785881546000"
+        }
+      ]
+    },
+    {
+      "id": "wp-plugins#146",
+      "task": "WordPress-Plugins auf modernes React-Rendering umgestellt",
+      "description": "Ersetzt veraltete React-Rendering-APIs durch createRoot und erneuert die Build-Asset-Metadaten für das Plugin-Bundle.",
+      "platform": "Nordstern",
+      "developer": "martinj",
+      "date": "2026-08-05",
+      "reference": "wp-plugins · MR 146",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ],
+      "links": [
+        {
+          "label": "Merge Request",
+          "url": "https://gitlab.russmedia.com/DEVV/wp-plugins/-/merge_requests/146"
+        },
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785881546201?groupId=ef3b045f-de29-40ea-9aae-d8048bae5146&createdTime=1785881546000"
+        }
       ]
     }
   ]
