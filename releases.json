@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-05T15:05:53+02:00",
+  "lastUpdated": "2026-08-06T08:41:22+02:00",
   "releases": [
     {
       "id": "google-play-vol-at-2026-07-01",
@@ -920,6 +920,30 @@
           "label": "Teams",
           "url": "https://teams.microsoft.com/l/message/19%3aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785881546201?groupId=ef3b045f-de29-40ea-9aae-d8048bae5146&createdTime=1785881546000"
         }
+      ]
+    },
+    {
+      "id": "docker-base-images#107",
+      "task": "WordPress-Build-Matrix erweitert",
+      "description": "Erweitert die Apache-FPM-WordPress-Build-Matrix um die Versionen 6.6.5 und 6.9.5.",
+      "platform": "Andere",
+      "developer": "martinj",
+      "date": "2026-08-05",
+      "reference": "docker-base-images · PR 107",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "rm-api#11",
+      "task": "Wetter- und Hyperlocal-Ergebnisse verbessert",
+      "description": "Entfernt redundante Reverse-Geocoding-Aufrufe bei Wetter- und Hyperlocal-Anfragen und behält standortspezifische Defaults sowie die Zuordnung nach Gemeinden bei.",
+      "platform": "Andere",
+      "developer": "martinj",
+      "date": "2026-08-05",
+      "reference": "rm-api · PR 11",
+      "sources": [
+        "CodeRabbit"
       ]
     }
   ]
