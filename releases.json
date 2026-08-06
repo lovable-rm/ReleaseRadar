@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-06T08:41:22+02:00",
+  "lastUpdated": "2026-08-06T10:33:34+02:00",
   "releases": [
     {
       "id": "google-play-vol-at-2026-07-01",
@@ -698,7 +698,7 @@
       "description": "Ermöglicht die Konfiguration des PHP-Speicherlimits über MEMORY_LIMIT und behält 384 MB als Standardwert bei.",
       "platform": "Andere",
       "developer": "martinj",
-      "date": "2026-08-05",
+      "date": "2026-08-04",
       "reference": "docker-base-images · MR 106",
       "sources": [
         "CodeRabbit",
@@ -721,7 +721,7 @@
       "description": "Aktualisiert Mock Service Worker auf 2.15.0, erhält SSE-Streaming und ergänzt Subscription-Szenarien für Storybook.",
       "platform": "Sonstige",
       "developer": "martinj",
-      "date": "2026-08-05",
+      "date": "2026-08-03",
       "reference": "russmedia-frontend-nuxt3 · MR 1300",
       "sources": [
         "CodeRabbit",
@@ -744,7 +744,7 @@
       "description": "Korrigiert die Navigation nach Abbruch eines Checkouts und verhindert dadurch unerwünschte Paywall-Umgehungen.",
       "platform": "VOL.AT",
       "developer": "martinj",
-      "date": "2026-08-05",
+      "date": "2026-08-04",
       "reference": "russmedia-frontend-nuxt3 · MR 1301",
       "sources": [
         "CodeRabbit",
@@ -767,7 +767,7 @@
       "description": "Ergänzt das direkte Öffnen der Heimatort- und Gemeindeauswahl in der App und verbessert das Dropdown-Verhalten.",
       "platform": "VOL.AT",
       "developer": "martinj",
-      "date": "2026-08-05",
+      "date": "2026-08-04",
       "reference": "russmedia-frontend-nuxt3 · MR 1302",
       "sources": [
         "CodeRabbit",
@@ -790,7 +790,7 @@
       "description": "Aktualisiert zentrale Laufzeit- und Entwicklungsabhängigkeiten und verbessert Authentifizierungsbereinigung, Billing, Editor-Initialisierung, Artikelstart und E2E-Testzuverlässigkeit.",
       "platform": "VOL.AT",
       "developer": "mwidmann",
-      "date": "2026-08-05",
+      "date": "2026-08-04",
       "reference": "russmedia-fat · MR 14",
       "sources": [
         "CodeRabbit",
@@ -813,7 +813,7 @@
       "description": "Reduziert die E2E-Startverzögerung, aktiviert synchrone Migrationen und leert den Cache vor dem Start des Dienstes.",
       "platform": "Backend/NNP",
       "developer": "martinj",
-      "date": "2026-08-05",
+      "date": "2026-08-04",
       "reference": "russmedia-tee · MR 1930",
       "sources": [
         "CodeRabbit",
@@ -836,7 +836,7 @@
       "description": "Deaktiviert Baseljetzt- und Ksta-spezifische Kunden-, Inhalts-, Reward- und Tagesreward-Seeder und behält gemeinsame Testdaten bei.",
       "platform": "Backend/NNP",
       "developer": "martinj",
-      "date": "2026-08-05",
+      "date": "2026-08-04",
       "reference": "russmedia-tee · MR 1931",
       "sources": [
         "CodeRabbit",
@@ -859,7 +859,7 @@
       "description": "Ergänzt eine /doppelt-Weiterleitung auf die vorgesehene Subscription-Testseite.",
       "platform": "Nordstern",
       "developer": "mwidmann",
-      "date": "2026-08-05",
+      "date": "2026-08-03",
       "reference": "vn-nordstern · MR 824",
       "sources": [
         "CodeRabbit",
@@ -882,7 +882,7 @@
       "description": "Ersetzt die Podcast-Schaltfläche durch die VN-Tippgeber-Marke und verlinkt auf die passende Seite.",
       "platform": "Nordstern",
       "developer": "mwidmann",
-      "date": "2026-08-05",
+      "date": "2026-08-04",
       "reference": "vn-nordstern · MR 825",
       "sources": [
         "CodeRabbit",
@@ -905,7 +905,7 @@
       "description": "Ersetzt veraltete React-Rendering-APIs durch createRoot und erneuert die Build-Asset-Metadaten für das Plugin-Bundle.",
       "platform": "Nordstern",
       "developer": "martinj",
-      "date": "2026-08-05",
+      "date": "2026-08-03",
       "reference": "wp-plugins · MR 146",
       "sources": [
         "CodeRabbit",
@@ -944,6 +944,29 @@
       "reference": "rm-api · PR 11",
       "sources": [
         "CodeRabbit"
+      ]
+    },
+    {
+      "id": "epaper-service#28",
+      "task": "Push-Benachrichtigungen präziser ausgewählt",
+      "description": "Wählt die prominenteste Artikelüberschrift abhängig von Größe und Platzierung zuverlässiger aus und korrigiert die Flächenberechnung unterhalb der Seitenmitte.",
+      "platform": "Nordstern",
+      "developer": "mwidmann",
+      "date": "2026-08-04",
+      "reference": "epaper-service · MR 28",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ],
+      "links": [
+        {
+          "label": "Merge Request",
+          "url": "https://gitlab.russmedia.com/DEVV/epaper-service/-/merge_requests/28"
+        },
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3Aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785795136221?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de&tenantId=6b84c5a7-5528-4071-b5b2-49e3cf5f2208&createdTime=1785795136221&parentMessageId=1785795136221"
+        }
       ]
     }
   ]
