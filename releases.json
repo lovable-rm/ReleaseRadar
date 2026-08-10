@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-06T10:33:34+02:00",
+  "lastUpdated": "2026-08-10T11:07:08+02:00",
   "releases": [
     {
       "id": "google-play-vol-at-2026-07-01",
@@ -967,6 +967,18 @@
           "label": "Teams",
           "url": "https://teams.microsoft.com/l/message/19%3Aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785795136221?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de&tenantId=6b84c5a7-5528-4071-b5b2-49e3cf5f2208&createdTime=1785795136221&parentMessageId=1785795136221"
         }
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1304",
+      "task": "GamesWidget mit aktuellen Spielen aktualisiert",
+      "description": "Ersetzt die bisherigen GamesWidget-Einträge durch sieben aktualisierte Spiele mit neuen Titeln, Beschreibungen, Bildern und externen Links und entfernt zwei veraltete Spiele.",
+      "platform": "Sonstige",
+      "developer": "buchhaeusls",
+      "date": "2026-08-07",
+      "reference": "russmedia-frontend-nuxt3 · PR 1304",
+      "sources": [
+        "CodeRabbit"
       ]
     }
   ]
