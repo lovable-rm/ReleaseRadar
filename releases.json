@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-10T11:07:08+02:00",
+  "lastUpdated": "2026-08-12T08:00:21+02:00",
   "releases": [
     {
       "id": "google-play-vol-at-2026-07-01",
@@ -977,6 +977,42 @@
       "developer": "buchhaeusls",
       "date": "2026-08-07",
       "reference": "russmedia-frontend-nuxt3 · PR 1304",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1307",
+      "task": "Forum-Bildfallbacks und Greta-Schrift verbessert",
+      "description": "Verbessert die Fallback-Darstellung von Nutzerbildern im Forum und lädt die Greta-Schrift konsistenter aus lokal gebündelten Dateien.",
+      "platform": "VOL.AT",
+      "developer": "martinj",
+      "date": "2026-08-11",
+      "reference": "russmedia-frontend-nuxt3 · PR 1307",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-tee#1932",
+      "task": "Automatische Abhängigkeitsupdates vorbereitet",
+      "description": "Ergänzt die empfohlene Renovate-Konfiguration und ermöglicht damit eine automatisierte Verwaltung von Abhängigkeitsupdates.",
+      "platform": "Backend/NNP",
+      "developer": "borcilae",
+      "date": "2026-08-11",
+      "reference": "russmedia-tee · PR 1932",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "vn-nordstern#826",
+      "task": "Personalisierte Startseite ergänzt",
+      "description": "Fügt personalisierte Artikel auf der Startseite hinzu, inklusive API, Caching, GraphQL-Unterstützung, Konfiguration und zuverlässigem Fallback-Verhalten.",
+      "platform": "Nordstern",
+      "developer": "martinj",
+      "date": "2026-08-11",
+      "reference": "vn-nordstern · PR 826",
       "sources": [
         "CodeRabbit"
       ]
