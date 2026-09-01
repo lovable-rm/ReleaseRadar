@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-12T08:00:21+02:00",
+  "lastUpdated": "2026-09-01T11:27:01+02:00",
   "releases": [
     {
       "id": "google-play-vol-at-2026-07-01",
@@ -1013,6 +1013,462 @@
       "developer": "martinj",
       "date": "2026-08-11",
       "reference": "vn-nordstern · PR 826",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "wp-plugins#147",
+      "task": "WordPress-6.9.6-Kompatibilität verbessert",
+      "description": "Aktualisiert die WordPress-Plugins für WordPress 6.9.6 und moderne PHP-Versionen, verschiebt Übersetzungen, reduziert Deprecation-Warnungen und erhält die Kompatibilität älterer Logeinträge.",
+      "platform": "Nordstern",
+      "developer": "fbittner",
+      "date": "2026-08-12",
+      "reference": "wp-plugins · PR 147",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "piano_frontend#88",
+      "task": "VOL.AT+ Checkout und Branding aktualisiert",
+      "description": "Modernisiert Typografie und VOL.AT+-Bezeichnungen in Checkout, Konto, Angeboten, Bannern, Upsells und Benachrichtigungen.",
+      "platform": "VOL.AT",
+      "developer": "baldaufp",
+      "date": "2026-08-12",
+      "reference": "piano_frontend · PR 88",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1305",
+      "task": "App-Navigation und Dark Mode ergänzt",
+      "description": "Ergänzt die untere Navigation im App-Modus und verbessert die Darstellung im Dark Mode.",
+      "platform": "VOL.AT",
+      "developer": "fbittner",
+      "date": "2026-08-12",
+      "reference": "russmedia-frontend-nuxt3 · PR 1305",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1309",
+      "task": "Eliteliga-Typografie aktualisiert",
+      "description": "Aktualisiert die Eliteliga-Typografie und die Auslieferung der verwendeten Schriften.",
+      "platform": "VOL.AT",
+      "developer": "martinj",
+      "date": "2026-08-12",
+      "reference": "russmedia-frontend-nuxt3 · PR 1309",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1310",
+      "task": "Greta-Schriften und veraltete Teaser-Komponenten entfernt",
+      "description": "Entfernt Greta-Schriften und veraltete Teaser-Komponenten und vereinheitlicht die Typografie.",
+      "platform": "VOL.AT",
+      "developer": "martinj",
+      "date": "2026-08-12",
+      "reference": "russmedia-frontend-nuxt3 · PR 1310",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1311",
+      "task": "Checkout-Tracking bereinigt",
+      "description": "Bereinigt das Checkout-Tracking und ermöglicht die korrekte Nutzung von Schriften über verschiedene Ursprünge hinweg.",
+      "platform": "VOL.AT",
+      "developer": "martinj",
+      "date": "2026-08-12",
+      "reference": "russmedia-frontend-nuxt3 · PR 1311",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1312",
+      "task": "Proxy-Map-Anfragen vor dem Routing umgeschrieben",
+      "description": "Ergänzt die Umschreibung von Proxy-Map-Anfragen vor dem Routing.",
+      "platform": "VOL.AT",
+      "developer": "martinj",
+      "date": "2026-08-12",
+      "reference": "russmedia-frontend-nuxt3 · PR 1312",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend#397",
+      "task": "Eliteliga-Widget typografisch modernisiert",
+      "description": "Ersetzt Greta-Schriften im Eliteliga-Widget durch Inter und Public Sans, passt die Textgrößen an und aktualisiert die Paketversion.",
+      "platform": "VOL.AT",
+      "developer": "martinj",
+      "date": "2026-08-12",
+      "reference": "russmedia-frontend · PR 397",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-tee#1939",
+      "task": "Premium-Pass-Status in der Collectors-API ergänzt",
+      "description": "Die Collectors-API liefert nun, ob ein Nutzer einen aktiven Premium-Pass besitzt, und verwendet andernfalls false.",
+      "platform": "Backend/NNP",
+      "developer": "martinj",
+      "date": "2026-08-12",
+      "reference": "russmedia-tee · PR 1939",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "vn-nordstern#827",
+      "task": "Eliteliga-Personalisierung und Rendering korrigiert",
+      "description": "Verbessert die Eliteliga-Personalisierung, Entwicklungsendpunkte und das Rendering, damit Daten zuverlässig ankommen und leere Bereiche vermieden werden.",
+      "platform": "Nordstern",
+      "developer": "martinj",
+      "date": "2026-08-12",
+      "reference": "vn-nordstern · PR 827",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "piano_frontend#89",
+      "task": "Checkout-Preise und Gutscheine dynamisch aktualisiert",
+      "description": "Aktualisiert Checkout-Preise und Hinweise dynamisch bei Änderungen von Abrechnungszeitraum oder Gutschein und ergänzt Tests für EUR-Abos und PayPal.",
+      "platform": "VOL.AT",
+      "developer": "baldaufp",
+      "date": "2026-08-13",
+      "reference": "piano_frontend · PR 89",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1313",
+      "task": "Vorteilsclub-Zugriff für Apps erweitert",
+      "description": "Stellt den Vorteilsclub-Zugriff in Apps ohne JWT-Abhängigkeit bereit.",
+      "platform": "VOL.AT",
+      "developer": "baldaufp",
+      "date": "2026-08-18",
+      "reference": "russmedia-frontend-nuxt3 · PR 1313",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1314",
+      "task": "Vorteilsclub-Passdownloads verbessert",
+      "description": "Verbessert den Download von Vorteilsclub-Pässen mit plattformspezifischer Verlinkung.",
+      "platform": "VOL.AT",
+      "developer": "baldaufp",
+      "date": "2026-08-18",
+      "reference": "russmedia-frontend-nuxt3 · PR 1314",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1315",
+      "task": "Snowplow-Nutzer-ID synchronisiert",
+      "description": "Synchronisiert die Nutzer-ID der Snowplow-Tracker zuverlässig bei Anmeldung und Abmeldung.",
+      "platform": "VOL.AT",
+      "developer": "biermannm",
+      "date": "2026-08-18",
+      "reference": "russmedia-frontend-nuxt3 · PR 1315",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1316",
+      "task": "Bildflackern bei der Hydration behoben",
+      "description": "Behebt Bildflackern in Bildblöcken und verbessert das Verhalten beim Laden von Inhalten.",
+      "platform": "VOL.AT",
+      "developer": "martinj",
+      "date": "2026-08-18",
+      "reference": "russmedia-frontend-nuxt3 · PR 1316",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "wordpress-webpapers#967",
+      "task": "Erscheinungsdatum für Berechtigungsprüfung verwendet",
+      "description": "Verwendet das Erscheinungsdatum statt des Wochentags für die Berechtigungsprüfung von Ausgaben.",
+      "platform": "Nordstern",
+      "developer": "mwidmann",
+      "date": "2026-08-18",
+      "reference": "wordpress-webpapers · PR 967",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "wp-plugins#148",
+      "task": "V3-App-Start-Endpunkt ergänzt",
+      "description": "Ergänzt den V3-App-Start-Endpunkt für Webview-Seiten, App-Menüs und die Vorbereitung des Service-Hubs.",
+      "platform": "Nordstern",
+      "developer": "rfischl",
+      "date": "2026-08-18",
+      "reference": "wp-plugins · PR 148",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1317",
+      "task": "Checkout-Tracking und A/B-Tests erweitert",
+      "description": "Erweitert Checkout-Tracking und die Speicherung von A/B-Testvarianten.",
+      "platform": "VOL.AT",
+      "developer": "martinj",
+      "date": "2026-08-19",
+      "reference": "russmedia-frontend-nuxt3 · PR 1317",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1318",
+      "task": "App-Hub-Widget-API ergänzt",
+      "description": "Ergänzt die API für Inhalte des App-Hub-Widgets.",
+      "platform": "VOL.AT",
+      "developer": "martinj",
+      "date": "2026-08-19",
+      "reference": "russmedia-frontend-nuxt3 · PR 1318",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1319",
+      "task": "Journalistenprofile und Editor-Bilder verbessert",
+      "description": "Erweitert Metadaten für Journalistenprofile und verbessert die Verarbeitung von Editor-Bildern.",
+      "platform": "VOL.AT",
+      "developer": "illmerl",
+      "date": "2026-08-19",
+      "reference": "russmedia-frontend-nuxt3 · PR 1319",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1320",
+      "task": "Abhängigkeiten und Monitoring aktualisiert",
+      "description": "Aktualisiert Abhängigkeiten, Laufzeit- und Build-Konfiguration sowie die Veröffentlichung von Bugsnag-Releases.",
+      "platform": "Sonstige",
+      "developer": "martinj",
+      "date": "2026-08-19",
+      "reference": "russmedia-frontend-nuxt3 · PR 1320",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-tee#1940",
+      "task": "Veraltete Basel- und KSTA-Kollektoren entfernt",
+      "description": "Entfernt veraltete Basel- und KSTA-Kollektoren aus den Seed-Daten und erhält unterstützte Vorschau-Kollektoren.",
+      "platform": "Backend/NNP",
+      "developer": "martinj",
+      "date": "2026-08-19",
+      "reference": "russmedia-tee · PR 1940",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-tee#1941",
+      "task": "Veraltete anonyme Kollektoren entfernt",
+      "description": "Entfernt die verbliebenen veralteten anonymen Basel- und KSTA-Kollektoren aus den Seed-Daten.",
+      "platform": "Backend/NNP",
+      "developer": "martinj",
+      "date": "2026-08-19",
+      "reference": "russmedia-tee · PR 1941",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "wp-plugins#149",
+      "task": "AI-Metadatenänderungen abgesichert",
+      "description": "Schützt Änderungen an AI-Editor-Metadaten mit einer Nonce-Prüfung.",
+      "platform": "Nordstern",
+      "developer": "rfischl",
+      "date": "2026-08-19",
+      "reference": "wp-plugins · PR 149",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "ci-templates-gitlab#98",
+      "task": "PHP-8.5-Umgebung und Git bereitgestellt",
+      "description": "Aktualisiert die PHP-Umgebung auf Version 8.5 und stellt Git als verfügbares Werkzeug bereit.",
+      "platform": "Andere",
+      "developer": "martinj",
+      "date": "2026-08-20",
+      "reference": "ci-templates-gitlab · PR 98",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1322",
+      "task": "Portal- und Seitennamen im Editor korrigiert",
+      "description": "Verwendet auf Editor-Seiten die konfigurierte Portal- und Seitennamensinformation auch für das ÖWA-Tracking.",
+      "platform": "VOL.AT",
+      "developer": "illmerl",
+      "date": "2026-08-20",
+      "reference": "russmedia-frontend-nuxt3 · PR 1322",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "wp-plugins#150",
+      "task": "Paywall-Block-Icon erneuert",
+      "description": "Erneuert Design und Asset-Metadaten des Paywall-Block-Icons.",
+      "platform": "Nordstern",
+      "developer": "illmerl",
+      "date": "2026-08-20",
+      "reference": "wp-plugins · PR 150",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "wp-plugins#151",
+      "task": "Paywall-Block-Icon eingefärbt",
+      "description": "Passt die Farbe des Paywall-Block-Icons an und aktualisiert die Build-Asset-Version.",
+      "platform": "Nordstern",
+      "developer": "illmerl",
+      "date": "2026-08-21",
+      "reference": "wp-plugins · PR 151",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1324",
+      "task": "Statisches Widget-Rendering optimiert",
+      "description": "Verbessert Rendering und Hydration statischer HTML- und Homepage-Widgets und reduziert unnötige Aktualisierungen.",
+      "platform": "VOL.AT",
+      "developer": "illmerl",
+      "date": "2026-08-21",
+      "reference": "russmedia-frontend-nuxt3 · PR 1324",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "wp-plugin-scaffolder#1",
+      "task": "E2E-Testsetup und WordPress-Tooling aktualisiert",
+      "description": "Vereinheitlicht die Plugin-Installation, aktualisiert die WordPress-Testversion und erneuert das Entwicklungs-Tooling.",
+      "platform": "Nordstern",
+      "developer": "illmerl",
+      "date": "2026-08-24",
+      "reference": "wp-plugin-scaffolder · PR 1",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "wp-plugins#152",
+      "task": "WordPress-E2E-Testumgebung aktualisiert",
+      "description": "Aktualisiert die WordPress-E2E-Testumgebung und verbessert die Kompatibilität mit neuerem Entwicklungs-Tooling.",
+      "platform": "Nordstern",
+      "developer": "illmerl",
+      "date": "2026-08-24",
+      "reference": "wp-plugins · PR 152",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1325",
+      "task": "AI-Bildnachweise in Bildansichten ergänzt",
+      "description": "Zeigt AI-generierte Bilder in Bildunterschriften, Galerien und Vollbildansichten klarer an und übernimmt die Metadaten zuverlässig.",
+      "platform": "VOL.AT",
+      "developer": "rfischl",
+      "date": "2026-08-26",
+      "reference": "russmedia-frontend-nuxt3 · PR 1325",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "wp-plugins#153",
+      "task": "AI-Bilder im Gutenberg-Workflow gekennzeichnet",
+      "description": "Kennzeichnet AI-generierte Bilder im Gutenberg- und Medien-Workflow, inklusive Metadatensteuerung, Labels, Übersetzungen und Tests.",
+      "platform": "Nordstern",
+      "developer": "rfischl",
+      "date": "2026-08-26",
+      "reference": "wp-plugins · PR 153",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-fat#15",
+      "task": "Bildnachweise für Bilder und Galerien ergänzt",
+      "description": "Ermöglicht Bildnachweise für hochgeladene Bilder und Galerien und erhält diese durch Bearbeitung, Speicherung, Upload und Veröffentlichung.",
+      "platform": "VOL.AT",
+      "developer": "mwidmann",
+      "date": "2026-08-27",
+      "reference": "russmedia-fat · PR 15",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1326",
+      "task": "AI-Bildindikatoren für Teaser ergänzt",
+      "description": "Ergänzt Indikatoren und Metadaten für AI-generierte Bilder in Teasern und zugehörigen Bildern.",
+      "platform": "VOL.AT",
+      "developer": "rfischl",
+      "date": "2026-08-28",
+      "reference": "russmedia-frontend-nuxt3 · PR 1326",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1327",
+      "task": "Piano-Upgrade-Paywall für eingeloggte Nutzer ergänzt",
+      "description": "Ermöglicht eingeloggten Nutzern passende Upgrade-Angebote und In-App-Kaufaktionen über die Piano-Paywall.",
+      "platform": "VOL.AT",
+      "developer": "baldaufp",
+      "date": "2026-08-28",
+      "reference": "russmedia-frontend-nuxt3 · PR 1327",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1329",
+      "task": "Carto-API für Niederschlagsradar konfigurierbar gemacht",
+      "description": "Ergänzt die konfigurierbare Carto-API-Unterstützung für authentifizierte Kachelanfragen des Niederschlagsradars.",
+      "platform": "VOL.AT",
+      "developer": "illmerl",
+      "date": "2026-08-28",
+      "reference": "russmedia-frontend-nuxt3 · PR 1329",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "vn-nordstern#828",
+      "task": "Weiterleitungen zum Abo-Shop ergänzt",
+      "description": "Ergänzt Weiterleitungen ausgewählter alter Pfade zu den passenden Seiten des Abo-Shops.",
+      "platform": "Nordstern",
+      "developer": "baldaufp",
+      "date": "2026-08-28",
+      "reference": "vn-nordstern · PR 828",
       "sources": [
         "CodeRabbit"
       ]
