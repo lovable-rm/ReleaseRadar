@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-01T11:27:01+02:00",
+  "lastUpdated": "2026-09-02T09:10:29+02:00",
   "releases": [
     {
       "id": "google-play-vol-at-2026-07-01",
@@ -1471,6 +1471,42 @@
       "reference": "vn-nordstern · PR 828",
       "sources": [
         "CodeRabbit"
+      ]
+    },
+    {
+      "id": "teams-android-1788251701431",
+      "task": "VOL.AT Android 5.007 veröffentlicht",
+      "description": "Behebt mehrere Absturzursachen, stabilisiert Audio- und Artikelansicht und verbessert Wetter-, Ländlepunkte- und Push-Funktionen.",
+      "platform": "Native Apps",
+      "developer": "App-Team",
+      "date": "2026-09-01",
+      "reference": "Teams · Releases - Android · Build 507",
+      "sources": [
+        "Teams"
+      ],
+      "links": [
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3A9583be02c43c4f44b0c8498f7565a911%40thread.tacv2/1788251701431?groupId=81c4fd73-5c4c-4fca-b1a1-c85ac521f063&tenantId=6b84c5a7-5528-4071-b5b2-49e3cf5f2208&createdTime=1788251701431&parentMessageId=1788251701431"
+        }
+      ]
+    },
+    {
+      "id": "teams-android-1788268139509",
+      "task": "VOL.AT Android 508 veröffentlicht",
+      "description": "Korrigiert die Zuordnung von Abonnement-Berechtigungen und stellt sicher, dass Plus-/Premium-Zugriff sowie Ländlepunkte korrekt funktionieren.",
+      "platform": "Native Apps",
+      "developer": "App-Team",
+      "date": "2026-09-01",
+      "reference": "Teams · Releases - Android · Build 508",
+      "sources": [
+        "Teams"
+      ],
+      "links": [
+        {
+          "label": "Teams",
+          "url": "https://teams.microsoft.com/l/message/19%3A9583be02c43c4f44b0c8498f7565a911%40thread.tacv2/1788268139509?groupId=81c4fd73-5c4c-4fca-b1a1-c85ac521f063&tenantId=6b84c5a7-5528-4071-b5b2-49e3cf5f2208&createdTime=1788268139509&parentMessageId=1788268139509"
+        }
       ]
     }
   ]
