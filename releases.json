@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-02T09:10:29+02:00",
+  "lastUpdated": "2026-09-07T16:43:34+02:00",
   "releases": [
     {
       "id": "google-play-vol-at-2026-07-01",
@@ -1507,6 +1507,174 @@
           "label": "Teams",
           "url": "https://teams.microsoft.com/l/message/19%3A9583be02c43c4f44b0c8498f7565a911%40thread.tacv2/1788268139509?groupId=81c4fd73-5c4c-4fca-b1a1-c85ac521f063&tenantId=6b84c5a7-5528-4071-b5b2-49e3cf5f2208&createdTime=1788268139509&parentMessageId=1788268139509"
         }
+      ]
+    },
+    {
+      "id": "app-store-vol-at-4.19.9",
+      "task": "VOL.AT iOS 4.19.9 veröffentlicht",
+      "description": "Die neue Produktionsversion enthält allgemeine Fehlerbehebungen und Verbesserungen.",
+      "platform": "Native Apps",
+      "developer": "App-Team",
+      "date": "2026-08-08",
+      "reference": "App Store · Version 4.19.9",
+      "sources": [
+        "App Store"
+      ],
+      "links": [
+        {
+          "label": "App Store",
+          "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"
+        }
+      ]
+    },
+    {
+      "id": "app-store-vol-at-4.19.10",
+      "task": "VOL.AT iOS 4.19.10 veröffentlicht",
+      "description": "Die neue Produktionsversion enthält allgemeine Fehlerbehebungen und Verbesserungen.",
+      "platform": "Native Apps",
+      "developer": "App-Team",
+      "date": "2026-08-12",
+      "reference": "App Store · Version 4.19.10",
+      "sources": [
+        "App Store"
+      ],
+      "links": [
+        {
+          "label": "App Store",
+          "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"
+        }
+      ]
+    },
+    {
+      "id": "app-store-vol-at-4.19.11",
+      "task": "VOL.AT iOS 4.19.11 veröffentlicht",
+      "description": "Die neue Produktionsversion enthält allgemeine Fehlerbehebungen und Verbesserungen.",
+      "platform": "Native Apps",
+      "developer": "App-Team",
+      "date": "2026-08-14",
+      "reference": "App Store · Version 4.19.11",
+      "sources": [
+        "App Store"
+      ],
+      "links": [
+        {
+          "label": "App Store",
+          "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"
+        }
+      ]
+    },
+    {
+      "id": "app-store-vol-at-4.19.12",
+      "task": "VOL.AT iOS 4.19.12 veröffentlicht",
+      "description": "Die neue Produktionsversion enthält allgemeine Fehlerbehebungen und Verbesserungen.",
+      "platform": "Native Apps",
+      "developer": "App-Team",
+      "date": "2026-08-18",
+      "reference": "App Store · Version 4.19.12",
+      "sources": [
+        "App Store"
+      ],
+      "links": [
+        {
+          "label": "App Store",
+          "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"
+        }
+      ]
+    },
+    {
+      "id": "docker-base-images#110",
+      "task": "WordPress-6.9.7-Kompatibilität ergänzt",
+      "description": "Aktualisiert die WordPress-Kompatibilitätstests für PHP 8.2 und PHP 8.5 auf WordPress 6.9.7.",
+      "platform": "Andere",
+      "developer": "Platform-Team",
+      "date": "2026-09-02",
+      "reference": "docker-base-images · PR 110",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend#398",
+      "task": "Vplus-Logo aus Eliteliga-Widget entfernt",
+      "description": "Entfernt das Vplus-Logo aus dem Eliteliga-Widget und veröffentlicht das Paket in Version 0.9.4.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-02",
+      "reference": "russmedia-frontend · PR 398",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1330",
+      "task": "AI-Bildkennzeichnung in Artikel-Openers ergänzt",
+      "description": "Kennzeichnet AI-generierte Bilder auch in älteren Artikel-Openers und erweitert die zugehörigen Bildmetadaten.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-02",
+      "reference": "russmedia-frontend-nuxt3 · PR 1330",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1331",
+      "task": "VOL-Anwendungskonfiguration aktualisiert",
+      "description": "Aktualisiert die VOL-Anwendungskonfiguration und stößt eine erneute Bereitstellung der Anwendung an.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-02",
+      "reference": "russmedia-frontend-nuxt3 · PR 1331",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1332",
+      "task": "Consent-Ausnahmen für Datenschutzseiten korrigiert",
+      "description": "Korrigiert die Pfade, über die Datenschutzseiten von der Consent-Verwaltung ausgenommen werden.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-02",
+      "reference": "russmedia-frontend-nuxt3 · PR 1332",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "vn-nordstern#829",
+      "task": "Eliteliga-Widget ohne Vplus-Logo aktualisiert",
+      "description": "Aktualisiert das Eliteliga-Paket auf Version 0.9.4 und entfernt damit das Vplus-Logo aus dem Widget.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-09-02",
+      "reference": "vn-nordstern · PR 829",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "wp-plugins#154",
+      "task": "WordPress-Testumgebung auf 6.9.7 aktualisiert",
+      "description": "Aktualisiert die WordPress-Testumgebung auf Version 6.9.7 und verbessert damit die Kompatibilitätsprüfung.",
+      "platform": "Nordstern",
+      "developer": "Platform-Team",
+      "date": "2026-09-02",
+      "reference": "wp-plugins · PR 154",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1328",
+      "task": "Paywall-Experimente und Piano-Tagging verbessert",
+      "description": "Stabilisiert die Zuordnung zu Paywall-Testgruppen, verbessert das Piano-Tagging und strukturiert Sitzungsdaten für Abonnements.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-03",
+      "reference": "russmedia-frontend-nuxt3 · PR 1328",
+      "sources": [
+        "CodeRabbit"
       ]
     }
   ]
