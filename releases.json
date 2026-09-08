@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-07T16:43:34+02:00",
+  "lastUpdated": "2026-09-08T15:49:57+02:00",
   "releases": [
     {
       "id": "google-play-vol-at-2026-07-01",
@@ -1673,6 +1673,78 @@
       "developer": "Web-Team",
       "date": "2026-09-03",
       "reference": "russmedia-frontend-nuxt3 · PR 1328",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "ci-templates-gitlab#99",
+      "task": "Vinyl Cache 8 mit OpenTelemetry ergänzt",
+      "description": "Stellt ein neues Vinyl-Cache-8.0.2-Image mit OpenTelemetry, Trace-Weitergabe, konfigurierbaren Healthchecks und Einbindung in Build- und Veröffentlichungsabläufe bereit.",
+      "platform": "Andere",
+      "developer": "Platform-Team",
+      "date": "2026-09-07",
+      "reference": "ci-templates-gitlab · PR 99",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1333",
+      "task": "Varnish und HAProxy mit OpenTelemetry aktualisiert",
+      "description": "Aktualisiert Varnish und HAProxy und ergänzt Telemetrie-Konfigurationen für verteiltes Tracing in den Bereitstellungen.",
+      "platform": "VOL.AT",
+      "developer": "Platform-Team",
+      "date": "2026-09-07",
+      "reference": "russmedia-frontend-nuxt3 · PR 1333",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1334",
+      "task": "VOL-Bereitstellung neu angestoßen",
+      "description": "Stößt die Bereitstellung der VOL-Anwendung erneut an.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-07",
+      "reference": "russmedia-frontend-nuxt3 · PR 1334",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1336",
+      "task": "Review-Apps auf interne Routen umgestellt",
+      "description": "Routet Review-Apps über interne OpenShift-Adressen, aktualisiert die zugehörigen Tests und bereinigt veraltete öffentliche Entwicklungsrouten.",
+      "platform": "VOL.AT",
+      "developer": "Platform-Team",
+      "date": "2026-09-07",
+      "reference": "russmedia-frontend-nuxt3 · PR 1336",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "wordpress-webpapers#968",
+      "task": "Newsletter-Permalink-Fallback korrigiert",
+      "description": "Korrigiert die Ermittlung von Artikel-Permalinks, wenn im Newsletter ein Ersatzpfad verwendet wird.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-09-07",
+      "reference": "wordpress-webpapers · PR 968",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "wordpress-webpapers#969",
+      "task": "Newsletter-E-Paper-Renderer stabilisiert",
+      "description": "Korrigiert eine interne API-Referenz und behebt damit einen Fehler im Newsletter-E-Paper-Renderer.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-09-07",
+      "reference": "wordpress-webpapers · PR 969",
       "sources": [
         "CodeRabbit"
       ]
