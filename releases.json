@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-08T15:49:57+02:00",
+  "lastUpdated": "2026-09-09T08:47:19+02:00",
   "releases": [
     {
       "id": "google-play-vol-at-2026-07-01",
@@ -1745,6 +1745,18 @@
       "developer": "Web-Team",
       "date": "2026-09-07",
       "reference": "wordpress-webpapers · PR 969",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "wp-plugins#155",
+      "task": "PHP-Unterstützung und Codequalität erweitert",
+      "description": "Erweitert die Unterstützung auf PHP 8.2 bis 8.5, modernisiert Qualitätsprüfungen und verbessert die Fehlerbehandlung bei AI-Streaming und Bildverarbeitung.",
+      "platform": "Nordstern",
+      "developer": "Platform-Team",
+      "date": "2026-09-08",
+      "reference": "wp-plugins · PR 155",
       "sources": [
         "CodeRabbit"
       ]
