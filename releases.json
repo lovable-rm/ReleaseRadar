@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-10T08:40:13+02:00",
+  "lastUpdated": "2026-09-10T09:01:03+02:00",
   "releases": [
     {
       "id": "google-play-vol-at-2026-07-01",
@@ -282,7 +282,7 @@
       "task": "PHP-8.5-Basisimages bereitgestellt",
       "description": "Ergänzt aktuelle PHP-8.5-Container und erweitert Laufzeitoptionen für kommende Systemaktualisierungen.",
       "platform": "Andere",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-07-21",
       "reference": "docker-base-images · MR 103",
       "sources": [
@@ -354,7 +354,7 @@
       "task": "Sichere FTP-Verbindungen vorbereitet",
       "description": "Ergänzt die nötige SSL-Unterstützung in den PHP-8.5-Images für sichere FTP-Verbindungen.",
       "platform": "Andere",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-07-22",
       "reference": "docker-base-images · MR 105",
       "sources": [
@@ -585,7 +585,7 @@
       "task": "Wetteransicht und Vorhersage erweitert",
       "description": "Ergänzt Tages- und Datumskennzeichnungen sowie Mitternachtsmarkierungen in Stunden-Grafiken, verbessert Scrollen und Ziehen, erweitert die Wochenvorhersage auf fünf Einträge, vereinfacht Legenden und formuliert historische Wettertexte klarer.",
       "platform": "Sonstige",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-08-01",
       "reference": "Teams · Release Notes 2026-08-01",
       "sources": [
@@ -597,7 +597,7 @@
       "task": "PHP-Speicherlimit zur Bereitstellungszeit konfigurierbar",
       "description": "Ermöglicht die Konfiguration des PHP-Speicherlimits über MEMORY_LIMIT und behält 384 MB als Standardwert bei.",
       "platform": "Andere",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-08-04",
       "reference": "docker-base-images · MR 106",
       "sources": [
@@ -610,7 +610,7 @@
       "task": "Storybook-Mock-Streaming verbessert",
       "description": "Aktualisiert Mock Service Worker auf 2.15.0, erhält SSE-Streaming und ergänzt Subscription-Szenarien für Storybook.",
       "platform": "Sonstige",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-08-03",
       "reference": "russmedia-frontend-nuxt3 · MR 1300",
       "sources": [
@@ -662,7 +662,7 @@
       "task": "E2E-Start in russmedia-tee beschleunigt",
       "description": "Reduziert die E2E-Startverzögerung, aktiviert synchrone Migrationen und leert den Cache vor dem Start des Dienstes.",
       "platform": "Backend/NNP",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-08-04",
       "reference": "russmedia-tee · MR 1930",
       "sources": [
@@ -675,7 +675,7 @@
       "task": "Produktspezifische Seeder deaktiviert",
       "description": "Deaktiviert Baseljetzt- und Ksta-spezifische Kunden-, Inhalts-, Reward- und Tagesreward-Seeder und behält gemeinsame Testdaten bei.",
       "platform": "Backend/NNP",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-08-04",
       "reference": "russmedia-tee · MR 1931",
       "sources": [
@@ -727,7 +727,7 @@
       "task": "WordPress-Build-Matrix erweitert",
       "description": "Erweitert die Apache-FPM-WordPress-Build-Matrix um die Versionen 6.6.5 und 6.9.5.",
       "platform": "Andere",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-08-05",
       "reference": "docker-base-images · PR 107",
       "sources": [
@@ -739,7 +739,7 @@
       "task": "Wetter- und Hyperlocal-Ergebnisse verbessert",
       "description": "Entfernt redundante Reverse-Geocoding-Aufrufe bei Wetter- und Hyperlocal-Anfragen und behält standortspezifische Defaults sowie die Zuordnung nach Gemeinden bei.",
       "platform": "Andere",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-08-05",
       "reference": "rm-api · PR 11",
       "sources": [
@@ -764,7 +764,7 @@
       "task": "GamesWidget mit aktuellen Spielen aktualisiert",
       "description": "Ersetzt die bisherigen GamesWidget-Einträge durch sieben aktualisierte Spiele mit neuen Titeln, Beschreibungen, Bildern und externen Links und entfernt zwei veraltete Spiele.",
       "platform": "Sonstige",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-08-07",
       "reference": "russmedia-frontend-nuxt3 · PR 1304",
       "sources": [
@@ -788,7 +788,7 @@
       "task": "Automatische Abhängigkeitsupdates vorbereitet",
       "description": "Ergänzt die empfohlene Renovate-Konfiguration und ermöglicht damit eine automatisierte Verwaltung von Abhängigkeitsupdates.",
       "platform": "Backend/NNP",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-08-11",
       "reference": "russmedia-tee · PR 1932",
       "sources": [
@@ -908,7 +908,7 @@
       "task": "Premium-Pass-Status in der Collectors-API ergänzt",
       "description": "Die Collectors-API liefert nun, ob ein Nutzer einen aktiven Premium-Pass besitzt, und verwendet andernfalls false.",
       "platform": "Backend/NNP",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-08-12",
       "reference": "russmedia-tee · PR 1939",
       "sources": [
@@ -1052,7 +1052,7 @@
       "task": "Abhängigkeiten und Monitoring aktualisiert",
       "description": "Aktualisiert Abhängigkeiten, Laufzeit- und Build-Konfiguration sowie die Veröffentlichung von Bugsnag-Releases.",
       "platform": "Sonstige",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-08-19",
       "reference": "russmedia-frontend-nuxt3 · PR 1320",
       "sources": [
@@ -1064,7 +1064,7 @@
       "task": "Veraltete Basel- und KSTA-Kollektoren entfernt",
       "description": "Entfernt veraltete Basel- und KSTA-Kollektoren aus den Seed-Daten und erhält unterstützte Vorschau-Kollektoren.",
       "platform": "Backend/NNP",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-08-19",
       "reference": "russmedia-tee · PR 1940",
       "sources": [
@@ -1076,7 +1076,7 @@
       "task": "Veraltete anonyme Kollektoren entfernt",
       "description": "Entfernt die verbliebenen veralteten anonymen Basel- und KSTA-Kollektoren aus den Seed-Daten.",
       "platform": "Backend/NNP",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-08-19",
       "reference": "russmedia-tee · PR 1941",
       "sources": [
@@ -1100,7 +1100,7 @@
       "task": "PHP-8.5-Umgebung und Git bereitgestellt",
       "description": "Aktualisiert die PHP-Umgebung auf Version 8.5 und stellt Git als verfügbares Werkzeug bereit.",
       "platform": "Andere",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-08-20",
       "reference": "ci-templates-gitlab · PR 98",
       "sources": [
@@ -1236,7 +1236,8 @@
       "date": "2026-08-28",
       "reference": "russmedia-frontend-nuxt3 · PR 1327",
       "sources": [
-        "CodeRabbit"
+        "CodeRabbit",
+        "Teams"
       ]
     },
     {
@@ -1248,7 +1249,8 @@
       "date": "2026-08-28",
       "reference": "russmedia-frontend-nuxt3 · PR 1329",
       "sources": [
-        "CodeRabbit"
+        "CodeRabbit",
+        "Teams"
       ]
     },
     {
@@ -1260,7 +1262,8 @@
       "date": "2026-08-28",
       "reference": "vn-nordstern · PR 828",
       "sources": [
-        "CodeRabbit"
+        "CodeRabbit",
+        "Teams"
       ]
     },
     {
@@ -1364,7 +1367,7 @@
       "task": "WordPress-6.9.7-Kompatibilität ergänzt",
       "description": "Aktualisiert die WordPress-Kompatibilitätstests für PHP 8.2 und PHP 8.5 auf WordPress 6.9.7.",
       "platform": "Andere",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-09-02",
       "reference": "docker-base-images · PR 110",
       "sources": [
@@ -1380,7 +1383,8 @@
       "date": "2026-09-02",
       "reference": "russmedia-frontend · PR 398",
       "sources": [
-        "CodeRabbit"
+        "CodeRabbit",
+        "Teams"
       ]
     },
     {
@@ -1392,7 +1396,8 @@
       "date": "2026-09-02",
       "reference": "russmedia-frontend-nuxt3 · PR 1330",
       "sources": [
-        "CodeRabbit"
+        "CodeRabbit",
+        "Teams"
       ]
     },
     {
@@ -1404,7 +1409,8 @@
       "date": "2026-09-02",
       "reference": "russmedia-frontend-nuxt3 · PR 1331",
       "sources": [
-        "CodeRabbit"
+        "CodeRabbit",
+        "Teams"
       ]
     },
     {
@@ -1416,7 +1422,8 @@
       "date": "2026-09-02",
       "reference": "russmedia-frontend-nuxt3 · PR 1332",
       "sources": [
-        "CodeRabbit"
+        "CodeRabbit",
+        "Teams"
       ]
     },
     {
@@ -1428,7 +1435,8 @@
       "date": "2026-09-02",
       "reference": "vn-nordstern · PR 829",
       "sources": [
-        "CodeRabbit"
+        "CodeRabbit",
+        "Teams"
       ]
     },
     {
@@ -1436,11 +1444,12 @@
       "task": "WordPress-Testumgebung auf 6.9.7 aktualisiert",
       "description": "Aktualisiert die WordPress-Testumgebung auf Version 6.9.7 und verbessert damit die Kompatibilitätsprüfung.",
       "platform": "Nordstern",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-09-02",
       "reference": "wp-plugins · PR 154",
       "sources": [
-        "CodeRabbit"
+        "CodeRabbit",
+        "Teams"
       ]
     },
     {
@@ -1452,7 +1461,8 @@
       "date": "2026-09-03",
       "reference": "russmedia-frontend-nuxt3 · PR 1328",
       "sources": [
-        "CodeRabbit"
+        "CodeRabbit",
+        "Teams"
       ]
     },
     {
@@ -1460,7 +1470,7 @@
       "task": "Vinyl Cache 8 mit OpenTelemetry ergänzt",
       "description": "Stellt ein neues Vinyl-Cache-8.0.2-Image mit OpenTelemetry, Trace-Weitergabe, konfigurierbaren Healthchecks und Einbindung in Build- und Veröffentlichungsabläufe bereit.",
       "platform": "Andere",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-09-07",
       "reference": "ci-templates-gitlab · PR 99",
       "sources": [
@@ -1472,7 +1482,7 @@
       "task": "Varnish und HAProxy mit OpenTelemetry aktualisiert",
       "description": "Aktualisiert Varnish und HAProxy und ergänzt Telemetrie-Konfigurationen für verteiltes Tracing in den Bereitstellungen.",
       "platform": "VOL.AT",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-09-07",
       "reference": "russmedia-frontend-nuxt3 · PR 1333",
       "sources": [
@@ -1496,7 +1506,7 @@
       "task": "Review-Apps auf interne Routen umgestellt",
       "description": "Routet Review-Apps über interne OpenShift-Adressen, aktualisiert die zugehörigen Tests und bereinigt veraltete öffentliche Entwicklungsrouten.",
       "platform": "VOL.AT",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-09-07",
       "reference": "russmedia-frontend-nuxt3 · PR 1336",
       "sources": [
@@ -1512,7 +1522,8 @@
       "date": "2026-09-07",
       "reference": "wordpress-webpapers · PR 968",
       "sources": [
-        "CodeRabbit"
+        "CodeRabbit",
+        "Teams"
       ]
     },
     {
@@ -1529,14 +1540,15 @@
     },
     {
       "id": "wp-plugins#155",
-      "task": "PHP-Unterstützung und Codequalität erweitert",
-      "description": "Erweitert die Unterstützung auf PHP 8.2 bis 8.5, modernisiert Qualitätsprüfungen und verbessert die Fehlerbehandlung bei AI-Streaming und Bildverarbeitung.",
+      "task": "WordPress-Plugins für PHP 8.5 vorbereitet",
+      "description": "Bereitet die zentralen WordPress-Plugins auf PHP 8.5 vor, modernisiert Qualitätsprüfungen und verbessert die Fehlerbehandlung bei AI-Streaming und Bildverarbeitung.",
       "platform": "Nordstern",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-09-08",
       "reference": "wp-plugins · PR 155",
       "sources": [
-        "CodeRabbit"
+        "CodeRabbit",
+        "Teams"
       ]
     },
     {
@@ -1544,7 +1556,7 @@
       "task": "Varnish-Telemetrieimage erweitert",
       "description": "Stellt das Varnish-OpenTelemetry-Image auf ein vorkompiliertes VCOT-Image um und ergänzt Trace-Verknüpfung, Backend-Verschachtelung sowie gebündelte VCL-Hilfen.",
       "platform": "Andere",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-09-09",
       "reference": "ci-templates-gitlab · PR 100",
       "sources": [
@@ -1556,11 +1568,48 @@
       "task": "Varnish-Telemetrieaufrufe bereinigt",
       "description": "Entfernt nicht unterstützte OpenTelemetry-Aufrufe aus der Vienna-Varnish-Konfiguration und erhält das bestehende Anfrage- und Auslieferungsverhalten.",
       "platform": "VOL.AT",
-      "developer": "Platform-Team",
+      "developer": "Web-Team",
       "date": "2026-09-09",
       "reference": "russmedia-frontend-nuxt3 · PR 1339",
       "sources": [
         "CodeRabbit"
+      ]
+    },
+    {
+      "id": "nnp#2077",
+      "task": "Großes WordPress-Update für NNP veröffentlicht",
+      "description": "Aktualisiert die NNP-WordPress-Installation samt zentraler Plugins auf den neuen technischen Stand und schützt administrative Kommentarzugriffe zusätzlich über den WordPress-Nonce-Header.",
+      "platform": "Backend/NNP",
+      "developer": "Web-Team",
+      "date": "2026-09-09",
+      "reference": "nnp · MR 2077; wp-plugins · PR 155",
+      "sources": [
+        "Teams",
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "teams-android-1788449835092",
+      "task": "VOL.AT Android 512 veröffentlicht",
+      "description": "Stabilisiert die Freischaltung von Ländlepunkte-Tagespässen, beseitigt Darstellungsfehler an Systemleisten und macht die Prüfung der Web-Sitzung zuverlässiger.",
+      "platform": "Native Apps",
+      "developer": "App-Team",
+      "date": "2026-09-03",
+      "reference": "Teams · Releases - Android · Build 512",
+      "sources": [
+        "Teams"
+      ]
+    },
+    {
+      "id": "teams-android-1788965846398",
+      "task": "VOL.AT Android 520 mit neuem Web-Dashboard veröffentlicht",
+      "description": "Stellt die Startseite auf das Web-Dashboard um, ermöglicht backend-gesteuerte Tabs, integriert den personalisierten „Für dich“-Bereich und verbessert Wetter, Ländlepunkte, Werbung sowie Systemleisten.",
+      "platform": "Native Apps",
+      "developer": "App-Team",
+      "date": "2026-09-09",
+      "reference": "Teams · Releases - Android · Build 520",
+      "sources": [
+        "Teams"
       ]
     }
   ]
