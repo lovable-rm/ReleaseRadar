@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-09T08:47:19+02:00",
+  "lastUpdated": "2026-09-10T08:40:13+02:00",
   "releases": [
     {
       "id": "google-play-vol-at-2026-07-01",
@@ -60,7 +60,7 @@
       "task": "Paywall-Abschlüsse besser messbar",
       "description": "Erfasst Checkout-Schritte beim Piano-Paywall-Kauf und verbessert damit die Auswertung von Abo-Abschlüssen.",
       "platform": "VOL.AT",
-      "developer": "martinj",
+      "developer": "Web-Team",
       "date": "2026-07-14",
       "reference": "russmedia-frontend-nuxt3 · MR 1244",
       "sources": [
@@ -72,7 +72,7 @@
       "task": "Geschützte Inhalte zuverlässiger erkannt",
       "description": "Verbessert die serverseitige Erkennung eingeschränkter Artikel und sorgt für eine konsistente Paywall.",
       "platform": "VOL.AT",
-      "developer": "illmerl",
+      "developer": "Web-Team",
       "date": "2026-07-14",
       "reference": "russmedia-frontend-nuxt3 · MR 1262",
       "sources": [
@@ -84,7 +84,7 @@
       "task": "Wetter-Einstieg in der App verbessert",
       "description": "Führt Nutzer verständlicher durch die Ortsauswahl und verbindet den neuen Wetter-Einstieg mit der nativen App.",
       "platform": "VOL.AT",
-      "developer": "illmerl · fbittner",
+      "developer": "Web-Team",
       "date": "2026-07-14",
       "reference": "russmedia-frontend-nuxt3 · MR 1265, 1268",
       "sources": [
@@ -96,7 +96,7 @@
       "task": "Staging-Bereitstellung stabilisiert",
       "description": "Bereinigt die Staging-Konfiguration und macht Test-Bereitstellungen sowie deren Zugriff zuverlässiger.",
       "platform": "VOL.AT",
-      "developer": "martinj",
+      "developer": "Web-Team",
       "date": "2026-07-14",
       "reference": "russmedia-frontend-nuxt3 · MR 1266",
       "sources": [
@@ -108,7 +108,7 @@
       "task": "Nordstern-Inhalte robuster ausgeliefert",
       "description": "Verbessert den Zugriff auf freie Inhalte und stellt Bilder auch bei fehlenden Konfigurationswerten zuverlässig bereit.",
       "platform": "Nordstern",
-      "developer": "fbittner",
+      "developer": "Web-Team",
       "date": "2026-07-14",
       "reference": "wordpress-webpapers · MR 960, 961, 962",
       "sources": [
@@ -120,7 +120,7 @@
       "task": "E-Mail-Versand auf SMTP umgestellt",
       "description": "Ersetzt SendGrid durch konfigurierbaren SMTP-Versand und verbessert mehrsprachige Benachrichtigungen.",
       "platform": "VOL.AT",
-      "developer": "mwidmann",
+      "developer": "Web-Team",
       "date": "2026-07-15",
       "reference": "russmedia-fat · MR 10",
       "sources": [
@@ -132,7 +132,7 @@
       "task": "Profile ohne vollständigen Namen unterstützt",
       "description": "Zeigt Profile auch bei fehlendem Vor- oder Nachnamen korrekt an und nutzt einen verlässlichen Ersatznamen.",
       "platform": "VOL.AT",
-      "developer": "mwidmann · martinj",
+      "developer": "Web-Team",
       "date": "2026-07-15",
       "reference": "russmedia-fat · MR 11; russmedia-frontend-nuxt3 · MR 1271, 1272",
       "sources": [
@@ -144,7 +144,7 @@
       "task": "Editor-Bilder zuverlässiger geladen",
       "description": "Leitet Bilder aus dem Editor über den Bilddienst aus und verbessert damit Ladezeit und Verfügbarkeit.",
       "platform": "VOL.AT",
-      "developer": "illmerl",
+      "developer": "Web-Team",
       "date": "2026-07-15",
       "reference": "russmedia-frontend-nuxt3 · MR 1269",
       "sources": [
@@ -156,7 +156,7 @@
       "task": "In-App-Angebote zuverlässig verarbeitet",
       "description": "Speichert frühe Kaufanfragen zwischen, damit Angebote auch bei verzögertem App-Start korrekt angezeigt werden.",
       "platform": "VOL.AT",
-      "developer": "illmerl",
+      "developer": "Web-Team",
       "date": "2026-07-15",
       "reference": "russmedia-frontend-nuxt3 · MR 1274",
       "sources": [
@@ -186,7 +186,7 @@
       "task": "Audio-Inhalte länger verfügbar",
       "description": "Bewahrt erzeugte Audio-Inhalte standardmäßig 90 Tage auf und hält damit auch ältere Beiträge in Playlists verfügbar.",
       "platform": "VOL.AT",
-      "developer": "fbittner",
+      "developer": "Web-Team",
       "date": "2026-07-16",
       "reference": "content-voice-api · MR 15",
       "sources": [
@@ -198,7 +198,7 @@
       "task": "Audio-Player erweitert",
       "description": "Unterstützt ElevenLabs-Audio und Streaming, damit vertonte Artikel stabil und ohne lange Wartezeit starten.",
       "platform": "VOL.AT",
-      "developer": "fbittner",
+      "developer": "Web-Team",
       "date": "2026-07-18",
       "reference": "russmedia-frontend-nuxt3 · MR 1270",
       "sources": [
@@ -210,7 +210,7 @@
       "task": "Paywall-Darstellung verbessert",
       "description": "Entfernt störende Überlagerungen und vereinheitlicht die Darstellung der Video-Paywall.",
       "platform": "VOL.AT",
-      "developer": "illmerl",
+      "developer": "Web-Team",
       "date": "2026-07-18",
       "reference": "russmedia-frontend-nuxt3 · MR 1278",
       "sources": [
@@ -222,7 +222,7 @@
       "task": "E-Paper-Import stabilisiert",
       "description": "Verlängert Zeitlimits, wiederholt kurzfristig fehlgeschlagene Abrufe und verhindert unnötige Importabbrüche.",
       "platform": "Nordstern",
-      "developer": "mwidmann",
+      "developer": "Web-Team",
       "date": "2026-07-20",
       "reference": "epaper-service · MR 24",
       "sources": [
@@ -234,7 +234,7 @@
       "task": "Standardlogo im Seitenkopf vereinheitlicht",
       "description": "Verwendet im VOL.AT-Seitenkopf wieder das vorgesehene Standardlogo und sorgt für einen konsistenten Markenauftritt.",
       "platform": "VOL.AT",
-      "developer": "fbittner",
+      "developer": "Web-Team",
       "date": "2026-07-20",
       "reference": "russmedia-frontend-nuxt3 · MR 1279",
       "sources": [
@@ -246,7 +246,7 @@
       "task": "Forum-Sperren klarer umgesetzt",
       "description": "Berücksichtigt gesperrte Nutzer zuverlässig und zeigt den Sperrstatus im Forum verständlich an.",
       "platform": "VOL.AT",
-      "developer": "mwidmann",
+      "developer": "Web-Team",
       "date": "2026-07-20",
       "reference": "russmedia-frontend-nuxt3 · MR 1281",
       "sources": [
@@ -258,7 +258,7 @@
       "task": "E-Paper-Beilagen besser auffindbar",
       "description": "Liefert die Daten für Beilagen-Seiten und verbessert deren Navigation im Nordstern-Angebot.",
       "platform": "Nordstern",
-      "developer": "mwidmann",
+      "developer": "Web-Team",
       "date": "2026-07-20",
       "reference": "wordpress-webpapers · MR 963",
       "sources": [
@@ -270,7 +270,7 @@
       "task": "Newsletter-Builder um Artikel erweitert",
       "description": "Macht redaktionelle Artikel im Newsletter-Builder verfügbar und vereinfacht die Zusammenstellung von Aussendungen.",
       "platform": "Nordstern",
-      "developer": "baldaufp",
+      "developer": "Web-Team",
       "date": "2026-07-20",
       "reference": "wordpress-webpapers · MR 964",
       "sources": [
@@ -282,7 +282,7 @@
       "task": "PHP-8.5-Basisimages bereitgestellt",
       "description": "Ergänzt aktuelle PHP-8.5-Container und erweitert Laufzeitoptionen für kommende Systemaktualisierungen.",
       "platform": "Andere",
-      "developer": "martinj",
+      "developer": "Platform-Team",
       "date": "2026-07-21",
       "reference": "docker-base-images · MR 103",
       "sources": [
@@ -294,7 +294,7 @@
       "task": "Artikelansicht in der App vereinheitlicht",
       "description": "Erkennt native App-Aufrufe zuverlässig und verwendet die passende Darstellung sowie Zwischenspeicherung.",
       "platform": "VOL.AT",
-      "developer": "martinj",
+      "developer": "Web-Team",
       "date": "2026-07-21",
       "reference": "russmedia-frontend-nuxt3 · MR 1282, 1283",
       "sources": [
@@ -306,7 +306,7 @@
       "task": "Blackout-Darstellung korrigiert",
       "description": "Behebt fehlerhafte Abstände und Darstellung bei gesperrten oder ausgeblendeten Inhalten.",
       "platform": "VOL.AT",
-      "developer": "martinj",
+      "developer": "Web-Team",
       "date": "2026-07-21",
       "reference": "russmedia-frontend-nuxt3 · MR 1286",
       "sources": [
@@ -318,7 +318,7 @@
       "task": "Artikel-Editor abgesichert",
       "description": "Erlaubt den Zugriff auf den Artikel-Editor nur angemeldeten Nutzern und verbessert damit die Zugriffskontrolle.",
       "platform": "VOL.AT",
-      "developer": "mwidmann",
+      "developer": "Web-Team",
       "date": "2026-07-21",
       "reference": "russmedia-frontend-nuxt3 · MR 1287",
       "sources": [
@@ -330,7 +330,7 @@
       "task": "Paywall-Messung bereinigt",
       "description": "Verbessert die Messung des Abo-Abschlusses und entfernt eine nicht mehr benötigte Wetter-Überlagerung.",
       "platform": "VOL.AT",
-      "developer": "martinj",
+      "developer": "Web-Team",
       "date": "2026-07-21",
       "reference": "russmedia-frontend-nuxt3 · MR 1288",
       "sources": [
@@ -342,7 +342,7 @@
       "task": "Webanalyse-Pfad aktualisiert",
       "description": "Bindet das Analytics-Skript über den neuen vorgesehenen Pfad ein und hält die Reichweitenmessung funktionsfähig.",
       "platform": "Nordstern",
-      "developer": "martinj",
+      "developer": "Web-Team",
       "date": "2026-07-21",
       "reference": "wordpress-webpapers · MR 965",
       "sources": [
@@ -354,7 +354,7 @@
       "task": "Sichere FTP-Verbindungen vorbereitet",
       "description": "Ergänzt die nötige SSL-Unterstützung in den PHP-8.5-Images für sichere FTP-Verbindungen.",
       "platform": "Andere",
-      "developer": "martinj",
+      "developer": "Platform-Team",
       "date": "2026-07-22",
       "reference": "docker-base-images · MR 105",
       "sources": [
@@ -366,7 +366,7 @@
       "task": "E-Paper-Dateien sicher ausgeliefert",
       "description": "Stellt Bilder und PDF-Dateien über geschützte Endpunkte bereit und verbessert die Zugriffskontrolle.",
       "platform": "Nordstern",
-      "developer": "mwidmann",
+      "developer": "Web-Team",
       "date": "2026-07-22",
       "reference": "epaper-service · MR 25",
       "sources": [
@@ -378,7 +378,7 @@
       "task": "Android-Artikelansicht verbessert",
       "description": "Unterstützt den Dunkelmodus besser, behandelt ungültige Artikel sauber und reduziert unnötig große Datenpakete.",
       "platform": "VOL.AT",
-      "developer": "martinj",
+      "developer": "Web-Team",
       "date": "2026-07-22",
       "reference": "russmedia-frontend-nuxt3 · MR 1289",
       "sources": [
@@ -390,7 +390,7 @@
       "task": "Fehlerseiten verständlicher gemacht",
       "description": "Verbessert die Behandlung nicht gefundener Inhalte und verhindert irreführende Fehlermeldungen.",
       "platform": "VOL.AT",
-      "developer": "martinj",
+      "developer": "Web-Team",
       "date": "2026-07-22",
       "reference": "russmedia-frontend-nuxt3 · MR 1290",
       "sources": [
@@ -402,7 +402,7 @@
       "task": "E-Paper für VN und OBWO erweitert",
       "description": "Ergänzt die neue E-Paper-Oberfläche und Bereitstellung für VN und OBWO.",
       "platform": "Nordstern",
-      "developer": "mwidmann",
+      "developer": "Web-Team",
       "date": "2026-07-22",
       "reference": "russmedia-frontend-nuxt3 · MR 1291",
       "sources": [
@@ -414,7 +414,7 @@
       "task": "VOL.AT iOS 4.19.8 veröffentlicht",
       "description": "Behebt die Artikel-Freischaltung für TEE-Tagespässe und verhindert ungewollte Ortswechsel im Wetter-Widget.",
       "platform": "Native Apps",
-      "developer": "Michal Senk",
+      "developer": "App-Team",
       "date": "2026-07-22",
       "reference": "App Store · Version 4.19.8",
       "sources": [
@@ -425,10 +425,6 @@
         {
           "label": "App Store",
           "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"
-        },
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3aca5f854e422543239ad3937236210bf7%40thread.tacv2/1784484158826?groupId=81c4fd73-5c4c-4fca-b1a1-c85ac521f063&createdTime=1784484159000"
         }
       ]
     },
@@ -437,7 +433,7 @@
       "task": "Tippspiel-Weiterleitung aktualisiert",
       "description": "Leitet die bisherige Tippspiel-Adresse automatisch zur Eliteliga-Seite weiter.",
       "platform": "VOL.AT",
-      "developer": "rfischl",
+      "developer": "Web-Team",
       "date": "2026-07-24",
       "reference": "russmedia-frontend-nuxt3 · MR 1293",
       "sources": [
@@ -449,7 +445,7 @@
       "task": "Composer-Zugriff aktualisiert",
       "description": "Erneuert die Zugangsdaten für zuverlässige automatische Abhängigkeitsupdates.",
       "platform": "Nordstern",
-      "developer": "fbittner",
+      "developer": "Web-Team",
       "date": "2026-07-24",
       "reference": "wordpress-webpapers · MR 966",
       "sources": [
@@ -461,7 +457,7 @@
       "task": "Media Pocket für WordPress angepasst",
       "description": "Verbessert die Editor-Darstellung und lokale Tests für einen stabileren Betrieb.",
       "platform": "Nordstern",
-      "developer": "fbittner",
+      "developer": "Web-Team",
       "date": "2026-07-24",
       "reference": "wp-plugins · MR 144",
       "sources": [
@@ -473,22 +469,12 @@
       "task": "Push-Texte für Sonderausgaben korrigiert",
       "description": "Verwendet bei Sonderausgaben den passenden Publikationstitel und verbessert die Verarbeitung älterer OBWO-Ausgaben.",
       "platform": "Nordstern",
-      "developer": "mwidmann",
+      "developer": "Web-Team",
       "date": "2026-07-27",
       "reference": "epaper-service · MR 26",
       "sources": [
         "CodeRabbit",
         "Teams"
-      ],
-      "links": [
-        {
-          "label": "Merge Request",
-          "url": "https://gitlab.russmedia.com/DEVV/epaper-service/-/merge_requests/26"
-        },
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785129661705?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
-        }
       ]
     },
     {
@@ -496,22 +482,12 @@
       "task": "T-Shirt-Größe in Bestätigungen ergänzt",
       "description": "Übernimmt die gewählte T-Shirt-Größe in redaktionelle Bestätigungsmails und macht Bestellungen leichter nachvollziehbar.",
       "platform": "VOL.AT",
-      "developer": "mwidmann",
+      "developer": "Web-Team",
       "date": "2026-07-27",
       "reference": "russmedia-fat · MR 13",
       "sources": [
         "CodeRabbit",
         "Teams"
-      ],
-      "links": [
-        {
-          "label": "Merge Request",
-          "url": "https://gitlab.russmedia.com/DEVV/russmedia-fat/-/merge_requests/13"
-        },
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785149366175?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
-        }
       ]
     },
     {
@@ -519,22 +495,12 @@
       "task": "E-Paper-Navigation verbessert",
       "description": "Ergänzt flexible Zoomstufen, eine Rückkehr-nach-oben-Funktion und eine übersichtlichere Sortierung im E-Paper.",
       "platform": "Nordstern",
-      "developer": "mwidmann",
+      "developer": "Web-Team",
       "date": "2026-07-27",
       "reference": "russmedia-frontend-nuxt3 · MR 1294",
       "sources": [
         "CodeRabbit",
         "Teams"
-      ],
-      "links": [
-        {
-          "label": "Merge Request",
-          "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1294"
-        },
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785132620859?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
-        }
       ]
     },
     {
@@ -542,22 +508,12 @@
       "task": "Abo- und Inhaltsmessung erweitert",
       "description": "Erfasst aussichtsreiche Inhalte und Abo-Abschlüsse genauer und verbessert damit die Bewertung der Paywall-Performance.",
       "platform": "VOL.AT",
-      "developer": "martinj",
+      "developer": "Web-Team",
       "date": "2026-07-28",
       "reference": "russmedia-frontend-nuxt3 · MR 1295",
       "sources": [
         "CodeRabbit",
         "Teams"
-      ],
-      "links": [
-        {
-          "label": "Merge Request",
-          "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1295"
-        },
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785245795655?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
-        }
       ]
     },
     {
@@ -565,22 +521,12 @@
       "task": "Google-Quellenhinweis besser gesteuert",
       "description": "Verhindert zu häufige Hinweise zur Google-Quellenregistrierung und berücksichtigt bereits erfolgte Bestätigungen langfristig.",
       "platform": "VOL.AT",
-      "developer": "rfischl",
+      "developer": "Web-Team",
       "date": "2026-07-28",
       "reference": "russmedia-frontend-nuxt3 · MR 1296",
       "sources": [
         "CodeRabbit",
         "Teams"
-      ],
-      "links": [
-        {
-          "label": "Merge Request",
-          "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1296"
-        },
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785244892370?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
-        }
       ]
     },
     {
@@ -588,22 +534,12 @@
       "task": "E-Paper-Ausschnitte sicher bereitgestellt",
       "description": "Ermöglicht geschützte Downloads und erzeugt einzelne Seitenausschnitte als zwischengespeicherte Bilder.",
       "platform": "Nordstern",
-      "developer": "mwidmann",
+      "developer": "Web-Team",
       "date": "2026-07-29",
       "reference": "epaper-service · MR 27",
       "sources": [
         "CodeRabbit",
         "Teams"
-      ],
-      "links": [
-        {
-          "label": "Merge Request",
-          "url": "https://gitlab.russmedia.com/DEVV/epaper-service/-/merge_requests/27"
-        },
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785323871746?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
-        }
       ]
     },
     {
@@ -611,22 +547,12 @@
       "task": "E-Paper-Werkzeuge erweitert",
       "description": "Ergänzt Bildausschnitte, Downloads und konfigurierbare E-Paper-Widgets für eine flexiblere Nutzung.",
       "platform": "Nordstern",
-      "developer": "mwidmann",
+      "developer": "Web-Team",
       "date": "2026-07-29",
       "reference": "russmedia-frontend-nuxt3 · MR 1297",
       "sources": [
         "CodeRabbit",
         "Teams"
-      ],
-      "links": [
-        {
-          "label": "Merge Request",
-          "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1297"
-        },
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785329286409?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
-        }
       ]
     },
     {
@@ -634,22 +560,12 @@
       "task": "App-Menü in WordPress korrigiert",
       "description": "Behebt die Darstellung des App-Erweiterungsmenüs unter WordPress 6.6.5 und sorgt für konsistente Dropdown-Breiten.",
       "platform": "Nordstern",
-      "developer": "fbittner",
+      "developer": "Web-Team",
       "date": "2026-07-29",
       "reference": "wp-plugins · MR 145",
       "sources": [
         "CodeRabbit",
         "Teams"
-      ],
-      "links": [
-        {
-          "label": "Merge Request",
-          "url": "https://gitlab.russmedia.com/DEVV/wp-plugins/-/merge_requests/145"
-        },
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785251492807?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de"
-        }
       ]
     },
     {
@@ -657,21 +573,11 @@
       "task": "Abo-Prüfung um Abo-Nummer ergänzt",
       "description": "Übermittelt die Abo-Nummer nun auch an den Subscription-Service und verbessert damit die korrekte Zuordnung von Abos.",
       "platform": "VOL.AT",
-      "developer": "Julian Martin",
+      "developer": "Web-Team",
       "date": "2026-07-30",
       "reference": "nnp · MR 2046",
       "sources": [
         "Teams"
-      ],
-      "links": [
-        {
-          "label": "Merge Request",
-          "url": "https://gitlab.russmedia.com/nnp-dev/nnp/-/merge_requests/2046"
-        },
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3A8658a8dec69d44f7834d02a0961ad459%40thread.tacv2/1785406761841?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de&tenantId=6b84c5a7-5528-4071-b5b2-49e3cf5f2208"
-        }
       ]
     },
     {
@@ -679,17 +585,11 @@
       "task": "Wetteransicht und Vorhersage erweitert",
       "description": "Ergänzt Tages- und Datumskennzeichnungen sowie Mitternachtsmarkierungen in Stunden-Grafiken, verbessert Scrollen und Ziehen, erweitert die Wochenvorhersage auf fünf Einträge, vereinfacht Legenden und formuliert historische Wettertexte klarer.",
       "platform": "Sonstige",
-      "developer": "fbittner",
+      "developer": "Platform-Team",
       "date": "2026-08-01",
       "reference": "Teams · Release Notes 2026-08-01",
       "sources": [
         "Teams"
-      ],
-      "links": [
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785622548923?groupId=ef3b045f-de29-40ea-9aae-d8048bae5146&createdTime=1785622549000"
-        }
       ]
     },
     {
@@ -697,22 +597,12 @@
       "task": "PHP-Speicherlimit zur Bereitstellungszeit konfigurierbar",
       "description": "Ermöglicht die Konfiguration des PHP-Speicherlimits über MEMORY_LIMIT und behält 384 MB als Standardwert bei.",
       "platform": "Andere",
-      "developer": "martinj",
+      "developer": "Platform-Team",
       "date": "2026-08-04",
       "reference": "docker-base-images · MR 106",
       "sources": [
         "CodeRabbit",
         "Teams"
-      ],
-      "links": [
-        {
-          "label": "Merge Request",
-          "url": "https://gitlab.russmedia.com/DEVV/docker-base-images/-/merge_requests/106"
-        },
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785881546201?groupId=ef3b045f-de29-40ea-9aae-d8048bae5146&createdTime=1785881546000"
-        }
       ]
     },
     {
@@ -720,22 +610,12 @@
       "task": "Storybook-Mock-Streaming verbessert",
       "description": "Aktualisiert Mock Service Worker auf 2.15.0, erhält SSE-Streaming und ergänzt Subscription-Szenarien für Storybook.",
       "platform": "Sonstige",
-      "developer": "martinj",
+      "developer": "Platform-Team",
       "date": "2026-08-03",
       "reference": "russmedia-frontend-nuxt3 · MR 1300",
       "sources": [
         "CodeRabbit",
         "Teams"
-      ],
-      "links": [
-        {
-          "label": "Merge Request",
-          "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1300"
-        },
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785881546201?groupId=ef3b045f-de29-40ea-9aae-d8048bae5146&createdTime=1785881546000"
-        }
       ]
     },
     {
@@ -743,22 +623,12 @@
       "task": "Checkout-Abbruch zuverlässiger navigiert",
       "description": "Korrigiert die Navigation nach Abbruch eines Checkouts und verhindert dadurch unerwünschte Paywall-Umgehungen.",
       "platform": "VOL.AT",
-      "developer": "martinj",
+      "developer": "Web-Team",
       "date": "2026-08-04",
       "reference": "russmedia-frontend-nuxt3 · MR 1301",
       "sources": [
         "CodeRabbit",
         "Teams"
-      ],
-      "links": [
-        {
-          "label": "Merge Request",
-          "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1301"
-        },
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785881546201?groupId=ef3b045f-de29-40ea-9aae-d8048bae5146&createdTime=1785881546000"
-        }
       ]
     },
     {
@@ -766,22 +636,12 @@
       "task": "Ortsauswahl in der App verbessert",
       "description": "Ergänzt das direkte Öffnen der Heimatort- und Gemeindeauswahl in der App und verbessert das Dropdown-Verhalten.",
       "platform": "VOL.AT",
-      "developer": "martinj",
+      "developer": "Web-Team",
       "date": "2026-08-04",
       "reference": "russmedia-frontend-nuxt3 · MR 1302",
       "sources": [
         "CodeRabbit",
         "Teams"
-      ],
-      "links": [
-        {
-          "label": "Merge Request",
-          "url": "https://gitlab.russmedia.com/DEVV/russmedia-frontend-nuxt3/-/merge_requests/1302"
-        },
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785881546201?groupId=ef3b045f-de29-40ea-9aae-d8048bae5146&createdTime=1785881546000"
-        }
       ]
     },
     {
@@ -789,22 +649,12 @@
       "task": "Abhängigkeiten, Authentifizierung und Editor stabilisiert",
       "description": "Aktualisiert zentrale Laufzeit- und Entwicklungsabhängigkeiten und verbessert Authentifizierungsbereinigung, Billing, Editor-Initialisierung, Artikelstart und E2E-Testzuverlässigkeit.",
       "platform": "VOL.AT",
-      "developer": "mwidmann",
+      "developer": "Web-Team",
       "date": "2026-08-04",
       "reference": "russmedia-fat · MR 14",
       "sources": [
         "CodeRabbit",
         "Teams"
-      ],
-      "links": [
-        {
-          "label": "Merge Request",
-          "url": "https://gitlab.russmedia.com/DEVV/russmedia-fat/-/merge_requests/14"
-        },
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785881546201?groupId=ef3b045f-de29-40ea-9aae-d8048bae5146&createdTime=1785881546000"
-        }
       ]
     },
     {
@@ -812,22 +662,12 @@
       "task": "E2E-Start in russmedia-tee beschleunigt",
       "description": "Reduziert die E2E-Startverzögerung, aktiviert synchrone Migrationen und leert den Cache vor dem Start des Dienstes.",
       "platform": "Backend/NNP",
-      "developer": "martinj",
+      "developer": "Platform-Team",
       "date": "2026-08-04",
       "reference": "russmedia-tee · MR 1930",
       "sources": [
         "CodeRabbit",
         "Teams"
-      ],
-      "links": [
-        {
-          "label": "Merge Request",
-          "url": "https://gitlab.russmedia.com/DEVV/russmedia-tee/-/merge_requests/1930"
-        },
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785881546201?groupId=ef3b045f-de29-40ea-9aae-d8048bae5146&createdTime=1785881546000"
-        }
       ]
     },
     {
@@ -835,22 +675,12 @@
       "task": "Produktspezifische Seeder deaktiviert",
       "description": "Deaktiviert Baseljetzt- und Ksta-spezifische Kunden-, Inhalts-, Reward- und Tagesreward-Seeder und behält gemeinsame Testdaten bei.",
       "platform": "Backend/NNP",
-      "developer": "martinj",
+      "developer": "Platform-Team",
       "date": "2026-08-04",
       "reference": "russmedia-tee · MR 1931",
       "sources": [
         "CodeRabbit",
         "Teams"
-      ],
-      "links": [
-        {
-          "label": "Merge Request",
-          "url": "https://gitlab.russmedia.com/DEVV/russmedia-tee/-/merge_requests/1931"
-        },
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785881546201?groupId=ef3b045f-de29-40ea-9aae-d8048bae5146&createdTime=1785881546000"
-        }
       ]
     },
     {
@@ -858,22 +688,12 @@
       "task": "Subscription-Testweiterleitung ergänzt",
       "description": "Ergänzt eine /doppelt-Weiterleitung auf die vorgesehene Subscription-Testseite.",
       "platform": "Nordstern",
-      "developer": "mwidmann",
+      "developer": "Web-Team",
       "date": "2026-08-03",
       "reference": "vn-nordstern · MR 824",
       "sources": [
         "CodeRabbit",
         "Teams"
-      ],
-      "links": [
-        {
-          "label": "Merge Request",
-          "url": "https://gitlab.russmedia.com/DEVV/vn-nordstern/-/merge_requests/824"
-        },
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785881546201?groupId=ef3b045f-de29-40ea-9aae-d8048bae5146&createdTime=1785881546000"
-        }
       ]
     },
     {
@@ -881,22 +701,12 @@
       "task": "VN-Tippgeber im Podcast-Einstieg verlinkt",
       "description": "Ersetzt die Podcast-Schaltfläche durch die VN-Tippgeber-Marke und verlinkt auf die passende Seite.",
       "platform": "Nordstern",
-      "developer": "mwidmann",
+      "developer": "Web-Team",
       "date": "2026-08-04",
       "reference": "vn-nordstern · MR 825",
       "sources": [
         "CodeRabbit",
         "Teams"
-      ],
-      "links": [
-        {
-          "label": "Merge Request",
-          "url": "https://gitlab.russmedia.com/DEVV/vn-nordstern/-/merge_requests/825"
-        },
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785881546201?groupId=ef3b045f-de29-40ea-9aae-d8048bae5146&createdTime=1785881546000"
-        }
       ]
     },
     {
@@ -904,22 +714,12 @@
       "task": "WordPress-Plugins auf modernes React-Rendering umgestellt",
       "description": "Ersetzt veraltete React-Rendering-APIs durch createRoot und erneuert die Build-Asset-Metadaten für das Plugin-Bundle.",
       "platform": "Nordstern",
-      "developer": "martinj",
+      "developer": "Web-Team",
       "date": "2026-08-03",
       "reference": "wp-plugins · MR 146",
       "sources": [
         "CodeRabbit",
         "Teams"
-      ],
-      "links": [
-        {
-          "label": "Merge Request",
-          "url": "https://gitlab.russmedia.com/DEVV/wp-plugins/-/merge_requests/146"
-        },
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785881546201?groupId=ef3b045f-de29-40ea-9aae-d8048bae5146&createdTime=1785881546000"
-        }
       ]
     },
     {
@@ -927,7 +727,7 @@
       "task": "WordPress-Build-Matrix erweitert",
       "description": "Erweitert die Apache-FPM-WordPress-Build-Matrix um die Versionen 6.6.5 und 6.9.5.",
       "platform": "Andere",
-      "developer": "martinj",
+      "developer": "Platform-Team",
       "date": "2026-08-05",
       "reference": "docker-base-images · PR 107",
       "sources": [
@@ -939,7 +739,7 @@
       "task": "Wetter- und Hyperlocal-Ergebnisse verbessert",
       "description": "Entfernt redundante Reverse-Geocoding-Aufrufe bei Wetter- und Hyperlocal-Anfragen und behält standortspezifische Defaults sowie die Zuordnung nach Gemeinden bei.",
       "platform": "Andere",
-      "developer": "martinj",
+      "developer": "Platform-Team",
       "date": "2026-08-05",
       "reference": "rm-api · PR 11",
       "sources": [
@@ -951,22 +751,12 @@
       "task": "Push-Benachrichtigungen präziser ausgewählt",
       "description": "Wählt die prominenteste Artikelüberschrift abhängig von Größe und Platzierung zuverlässiger aus und korrigiert die Flächenberechnung unterhalb der Seitenmitte.",
       "platform": "Nordstern",
-      "developer": "mwidmann",
+      "developer": "Web-Team",
       "date": "2026-08-04",
       "reference": "epaper-service · MR 28",
       "sources": [
         "CodeRabbit",
         "Teams"
-      ],
-      "links": [
-        {
-          "label": "Merge Request",
-          "url": "https://gitlab.russmedia.com/DEVV/epaper-service/-/merge_requests/28"
-        },
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3Aeh-zN4MxxIpXvgjoFAtN8BTjVv1bcs98YhttYm8UEM01%40thread.tacv2/1785795136221?groupId=0c7a7aba-cdba-40e0-8eb9-63beb92566de&tenantId=6b84c5a7-5528-4071-b5b2-49e3cf5f2208&createdTime=1785795136221&parentMessageId=1785795136221"
-        }
       ]
     },
     {
@@ -974,7 +764,7 @@
       "task": "GamesWidget mit aktuellen Spielen aktualisiert",
       "description": "Ersetzt die bisherigen GamesWidget-Einträge durch sieben aktualisierte Spiele mit neuen Titeln, Beschreibungen, Bildern und externen Links und entfernt zwei veraltete Spiele.",
       "platform": "Sonstige",
-      "developer": "buchhaeusls",
+      "developer": "Platform-Team",
       "date": "2026-08-07",
       "reference": "russmedia-frontend-nuxt3 · PR 1304",
       "sources": [
@@ -986,7 +776,7 @@
       "task": "Forum-Bildfallbacks und Greta-Schrift verbessert",
       "description": "Verbessert die Fallback-Darstellung von Nutzerbildern im Forum und lädt die Greta-Schrift konsistenter aus lokal gebündelten Dateien.",
       "platform": "VOL.AT",
-      "developer": "martinj",
+      "developer": "Web-Team",
       "date": "2026-08-11",
       "reference": "russmedia-frontend-nuxt3 · PR 1307",
       "sources": [
@@ -998,7 +788,7 @@
       "task": "Automatische Abhängigkeitsupdates vorbereitet",
       "description": "Ergänzt die empfohlene Renovate-Konfiguration und ermöglicht damit eine automatisierte Verwaltung von Abhängigkeitsupdates.",
       "platform": "Backend/NNP",
-      "developer": "borcilae",
+      "developer": "Platform-Team",
       "date": "2026-08-11",
       "reference": "russmedia-tee · PR 1932",
       "sources": [
@@ -1010,7 +800,7 @@
       "task": "Personalisierte Startseite ergänzt",
       "description": "Fügt personalisierte Artikel auf der Startseite hinzu, inklusive API, Caching, GraphQL-Unterstützung, Konfiguration und zuverlässigem Fallback-Verhalten.",
       "platform": "Nordstern",
-      "developer": "martinj",
+      "developer": "Web-Team",
       "date": "2026-08-11",
       "reference": "vn-nordstern · PR 826",
       "sources": [
@@ -1022,7 +812,7 @@
       "task": "WordPress-6.9.6-Kompatibilität verbessert",
       "description": "Aktualisiert die WordPress-Plugins für WordPress 6.9.6 und moderne PHP-Versionen, verschiebt Übersetzungen, reduziert Deprecation-Warnungen und erhält die Kompatibilität älterer Logeinträge.",
       "platform": "Nordstern",
-      "developer": "fbittner",
+      "developer": "Web-Team",
       "date": "2026-08-12",
       "reference": "wp-plugins · PR 147",
       "sources": [
@@ -1034,7 +824,7 @@
       "task": "VOL.AT+ Checkout und Branding aktualisiert",
       "description": "Modernisiert Typografie und VOL.AT+-Bezeichnungen in Checkout, Konto, Angeboten, Bannern, Upsells und Benachrichtigungen.",
       "platform": "VOL.AT",
-      "developer": "baldaufp",
+      "developer": "Web-Team",
       "date": "2026-08-12",
       "reference": "piano_frontend · PR 88",
       "sources": [
@@ -1046,7 +836,7 @@
       "task": "App-Navigation und Dark Mode ergänzt",
       "description": "Ergänzt die untere Navigation im App-Modus und verbessert die Darstellung im Dark Mode.",
       "platform": "VOL.AT",
-      "developer": "fbittner",
+      "developer": "Web-Team",
       "date": "2026-08-12",
       "reference": "russmedia-frontend-nuxt3 · PR 1305",
       "sources": [
@@ -1058,7 +848,7 @@
       "task": "Eliteliga-Typografie aktualisiert",
       "description": "Aktualisiert die Eliteliga-Typografie und die Auslieferung der verwendeten Schriften.",
       "platform": "VOL.AT",
-      "developer": "martinj",
+      "developer": "Web-Team",
       "date": "2026-08-12",
       "reference": "russmedia-frontend-nuxt3 · PR 1309",
       "sources": [
@@ -1070,7 +860,7 @@
       "task": "Greta-Schriften und veraltete Teaser-Komponenten entfernt",
       "description": "Entfernt Greta-Schriften und veraltete Teaser-Komponenten und vereinheitlicht die Typografie.",
       "platform": "VOL.AT",
-      "developer": "martinj",
+      "developer": "Web-Team",
       "date": "2026-08-12",
       "reference": "russmedia-frontend-nuxt3 · PR 1310",
       "sources": [
@@ -1082,7 +872,7 @@
       "task": "Checkout-Tracking bereinigt",
       "description": "Bereinigt das Checkout-Tracking und ermöglicht die korrekte Nutzung von Schriften über verschiedene Ursprünge hinweg.",
       "platform": "VOL.AT",
-      "developer": "martinj",
+      "developer": "Web-Team",
       "date": "2026-08-12",
       "reference": "russmedia-frontend-nuxt3 · PR 1311",
       "sources": [
@@ -1094,7 +884,7 @@
       "task": "Proxy-Map-Anfragen vor dem Routing umgeschrieben",
       "description": "Ergänzt die Umschreibung von Proxy-Map-Anfragen vor dem Routing.",
       "platform": "VOL.AT",
-      "developer": "martinj",
+      "developer": "Web-Team",
       "date": "2026-08-12",
       "reference": "russmedia-frontend-nuxt3 · PR 1312",
       "sources": [
@@ -1106,7 +896,7 @@
       "task": "Eliteliga-Widget typografisch modernisiert",
       "description": "Ersetzt Greta-Schriften im Eliteliga-Widget durch Inter und Public Sans, passt die Textgrößen an und aktualisiert die Paketversion.",
       "platform": "VOL.AT",
-      "developer": "martinj",
+      "developer": "Web-Team",
       "date": "2026-08-12",
       "reference": "russmedia-frontend · PR 397",
       "sources": [
@@ -1118,7 +908,7 @@
       "task": "Premium-Pass-Status in der Collectors-API ergänzt",
       "description": "Die Collectors-API liefert nun, ob ein Nutzer einen aktiven Premium-Pass besitzt, und verwendet andernfalls false.",
       "platform": "Backend/NNP",
-      "developer": "martinj",
+      "developer": "Platform-Team",
       "date": "2026-08-12",
       "reference": "russmedia-tee · PR 1939",
       "sources": [
@@ -1130,7 +920,7 @@
       "task": "Eliteliga-Personalisierung und Rendering korrigiert",
       "description": "Verbessert die Eliteliga-Personalisierung, Entwicklungsendpunkte und das Rendering, damit Daten zuverlässig ankommen und leere Bereiche vermieden werden.",
       "platform": "Nordstern",
-      "developer": "martinj",
+      "developer": "Web-Team",
       "date": "2026-08-12",
       "reference": "vn-nordstern · PR 827",
       "sources": [
@@ -1142,7 +932,7 @@
       "task": "Checkout-Preise und Gutscheine dynamisch aktualisiert",
       "description": "Aktualisiert Checkout-Preise und Hinweise dynamisch bei Änderungen von Abrechnungszeitraum oder Gutschein und ergänzt Tests für EUR-Abos und PayPal.",
       "platform": "VOL.AT",
-      "developer": "baldaufp",
+      "developer": "Web-Team",
       "date": "2026-08-13",
       "reference": "piano_frontend · PR 89",
       "sources": [
@@ -1154,7 +944,7 @@
       "task": "Vorteilsclub-Zugriff für Apps erweitert",
       "description": "Stellt den Vorteilsclub-Zugriff in Apps ohne JWT-Abhängigkeit bereit.",
       "platform": "VOL.AT",
-      "developer": "baldaufp",
+      "developer": "Web-Team",
       "date": "2026-08-18",
       "reference": "russmedia-frontend-nuxt3 · PR 1313",
       "sources": [
@@ -1166,7 +956,7 @@
       "task": "Vorteilsclub-Passdownloads verbessert",
       "description": "Verbessert den Download von Vorteilsclub-Pässen mit plattformspezifischer Verlinkung.",
       "platform": "VOL.AT",
-      "developer": "baldaufp",
+      "developer": "Web-Team",
       "date": "2026-08-18",
       "reference": "russmedia-frontend-nuxt3 · PR 1314",
       "sources": [
@@ -1178,7 +968,7 @@
       "task": "Snowplow-Nutzer-ID synchronisiert",
       "description": "Synchronisiert die Nutzer-ID der Snowplow-Tracker zuverlässig bei Anmeldung und Abmeldung.",
       "platform": "VOL.AT",
-      "developer": "biermannm",
+      "developer": "Web-Team",
       "date": "2026-08-18",
       "reference": "russmedia-frontend-nuxt3 · PR 1315",
       "sources": [
@@ -1190,7 +980,7 @@
       "task": "Bildflackern bei der Hydration behoben",
       "description": "Behebt Bildflackern in Bildblöcken und verbessert das Verhalten beim Laden von Inhalten.",
       "platform": "VOL.AT",
-      "developer": "martinj",
+      "developer": "Web-Team",
       "date": "2026-08-18",
       "reference": "russmedia-frontend-nuxt3 · PR 1316",
       "sources": [
@@ -1202,7 +992,7 @@
       "task": "Erscheinungsdatum für Berechtigungsprüfung verwendet",
       "description": "Verwendet das Erscheinungsdatum statt des Wochentags für die Berechtigungsprüfung von Ausgaben.",
       "platform": "Nordstern",
-      "developer": "mwidmann",
+      "developer": "Web-Team",
       "date": "2026-08-18",
       "reference": "wordpress-webpapers · PR 967",
       "sources": [
@@ -1214,7 +1004,7 @@
       "task": "V3-App-Start-Endpunkt ergänzt",
       "description": "Ergänzt den V3-App-Start-Endpunkt für Webview-Seiten, App-Menüs und die Vorbereitung des Service-Hubs.",
       "platform": "Nordstern",
-      "developer": "rfischl",
+      "developer": "Web-Team",
       "date": "2026-08-18",
       "reference": "wp-plugins · PR 148",
       "sources": [
@@ -1226,7 +1016,7 @@
       "task": "Checkout-Tracking und A/B-Tests erweitert",
       "description": "Erweitert Checkout-Tracking und die Speicherung von A/B-Testvarianten.",
       "platform": "VOL.AT",
-      "developer": "martinj",
+      "developer": "Web-Team",
       "date": "2026-08-19",
       "reference": "russmedia-frontend-nuxt3 · PR 1317",
       "sources": [
@@ -1238,7 +1028,7 @@
       "task": "App-Hub-Widget-API ergänzt",
       "description": "Ergänzt die API für Inhalte des App-Hub-Widgets.",
       "platform": "VOL.AT",
-      "developer": "martinj",
+      "developer": "Web-Team",
       "date": "2026-08-19",
       "reference": "russmedia-frontend-nuxt3 · PR 1318",
       "sources": [
@@ -1250,7 +1040,7 @@
       "task": "Journalistenprofile und Editor-Bilder verbessert",
       "description": "Erweitert Metadaten für Journalistenprofile und verbessert die Verarbeitung von Editor-Bildern.",
       "platform": "VOL.AT",
-      "developer": "illmerl",
+      "developer": "Web-Team",
       "date": "2026-08-19",
       "reference": "russmedia-frontend-nuxt3 · PR 1319",
       "sources": [
@@ -1262,7 +1052,7 @@
       "task": "Abhängigkeiten und Monitoring aktualisiert",
       "description": "Aktualisiert Abhängigkeiten, Laufzeit- und Build-Konfiguration sowie die Veröffentlichung von Bugsnag-Releases.",
       "platform": "Sonstige",
-      "developer": "martinj",
+      "developer": "Platform-Team",
       "date": "2026-08-19",
       "reference": "russmedia-frontend-nuxt3 · PR 1320",
       "sources": [
@@ -1274,7 +1064,7 @@
       "task": "Veraltete Basel- und KSTA-Kollektoren entfernt",
       "description": "Entfernt veraltete Basel- und KSTA-Kollektoren aus den Seed-Daten und erhält unterstützte Vorschau-Kollektoren.",
       "platform": "Backend/NNP",
-      "developer": "martinj",
+      "developer": "Platform-Team",
       "date": "2026-08-19",
       "reference": "russmedia-tee · PR 1940",
       "sources": [
@@ -1286,7 +1076,7 @@
       "task": "Veraltete anonyme Kollektoren entfernt",
       "description": "Entfernt die verbliebenen veralteten anonymen Basel- und KSTA-Kollektoren aus den Seed-Daten.",
       "platform": "Backend/NNP",
-      "developer": "martinj",
+      "developer": "Platform-Team",
       "date": "2026-08-19",
       "reference": "russmedia-tee · PR 1941",
       "sources": [
@@ -1298,7 +1088,7 @@
       "task": "AI-Metadatenänderungen abgesichert",
       "description": "Schützt Änderungen an AI-Editor-Metadaten mit einer Nonce-Prüfung.",
       "platform": "Nordstern",
-      "developer": "rfischl",
+      "developer": "Web-Team",
       "date": "2026-08-19",
       "reference": "wp-plugins · PR 149",
       "sources": [
@@ -1310,7 +1100,7 @@
       "task": "PHP-8.5-Umgebung und Git bereitgestellt",
       "description": "Aktualisiert die PHP-Umgebung auf Version 8.5 und stellt Git als verfügbares Werkzeug bereit.",
       "platform": "Andere",
-      "developer": "martinj",
+      "developer": "Platform-Team",
       "date": "2026-08-20",
       "reference": "ci-templates-gitlab · PR 98",
       "sources": [
@@ -1322,7 +1112,7 @@
       "task": "Portal- und Seitennamen im Editor korrigiert",
       "description": "Verwendet auf Editor-Seiten die konfigurierte Portal- und Seitennamensinformation auch für das ÖWA-Tracking.",
       "platform": "VOL.AT",
-      "developer": "illmerl",
+      "developer": "Web-Team",
       "date": "2026-08-20",
       "reference": "russmedia-frontend-nuxt3 · PR 1322",
       "sources": [
@@ -1334,7 +1124,7 @@
       "task": "Paywall-Block-Icon erneuert",
       "description": "Erneuert Design und Asset-Metadaten des Paywall-Block-Icons.",
       "platform": "Nordstern",
-      "developer": "illmerl",
+      "developer": "Web-Team",
       "date": "2026-08-20",
       "reference": "wp-plugins · PR 150",
       "sources": [
@@ -1346,7 +1136,7 @@
       "task": "Paywall-Block-Icon eingefärbt",
       "description": "Passt die Farbe des Paywall-Block-Icons an und aktualisiert die Build-Asset-Version.",
       "platform": "Nordstern",
-      "developer": "illmerl",
+      "developer": "Web-Team",
       "date": "2026-08-21",
       "reference": "wp-plugins · PR 151",
       "sources": [
@@ -1358,7 +1148,7 @@
       "task": "Statisches Widget-Rendering optimiert",
       "description": "Verbessert Rendering und Hydration statischer HTML- und Homepage-Widgets und reduziert unnötige Aktualisierungen.",
       "platform": "VOL.AT",
-      "developer": "illmerl",
+      "developer": "Web-Team",
       "date": "2026-08-21",
       "reference": "russmedia-frontend-nuxt3 · PR 1324",
       "sources": [
@@ -1370,7 +1160,7 @@
       "task": "E2E-Testsetup und WordPress-Tooling aktualisiert",
       "description": "Vereinheitlicht die Plugin-Installation, aktualisiert die WordPress-Testversion und erneuert das Entwicklungs-Tooling.",
       "platform": "Nordstern",
-      "developer": "illmerl",
+      "developer": "Web-Team",
       "date": "2026-08-24",
       "reference": "wp-plugin-scaffolder · PR 1",
       "sources": [
@@ -1382,7 +1172,7 @@
       "task": "WordPress-E2E-Testumgebung aktualisiert",
       "description": "Aktualisiert die WordPress-E2E-Testumgebung und verbessert die Kompatibilität mit neuerem Entwicklungs-Tooling.",
       "platform": "Nordstern",
-      "developer": "illmerl",
+      "developer": "Web-Team",
       "date": "2026-08-24",
       "reference": "wp-plugins · PR 152",
       "sources": [
@@ -1394,7 +1184,7 @@
       "task": "AI-Bildnachweise in Bildansichten ergänzt",
       "description": "Zeigt AI-generierte Bilder in Bildunterschriften, Galerien und Vollbildansichten klarer an und übernimmt die Metadaten zuverlässig.",
       "platform": "VOL.AT",
-      "developer": "rfischl",
+      "developer": "Web-Team",
       "date": "2026-08-26",
       "reference": "russmedia-frontend-nuxt3 · PR 1325",
       "sources": [
@@ -1406,7 +1196,7 @@
       "task": "AI-Bilder im Gutenberg-Workflow gekennzeichnet",
       "description": "Kennzeichnet AI-generierte Bilder im Gutenberg- und Medien-Workflow, inklusive Metadatensteuerung, Labels, Übersetzungen und Tests.",
       "platform": "Nordstern",
-      "developer": "rfischl",
+      "developer": "Web-Team",
       "date": "2026-08-26",
       "reference": "wp-plugins · PR 153",
       "sources": [
@@ -1418,7 +1208,7 @@
       "task": "Bildnachweise für Bilder und Galerien ergänzt",
       "description": "Ermöglicht Bildnachweise für hochgeladene Bilder und Galerien und erhält diese durch Bearbeitung, Speicherung, Upload und Veröffentlichung.",
       "platform": "VOL.AT",
-      "developer": "mwidmann",
+      "developer": "Web-Team",
       "date": "2026-08-27",
       "reference": "russmedia-fat · PR 15",
       "sources": [
@@ -1430,7 +1220,7 @@
       "task": "AI-Bildindikatoren für Teaser ergänzt",
       "description": "Ergänzt Indikatoren und Metadaten für AI-generierte Bilder in Teasern und zugehörigen Bildern.",
       "platform": "VOL.AT",
-      "developer": "rfischl",
+      "developer": "Web-Team",
       "date": "2026-08-28",
       "reference": "russmedia-frontend-nuxt3 · PR 1326",
       "sources": [
@@ -1442,7 +1232,7 @@
       "task": "Piano-Upgrade-Paywall für eingeloggte Nutzer ergänzt",
       "description": "Ermöglicht eingeloggten Nutzern passende Upgrade-Angebote und In-App-Kaufaktionen über die Piano-Paywall.",
       "platform": "VOL.AT",
-      "developer": "baldaufp",
+      "developer": "Web-Team",
       "date": "2026-08-28",
       "reference": "russmedia-frontend-nuxt3 · PR 1327",
       "sources": [
@@ -1454,7 +1244,7 @@
       "task": "Carto-API für Niederschlagsradar konfigurierbar gemacht",
       "description": "Ergänzt die konfigurierbare Carto-API-Unterstützung für authentifizierte Kachelanfragen des Niederschlagsradars.",
       "platform": "VOL.AT",
-      "developer": "illmerl",
+      "developer": "Web-Team",
       "date": "2026-08-28",
       "reference": "russmedia-frontend-nuxt3 · PR 1329",
       "sources": [
@@ -1466,7 +1256,7 @@
       "task": "Weiterleitungen zum Abo-Shop ergänzt",
       "description": "Ergänzt Weiterleitungen ausgewählter alter Pfade zu den passenden Seiten des Abo-Shops.",
       "platform": "Nordstern",
-      "developer": "baldaufp",
+      "developer": "Web-Team",
       "date": "2026-08-28",
       "reference": "vn-nordstern · PR 828",
       "sources": [
@@ -1483,12 +1273,6 @@
       "reference": "Teams · Releases - Android · Build 507",
       "sources": [
         "Teams"
-      ],
-      "links": [
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3A9583be02c43c4f44b0c8498f7565a911%40thread.tacv2/1788251701431?groupId=81c4fd73-5c4c-4fca-b1a1-c85ac521f063&tenantId=6b84c5a7-5528-4071-b5b2-49e3cf5f2208&createdTime=1788251701431&parentMessageId=1788251701431"
-        }
       ]
     },
     {
@@ -1501,12 +1285,6 @@
       "reference": "Teams · Releases - Android · Build 508",
       "sources": [
         "Teams"
-      ],
-      "links": [
-        {
-          "label": "Teams",
-          "url": "https://teams.microsoft.com/l/message/19%3A9583be02c43c4f44b0c8498f7565a911%40thread.tacv2/1788268139509?groupId=81c4fd73-5c4c-4fca-b1a1-c85ac521f063&tenantId=6b84c5a7-5528-4071-b5b2-49e3cf5f2208&createdTime=1788268139509&parentMessageId=1788268139509"
-        }
       ]
     },
     {
@@ -1757,6 +1535,30 @@
       "developer": "Platform-Team",
       "date": "2026-09-08",
       "reference": "wp-plugins · PR 155",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "ci-templates-gitlab#100",
+      "task": "Varnish-Telemetrieimage erweitert",
+      "description": "Stellt das Varnish-OpenTelemetry-Image auf ein vorkompiliertes VCOT-Image um und ergänzt Trace-Verknüpfung, Backend-Verschachtelung sowie gebündelte VCL-Hilfen.",
+      "platform": "Andere",
+      "developer": "Platform-Team",
+      "date": "2026-09-09",
+      "reference": "ci-templates-gitlab · PR 100",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1339",
+      "task": "Varnish-Telemetrieaufrufe bereinigt",
+      "description": "Entfernt nicht unterstützte OpenTelemetry-Aufrufe aus der Vienna-Varnish-Konfiguration und erhält das bestehende Anfrage- und Auslieferungsverhalten.",
+      "platform": "VOL.AT",
+      "developer": "Platform-Team",
+      "date": "2026-09-09",
+      "reference": "russmedia-frontend-nuxt3 · PR 1339",
       "sources": [
         "CodeRabbit"
       ]
