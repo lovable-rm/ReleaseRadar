@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-10T09:01:03+02:00",
+  "lastUpdated": "2026-09-29T08:00:34+02:00",
   "releases": [
     {
       "id": "google-play-vol-at-2026-07-01",
@@ -1582,7 +1582,7 @@
       "platform": "Backend/NNP",
       "developer": "Web-Team",
       "date": "2026-09-09",
-      "reference": "nnp · MR 2077; wp-plugins · PR 155",
+      "reference": "nnp · MR 2077",
       "sources": [
         "Teams",
         "CodeRabbit"
@@ -1609,6 +1609,159 @@
       "date": "2026-09-09",
       "reference": "Teams · Releases - Android · Build 520",
       "sources": [
+        "Teams"
+      ]
+    },
+    {
+      "id": "vn-nordstern#830",
+      "task": "Registrierung führt zur neuen Abo-Testseite",
+      "description": "Leitet Registrierungsinteressierte von der bisherigen Gratis-Abo-Seite zur neuen „Abo testen“-Strecke und erhält dabei die Kampagnenparameter für eine verlässliche Erfolgsmessung.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-09-10",
+      "reference": "vn-nordstern · MR 830",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "wp-plugins#156",
+      "task": "App-Menü um Audio und Service Hub erweitert",
+      "description": "Ermöglicht die backend-gesteuerte Navigation zu Audio/Podcasts und zum Service Hub „Für dich“ und verwendet je App-Version das passende native Ziel, damit Menüpunkte zuverlässig die vorgesehene In-App-Seite öffnen.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-09-10",
+      "reference": "wp-plugins · MR 156",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1340",
+      "task": "Plus-Symbol im Abo-Profil vereinheitlicht",
+      "description": "Ersetzt im Profilbereich das alte V+-Bild durch das standardisierte Plus-Symbol, sodass Abo-Verwaltung und übrige Oberfläche visuell konsistent auftreten.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-11",
+      "reference": "russmedia-frontend-nuxt3 · MR 1340",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "ci-templates-gitlab#101",
+      "task": "Varnish-Telemetrie gezielter konfigurierbar",
+      "description": "Ermöglicht frei konfigurierbare VSL-Filter für den OpenTelemetry-Collector und fixiert dessen Image auf einen getesteten Stand; dadurch lassen sich Diagnosen präziser eingrenzen und Deployments reproduzierbar betreiben.",
+      "platform": "Andere",
+      "developer": "Web-Team",
+      "date": "2026-09-14",
+      "reference": "ci-templates-gitlab · MR 101",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "neueshop#86",
+      "task": "Service-Zeiträume einfacher und sicherer auswählbar",
+      "description": "Vereinheitlicht Unterbrechung, Nachsendung und Zusatzlieferung mit einem deutschsprachigen Datumsbereich, sperrt nicht verfügbare Tage, begrenzt Vorgänge auf 28 Tage und hält Bestätigungsmails sowie Backend-Verarbeitung konsistent.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-09-14",
+      "reference": "neueshop · MR 86",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1342",
+      "task": "Pinpoll-Umfragen in weiteren Artikelblöcken erkannt",
+      "description": "Erkennt eingebettete Pinpoll-Umfragen sowohl in normalem HTML als auch in eigenen Inhaltsblöcken, damit Abstimmungen in allen unterstützten Artikelformaten zuverlässig erscheinen.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-14",
+      "reference": "russmedia-frontend-nuxt3 · MR 1342",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "wordpress-webpapers#970",
+      "task": "OVB-E-Paper-Import schneller und robuster",
+      "description": "Verwendet vorhandene Vorschaubilder und gemeinsam genutzte Seitenbereiche erneut, behandelt Archive und unvollständige Inhalte stabiler und vermeidet dadurch unnötige Bildkonvertierungen sowie Importabbrüche.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-09-14",
+      "reference": "wordpress-webpapers · MR 970",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "wordpress-webpapers#971",
+      "task": "E-Paper-Vorschaubilder bleiben aktuell",
+      "description": "Erzeugt niedrig aufgelöste Seiten-, Cover- und Navigationsbilder bei Änderungen konsequent neu, sodass überarbeitete E-Paper-Seiten keine veralteten Vorschaudateien mehr anzeigen.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-09-15",
+      "reference": "wordpress-webpapers · MR 971",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1344",
+      "task": "Healthchecks aus Telemetrie herausgefiltert",
+      "description": "Schließt `/healthz`-Anfragen über die einheitliche VCOT-Konfiguration aus der Varnish-Telemetrie aus, damit Traces und Betriebsdiagnosen nicht von regelmäßigen Healthchecks überlagert werden.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-16",
+      "reference": "russmedia-frontend-nuxt3 · MR 1344",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1347",
+      "task": "Redaktions- und Ressortdarstellung vereinheitlicht",
+      "description": "Aktualisiert Ressortfarben für VN und NEUE, vereinheitlicht die Logo-Behandlung und verbessert Avatar-Beispiele sowie Story-Darstellung im Dark Mode, damit Urheberschaft und Ressortmarken konsistenter erkennbar sind.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-17",
+      "reference": "russmedia-frontend-nuxt3 · MR 1347",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1348",
+      "task": "Galerie- und Autorenintegration klarer dokumentiert",
+      "description": "Präzisiert die Behandlung von Galerie-Wechseln und die Ermittlung von Editor-IDs, sodass Integrationen für Galerien und Autoreninformationen weniger fehleranfällig umgesetzt werden können.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-17",
+      "reference": "russmedia-frontend-nuxt3 · MR 1348",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-fat#18",
+      "task": "Fehlerdiagnose und Laufzeitstabilität verbessert",
+      "description": "Ergänzt Source Maps und zusätzliche Fehlerbehandlung, damit Probleme im Betrieb genauer auf ihren Ursprung zurückgeführt und erwartbare Fehler kontrollierter abgefangen werden können.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-28",
+      "reference": "russmedia-fat · MR 18",
+      "sources": [
+        "CodeRabbit",
         "Teams"
       ]
     }
