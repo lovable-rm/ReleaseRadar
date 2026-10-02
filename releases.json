@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-09-29T08:00:34+02:00",
+  "lastUpdated": "2026-10-02T08:02:00+02:00",
   "releases": [
     {
       "id": "google-play-vol-at-2026-07-01",
@@ -593,19 +593,6 @@
       ]
     },
     {
-      "id": "docker-base-images#106",
-      "task": "PHP-Speicherlimit zur Bereitstellungszeit konfigurierbar",
-      "description": "Ermöglicht die Konfiguration des PHP-Speicherlimits über MEMORY_LIMIT und behält 384 MB als Standardwert bei.",
-      "platform": "Andere",
-      "developer": "Web-Team",
-      "date": "2026-08-04",
-      "reference": "docker-base-images · MR 106",
-      "sources": [
-        "CodeRabbit",
-        "Teams"
-      ]
-    },
-    {
       "id": "russmedia-frontend-nuxt3#1300",
       "task": "Storybook-Mock-Streaming verbessert",
       "description": "Aktualisiert Mock Service Worker auf 2.15.0, erhält SSE-Streaming und ergänzt Subscription-Szenarien für Storybook.",
@@ -613,6 +600,45 @@
       "developer": "Web-Team",
       "date": "2026-08-03",
       "reference": "russmedia-frontend-nuxt3 · MR 1300",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "vn-nordstern#824",
+      "task": "Subscription-Testweiterleitung ergänzt",
+      "description": "Ergänzt eine /doppelt-Weiterleitung auf die vorgesehene Subscription-Testseite.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-08-03",
+      "reference": "vn-nordstern · MR 824",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "wp-plugins#146",
+      "task": "WordPress-Plugins auf modernes React-Rendering umgestellt",
+      "description": "Ersetzt veraltete React-Rendering-APIs durch createRoot und erneuert die Build-Asset-Metadaten für das Plugin-Bundle.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-08-03",
+      "reference": "wp-plugins · MR 146",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "docker-base-images#106",
+      "task": "PHP-Speicherlimit zur Bereitstellungszeit konfigurierbar",
+      "description": "Ermöglicht die Konfiguration des PHP-Speicherlimits über MEMORY_LIMIT und behält 384 MB als Standardwert bei.",
+      "platform": "Andere",
+      "developer": "Web-Team",
+      "date": "2026-08-04",
+      "reference": "docker-base-images · MR 106",
       "sources": [
         "CodeRabbit",
         "Teams"
@@ -684,19 +710,6 @@
       ]
     },
     {
-      "id": "vn-nordstern#824",
-      "task": "Subscription-Testweiterleitung ergänzt",
-      "description": "Ergänzt eine /doppelt-Weiterleitung auf die vorgesehene Subscription-Testseite.",
-      "platform": "Nordstern",
-      "developer": "Web-Team",
-      "date": "2026-08-03",
-      "reference": "vn-nordstern · MR 824",
-      "sources": [
-        "CodeRabbit",
-        "Teams"
-      ]
-    },
-    {
       "id": "vn-nordstern#825",
       "task": "VN-Tippgeber im Podcast-Einstieg verlinkt",
       "description": "Ersetzt die Podcast-Schaltfläche durch die VN-Tippgeber-Marke und verlinkt auf die passende Seite.",
@@ -710,13 +723,13 @@
       ]
     },
     {
-      "id": "wp-plugins#146",
-      "task": "WordPress-Plugins auf modernes React-Rendering umgestellt",
-      "description": "Ersetzt veraltete React-Rendering-APIs durch createRoot und erneuert die Build-Asset-Metadaten für das Plugin-Bundle.",
+      "id": "epaper-service#28",
+      "task": "Push-Benachrichtigungen präziser ausgewählt",
+      "description": "Wählt die prominenteste Artikelüberschrift abhängig von Größe und Platzierung zuverlässiger aus und korrigiert die Flächenberechnung unterhalb der Seitenmitte.",
       "platform": "Nordstern",
       "developer": "Web-Team",
-      "date": "2026-08-03",
-      "reference": "wp-plugins · MR 146",
+      "date": "2026-08-04",
+      "reference": "epaper-service · MR 28",
       "sources": [
         "CodeRabbit",
         "Teams"
@@ -747,19 +760,6 @@
       ]
     },
     {
-      "id": "epaper-service#28",
-      "task": "Push-Benachrichtigungen präziser ausgewählt",
-      "description": "Wählt die prominenteste Artikelüberschrift abhängig von Größe und Platzierung zuverlässiger aus und korrigiert die Flächenberechnung unterhalb der Seitenmitte.",
-      "platform": "Nordstern",
-      "developer": "Web-Team",
-      "date": "2026-08-04",
-      "reference": "epaper-service · MR 28",
-      "sources": [
-        "CodeRabbit",
-        "Teams"
-      ]
-    },
-    {
       "id": "russmedia-frontend-nuxt3#1304",
       "task": "GamesWidget mit aktuellen Spielen aktualisiert",
       "description": "Ersetzt die bisherigen GamesWidget-Einträge durch sieben aktualisierte Spiele mit neuen Titeln, Beschreibungen, Bildern und externen Links und entfernt zwei veraltete Spiele.",
@@ -769,6 +769,24 @@
       "reference": "russmedia-frontend-nuxt3 · PR 1304",
       "sources": [
         "CodeRabbit"
+      ]
+    },
+    {
+      "id": "app-store-vol-at-4.19.9",
+      "task": "VOL.AT iOS 4.19.9 veröffentlicht",
+      "description": "Die neue Produktionsversion enthält allgemeine Fehlerbehebungen und Verbesserungen.",
+      "platform": "Native Apps",
+      "developer": "App-Team",
+      "date": "2026-08-08",
+      "reference": "App Store · Version 4.19.9",
+      "sources": [
+        "App Store"
+      ],
+      "links": [
+        {
+          "label": "App Store",
+          "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"
+        }
       ]
     },
     {
@@ -928,6 +946,24 @@
       ]
     },
     {
+      "id": "app-store-vol-at-4.19.10",
+      "task": "VOL.AT iOS 4.19.10 veröffentlicht",
+      "description": "Die neue Produktionsversion enthält allgemeine Fehlerbehebungen und Verbesserungen.",
+      "platform": "Native Apps",
+      "developer": "App-Team",
+      "date": "2026-08-12",
+      "reference": "App Store · Version 4.19.10",
+      "sources": [
+        "App Store"
+      ],
+      "links": [
+        {
+          "label": "App Store",
+          "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"
+        }
+      ]
+    },
+    {
       "id": "piano_frontend#89",
       "task": "Checkout-Preise und Gutscheine dynamisch aktualisiert",
       "description": "Aktualisiert Checkout-Preise und Hinweise dynamisch bei Änderungen von Abrechnungszeitraum oder Gutschein und ergänzt Tests für EUR-Abos und PayPal.",
@@ -937,6 +973,24 @@
       "reference": "piano_frontend · PR 89",
       "sources": [
         "CodeRabbit"
+      ]
+    },
+    {
+      "id": "app-store-vol-at-4.19.11",
+      "task": "VOL.AT iOS 4.19.11 veröffentlicht",
+      "description": "Die neue Produktionsversion enthält allgemeine Fehlerbehebungen und Verbesserungen.",
+      "platform": "Native Apps",
+      "developer": "App-Team",
+      "date": "2026-08-14",
+      "reference": "App Store · Version 4.19.11",
+      "sources": [
+        "App Store"
+      ],
+      "links": [
+        {
+          "label": "App Store",
+          "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"
+        }
       ]
     },
     {
@@ -1009,6 +1063,24 @@
       "reference": "wp-plugins · PR 148",
       "sources": [
         "CodeRabbit"
+      ]
+    },
+    {
+      "id": "app-store-vol-at-4.19.12",
+      "task": "VOL.AT iOS 4.19.12 veröffentlicht",
+      "description": "Die neue Produktionsversion enthält allgemeine Fehlerbehebungen und Verbesserungen.",
+      "platform": "Native Apps",
+      "developer": "App-Team",
+      "date": "2026-08-18",
+      "reference": "App Store · Version 4.19.12",
+      "sources": [
+        "App Store"
+      ],
+      "links": [
+        {
+          "label": "App Store",
+          "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"
+        }
       ]
     },
     {
@@ -1291,78 +1363,6 @@
       ]
     },
     {
-      "id": "app-store-vol-at-4.19.9",
-      "task": "VOL.AT iOS 4.19.9 veröffentlicht",
-      "description": "Die neue Produktionsversion enthält allgemeine Fehlerbehebungen und Verbesserungen.",
-      "platform": "Native Apps",
-      "developer": "App-Team",
-      "date": "2026-08-08",
-      "reference": "App Store · Version 4.19.9",
-      "sources": [
-        "App Store"
-      ],
-      "links": [
-        {
-          "label": "App Store",
-          "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"
-        }
-      ]
-    },
-    {
-      "id": "app-store-vol-at-4.19.10",
-      "task": "VOL.AT iOS 4.19.10 veröffentlicht",
-      "description": "Die neue Produktionsversion enthält allgemeine Fehlerbehebungen und Verbesserungen.",
-      "platform": "Native Apps",
-      "developer": "App-Team",
-      "date": "2026-08-12",
-      "reference": "App Store · Version 4.19.10",
-      "sources": [
-        "App Store"
-      ],
-      "links": [
-        {
-          "label": "App Store",
-          "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"
-        }
-      ]
-    },
-    {
-      "id": "app-store-vol-at-4.19.11",
-      "task": "VOL.AT iOS 4.19.11 veröffentlicht",
-      "description": "Die neue Produktionsversion enthält allgemeine Fehlerbehebungen und Verbesserungen.",
-      "platform": "Native Apps",
-      "developer": "App-Team",
-      "date": "2026-08-14",
-      "reference": "App Store · Version 4.19.11",
-      "sources": [
-        "App Store"
-      ],
-      "links": [
-        {
-          "label": "App Store",
-          "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"
-        }
-      ]
-    },
-    {
-      "id": "app-store-vol-at-4.19.12",
-      "task": "VOL.AT iOS 4.19.12 veröffentlicht",
-      "description": "Die neue Produktionsversion enthält allgemeine Fehlerbehebungen und Verbesserungen.",
-      "platform": "Native Apps",
-      "developer": "App-Team",
-      "date": "2026-08-18",
-      "reference": "App Store · Version 4.19.12",
-      "sources": [
-        "App Store"
-      ],
-      "links": [
-        {
-          "label": "App Store",
-          "url": "https://apps.apple.com/at/app/vol-at-vorarlberg-online/id323365304"
-        }
-      ]
-    },
-    {
       "id": "docker-base-images#110",
       "task": "WordPress-6.9.7-Kompatibilität ergänzt",
       "description": "Aktualisiert die WordPress-Kompatibilitätstests für PHP 8.2 und PHP 8.5 auf WordPress 6.9.7.",
@@ -1462,6 +1462,18 @@
       "reference": "russmedia-frontend-nuxt3 · PR 1328",
       "sources": [
         "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "teams-android-1788449835092",
+      "task": "VOL.AT Android 512 veröffentlicht",
+      "description": "Stabilisiert die Freischaltung von Ländlepunkte-Tagespässen, beseitigt Darstellungsfehler an Systemleisten und macht die Prüfung der Web-Sitzung zuverlässiger.",
+      "platform": "Native Apps",
+      "developer": "App-Team",
+      "date": "2026-09-03",
+      "reference": "Teams · Releases - Android · Build 512",
+      "sources": [
         "Teams"
       ]
     },
@@ -1586,18 +1598,6 @@
       "sources": [
         "Teams",
         "CodeRabbit"
-      ]
-    },
-    {
-      "id": "teams-android-1788449835092",
-      "task": "VOL.AT Android 512 veröffentlicht",
-      "description": "Stabilisiert die Freischaltung von Ländlepunkte-Tagespässen, beseitigt Darstellungsfehler an Systemleisten und macht die Prüfung der Web-Sitzung zuverlässiger.",
-      "platform": "Native Apps",
-      "developer": "App-Team",
-      "date": "2026-09-03",
-      "reference": "Teams · Releases - Android · Build 512",
-      "sources": [
-        "Teams"
       ]
     },
     {
@@ -1753,6 +1753,313 @@
       ]
     },
     {
+      "id": "russmedia-frontend-nuxt3#1350",
+      "task": "Bestätigte Frontend-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von russmedia-frontend-nuxt3 MR 1350. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "russmedia-frontend-nuxt3 · MR 1350",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1351",
+      "task": "Bestätigte Frontend-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von russmedia-frontend-nuxt3 MR 1351. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "russmedia-frontend-nuxt3 · MR 1351",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1352",
+      "task": "Bestätigte Frontend-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von russmedia-frontend-nuxt3 MR 1352. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "russmedia-frontend-nuxt3 · MR 1352",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1353",
+      "task": "Bestätigte Frontend-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von russmedia-frontend-nuxt3 MR 1353. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "russmedia-frontend-nuxt3 · MR 1353",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1354",
+      "task": "Bestätigte Frontend-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von russmedia-frontend-nuxt3 MR 1354. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "russmedia-frontend-nuxt3 · MR 1354",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#2",
+      "task": "Bestätigte Stella-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von stella MR 2. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "stella · MR 2",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#11",
+      "task": "Bestätigte Stella-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von stella MR 11. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "stella · MR 11",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#12",
+      "task": "Bestätigte Stella-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von stella MR 12. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "stella · MR 12",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#16",
+      "task": "Bestätigte Stella-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von stella MR 16. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "stella · MR 16",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#17",
+      "task": "Bestätigte Stella-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von stella MR 17. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "stella · MR 17",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "vn-nordstern#831",
+      "task": "Bestätigte Nordstern-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von vn-nordstern MR 831. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "vn-nordstern · MR 831",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "wp-plugins#157",
+      "task": "Bestätigte WordPress-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von wp-plugins MR 157. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "wp-plugins · MR 157",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "epaper-service#30",
+      "task": "Bestätigte E-Paper-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von epaper-service MR 30. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-09-23",
+      "reference": "epaper-service · MR 30",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1356",
+      "task": "Bestätigte Frontend-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von russmedia-frontend-nuxt3 MR 1356. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-23",
+      "reference": "russmedia-frontend-nuxt3 · MR 1356",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1357",
+      "task": "Bestätigte Frontend-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von russmedia-frontend-nuxt3 MR 1357. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-23",
+      "reference": "russmedia-frontend-nuxt3 · MR 1357",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "stella#19",
+      "task": "Bestätigte Stella-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von stella MR 19. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-23",
+      "reference": "stella · MR 19",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#20",
+      "task": "Bestätigte Stella-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von stella MR 20. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-23",
+      "reference": "stella · MR 20",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#21",
+      "task": "Bestätigte Stella-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von stella MR 21. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-23",
+      "reference": "stella · MR 21",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#22",
+      "task": "Warnung bei benutzerdefinierten REST-Feldern behoben",
+      "description": "Behebt eine Warnung, die grundsätzlich auch bei weiteren benutzerdefinierten REST-Feldern auftreten konnte. Dadurch werden betroffene API-Felder stabiler verarbeitet und vergleichbare Fehler lassen sich leichter vermeiden.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-23",
+      "reference": "stella · MR 22",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "wordpress-webpapers#974",
+      "task": "Bestätigte E-Paper-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von wordpress-webpapers MR 974. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-09-23",
+      "reference": "wordpress-webpapers · MR 974",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "wp-plugin-scaffolder#2",
+      "task": "Bestätigte Plugin-Scaffolding-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von wp-plugin-scaffolder MR 2. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-09-23",
+      "reference": "wp-plugin-scaffolder · MR 2",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "wp-plugins#158",
+      "task": "Bestätigte WordPress-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von wp-plugins MR 158. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-09-23",
+      "reference": "wp-plugins · MR 158",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "stella#23",
+      "task": "Bestätigte Stella-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von stella MR 23. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-24",
+      "reference": "stella · MR 23",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1361",
+      "task": "Bestätigte Frontend-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von russmedia-frontend-nuxt3 MR 1361. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-25",
+      "reference": "russmedia-frontend-nuxt3 · MR 1361",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
       "id": "russmedia-fat#18",
       "task": "Fehlerdiagnose und Laufzeitstabilität verbessert",
       "description": "Ergänzt Source Maps und zusätzliche Fehlerbehandlung, damit Probleme im Betrieb genauer auf ihren Ursprung zurückgeführt und erwartbare Fehler kontrollierter abgefangen werden können.",
@@ -1760,6 +2067,136 @@
       "developer": "Web-Team",
       "date": "2026-09-28",
       "reference": "russmedia-fat · MR 18",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "readers-suggestions#7",
+      "task": "Bestätigte Leserhinweis-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von readers-suggestions MR 7. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-28",
+      "reference": "readers-suggestions · MR 7",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1362",
+      "task": "Bestätigte Frontend-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von russmedia-frontend-nuxt3 MR 1362. Weder der vollständige Release-Bericht noch der zugehörige Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag wird aufgenommen, damit die Release-Historie vollständig bleibt.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-28",
+      "reference": "russmedia-frontend-nuxt3 · MR 1362",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1364",
+      "task": "Bugsnag-Warnungen im Frontend reduziert",
+      "description": "Bereinigt mehrere in Bugsnag auffällige Warnungen. Damit wird die Laufzeit stabiler und das Monitoring konzentriert sich stärker auf tatsächlich relevante Fehler; die betroffenen Nutzerabläufe sind im Bericht nicht näher bezeichnet.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-28",
+      "reference": "russmedia-frontend-nuxt3 · MR 1364",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#24",
+      "task": "Überarbeitete Stella-Änderung nachgetragen",
+      "description": "Übernimmt eine geprüfte und nach Review nochmals angepasste Stella-Änderung. Der Thread bestätigt die Nachbesserung, enthält aber keine belastbare Beschreibung des betroffenen Nutzerablaufs.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-28",
+      "reference": "stella · MR 24",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#25",
+      "task": "Scope-Verarbeitung korrigiert",
+      "description": "Enthält einen Patch für die Scope-Verarbeitung. Der Merge ist bestätigt; der verfügbare Thread nennt jedoch weder den betroffenen Scope noch einen konkreten Nutzerablauf.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-28",
+      "reference": "stella · MR 25",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#26",
+      "task": "Folgefehler der Warning-Bereinigung korrigiert",
+      "description": "Korrigiert eine vorangegangene Bereinigung, die zwar 252 Warnungen beseitigt, dabei aber 12 neue Warnungen erzeugt hatte. Dadurch wird die technische Bereinigung ohne diese Regression vervollständigt.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-28",
+      "reference": "stella · MR 26",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1365",
+      "task": "Bestätigte Frontend-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von MR 1365. Weder der vollständige Release-Bericht noch der Merge-Request-Thread enthalten eine belastbare Change-Liste; eine konkrete sichtbare Wirkung lässt sich daher nicht seriös benennen. Der Eintrag hält die Release-Historie vollständig.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-29",
+      "reference": "russmedia-frontend-nuxt3 · MR 1365",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#29",
+      "task": "Bestätigte Stella-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von Stella MR 29. Der vollständige Bericht und der als „Mini“ bezeichnete Thread enthalten keine Change-Liste; die konkrete Wirkung ist deshalb nicht belastbar dokumentiert.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-29",
+      "reference": "stella · MR 29",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#31",
+      "task": "Bestätigte Stella-Änderung nachgetragen",
+      "description": "CodeRabbit bestätigt den Merge von Stella MR 31. Weder der vollständige Bericht noch der zugehörige Thread beschreiben die Änderung; der Eintrag wird für eine vollständige Release-Historie geführt.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-29",
+      "reference": "stella · MR 31",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1366",
+      "task": "team.russmedia.digital aktualisiert",
+      "description": "Aktualisiert die Auslieferung von team.russmedia.digital. Der Merge ist durch CodeRabbit bestätigt; der Thread nennt darüber hinaus keine einzelnen Komponenten oder konkret sichtbaren Änderungen.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-10-01",
+      "reference": "russmedia-frontend-nuxt3 · MR 1366",
       "sources": [
         "CodeRabbit",
         "Teams"
