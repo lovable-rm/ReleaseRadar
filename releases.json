@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-02T11:01:04+02:00",
+  "lastUpdated": "2026-10-02T11:31:47+02:00",
   "releases": [
     {
       "id": "google-play-vol-at-2026-07-01",
@@ -1753,6 +1753,237 @@
       ]
     },
     {
+      "id": "russmedia-frontend-nuxt3#1350",
+      "task": "Weitere HTML-Blöcke werden zuverlässig eingebettet",
+      "description": "Die Freigabeliste für HTML-Blöcke wurde erweitert. Dadurch funktionieren zusätzliche individuelle Einbettungen, die Inhalte über Document Fragments einsetzen, ohne vom Frontend blockiert zu werden.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "russmedia-frontend-nuxt3 · MR 1350",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1351",
+      "task": "Upgrade-Angebote funktionieren nach dem Login wieder korrekt",
+      "description": "Nach dem Anmelden wird bei Upgrade-Paywalls wieder der passende Neuinitialisierungs- oder Checkout-Ablauf gestartet. Normale Paywalls überspringen bei bereits vorhandenem Premium-Zugang weiterhin unnötige Schritte.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "russmedia-frontend-nuxt3 · MR 1351",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1352",
+      "task": "Frontend-Anpassung aus MR 1352",
+      "description": "CodeRabbit bestätigt den Merge als eigenen Frontend-MR. Der vollständige Release-Bericht enthält jedoch weder Titel noch Change-Liste; deshalb bleibt der Eintrag einzeln erhalten, ohne eine nicht belegte Wirkung zu erfinden.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "russmedia-frontend-nuxt3 · MR 1352",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1353",
+      "task": "Frontend-Anpassung aus MR 1353",
+      "description": "CodeRabbit bestätigt den Merge als eigenen Frontend-MR. Der vollständige Release-Bericht enthält jedoch weder Titel noch Change-Liste; deshalb bleibt der Eintrag einzeln erhalten, ohne eine nicht belegte Wirkung zu erfinden.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "russmedia-frontend-nuxt3 · MR 1353",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1354",
+      "task": "Redaktions-Avatar und Ressortlogo überlappen konsistent",
+      "description": "Der Abstand des Autoren- bzw. Redaktionsavatars wurde angepasst, damit Avatar und Ressortlogo auf unterschiedlichen Bildschirmgrößen sauber und einheitlich dargestellt werden.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "russmedia-frontend-nuxt3 · MR 1354",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#2",
+      "task": "Editor-Zuordnungen bleiben beim Artikelimport erhalten",
+      "description": "Importierte Artikel können die zuständigen Redakteur:innen direkt im Inhalt anzeigen. Zuordnungen aus VN und NEUE werden auf NNP-Editoren abgebildet, bei Aktualisierungen erhalten und bei mehreren Personen dedupliziert; fehlerhafte Mappings erzeugen Warnungen, blockieren den Import aber nicht.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "stella · MR 2",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#11",
+      "task": "Abhängigkeiten für Gutenberg-Blöcke aktualisiert",
+      "description": "Die technischen Abhängigkeiten der Block-Editor-Funktionen wurden aktualisiert. Das hält die Gutenberg-Komponenten kompatibel und vereinfacht ihre weitere Wartung.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "stella · MR 11",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#12",
+      "task": "Veraltete Gallery2-Anbindung entfernt",
+      "description": "Die nicht mehr benötigte Gallery2-Integration samt WordPress-Plugin, Bild- und Albumverarbeitung, API-Endpunkten und Tests wurde entfernt. Die Plattform greift damit nicht mehr auf die frühere Galerie-Infrastruktur zu.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "stella · MR 12",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#16",
+      "task": "Alte VMH-Bildskalierung vollständig entfernt",
+      "description": "Die frühere VMH-Logik für Zuschneiden, Skalieren, Wasserzeichen, automatische Bildgrößen, Caching und Fallbacks wurde aus Stella entfernt. Die Bildverarbeitung läuft damit nicht mehr über das veraltete Plugin.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "stella · MR 16",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#17",
+      "task": "Autorenbox erscheint nur bei vorhandener Journalistenzuordnung",
+      "description": "Die erweiterte Autorenbox wird nur noch bei unterstützten Inhaltstypen mit tatsächlich zugewiesener Journalist:in eingeblendet. Leere oder unpassende Autorenbereiche werden dadurch vermieden.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "stella · MR 17",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "vn-nordstern#831",
+      "task": "Weiterleitung für den Pfad /12 ergänzt",
+      "description": "Nordstern leitet Aufrufe des bisherigen Pfads /12 auf das vorgesehene Ziel weiter. Alte oder externe Verweise führen damit nicht mehr ins Leere.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "vn-nordstern · MR 831",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "wp-plugins#157",
+      "task": "Kleine Anpassung am WordPress-Plugin-Paket",
+      "description": "CodeRabbit und der als „Mini“ bezeichnete Teams-Thread bestätigen diesen Merge. Die verfügbaren Quellen enthalten keine weitere Change-Liste; der MR bleibt deshalb als eigener Eintrag sichtbar.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-09-22",
+      "reference": "wp-plugins · MR 157",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "epaper-service#30",
+      "task": "Keine falschen Import-Benachrichtigungen mehr",
+      "description": "Der Datei-Importer versendet keine Erfolgsmeldungen mehr, wenn in einem Lauf keine gültigen neuen Dateien importiert wurden. Ältere JSON-Dateien mit passendem Jahr und Monat lösen dadurch keine irreführenden Benachrichtigungen mehr aus.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-09-23",
+      "reference": "epaper-service · MR 30",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1356",
+      "task": "Regionalliga- und Eliteliga-Adressen führen auf die Themenseiten",
+      "description": "Aufrufe von vol.at/regionalliga und vol.at/eliteliga werden auf die jeweiligen VOL.AT-Themenseiten weitergeleitet. Bestehende Links landen damit direkt bei den passenden Liga-Inhalten.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-23",
+      "reference": "russmedia-frontend-nuxt3 · MR 1356",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1357",
+      "task": "Frontend-Anpassung aus MR 1357",
+      "description": "CodeRabbit bestätigt den Merge als eigenen Frontend-MR. Der vollständige Release-Bericht enthält jedoch weder Titel noch Change-Liste; deshalb bleibt der Eintrag einzeln erhalten, ohne eine nicht belegte Wirkung zu erfinden.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-23",
+      "reference": "russmedia-frontend-nuxt3 · MR 1357",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "stella#19",
+      "task": "Stella für WordPress 7 vorbereitet",
+      "description": "Veraltete WordPress- und jQuery-Aufrufe wurden ersetzt, der Themenbereich auf die aktuelle Rendering-Methode umgestellt und Kompatibilitätsregeln für WordPress 7 ergänzt. Das verbessert unter anderem Sitemap-, Taxonomie- und Admin-Funktionen.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-23",
+      "reference": "stella · MR 19",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#20",
+      "task": "Bugsnag-Fehlerberichte werden robuster verarbeitet",
+      "description": "Fehlermeldungen werden vor dem Versand auf unterstützte Schweregrade und gültige Datentypen geprüft. Ungültige Nachrichten, Fehlertypen oder Metadaten bringen die Fehlererfassung dadurch nicht mehr selbst zum Scheitern.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-23",
+      "reference": "stella · MR 20",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#21",
+      "task": "Slow-Query-Warnungen enthalten wieder vollständige Metadaten",
+      "description": "Ein falscher Bugsnag-Methodenaufruf wurde korrigiert. Hinweise zu langsamen Datenbankabfragen hängen ihre Query-Metadaten nun zuverlässig an und liefern der technischen Analyse mehr Kontext.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-23",
+      "reference": "stella · MR 21",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
       "id": "stella#22",
       "task": "Warnung bei benutzerdefinierten REST-Feldern behoben",
       "description": "Behebt eine Warnung, die grundsätzlich auch bei weiteren benutzerdefinierten REST-Feldern auftreten konnte. Dadurch werden betroffene API-Felder stabiler verarbeitet und vergleichbare Fehler lassen sich leichter vermeiden.",
@@ -1763,6 +1994,69 @@
       "sources": [
         "CodeRabbit",
         "Teams"
+      ]
+    },
+    {
+      "id": "wordpress-webpapers#974",
+      "task": "WordPress für Webpapers auf 6.4.12 aktualisiert",
+      "description": "Die in Build und Importer verwendete WordPress-Version wurde von 6.4.3 auf 6.4.12 angehoben. Damit fließen die Korrekturen der neueren Wartungsversion in die Webpaper-Verarbeitung ein.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-09-23",
+      "reference": "wordpress-webpapers · MR 974",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "wp-plugin-scaffolder#2",
+      "task": "Neue WordPress-Plugins starten mit TypeScript-Unterstützung",
+      "description": "Der Plugin-Generator erzeugt Anwendungscode und End-to-End-Tests nun als TypeScript und liefert Typprüfung sowie ESLint-Konfiguration mit. Zusätzlich wurden Tests, Block-Metadaten, Abhängigkeiten und die Standard-WordPress-Version aktualisiert.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-09-23",
+      "reference": "wp-plugin-scaffolder · MR 2",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "wp-plugins#158",
+      "task": "WordPress-Plugin-Anpassung aus MR 158",
+      "description": "CodeRabbit bestätigt diesen Merge im zentralen WordPress-Plugin-Paket. Der vollständige Bericht enthält weder Titel noch Change-Liste; der MR bleibt deshalb separat sichtbar, ohne eine nicht belegte Funktion zuzuordnen.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-09-23",
+      "reference": "wp-plugins · MR 158",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "stella#23",
+      "task": "Percolator-Ausfälle liefern ein leeres Ergebnis statt Fehler 500",
+      "description": "Schlägt eine Elasticsearch-Percolator-Abfrage fehl, erhalten Verbraucher weiterhin eine gültige Antwort mit null Treffern. Der interne Fehler wird als Warnung protokolliert, ohne abhängige Abläufe mit einem Serverfehler zu unterbrechen.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-24",
+      "reference": "stella · MR 23",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1361",
+      "task": "Frontend-Anpassung aus MR 1361",
+      "description": "CodeRabbit bestätigt den Merge als eigenen Frontend-MR. Der vollständige Release-Bericht enthält jedoch weder Titel noch Change-Liste; deshalb bleibt der Eintrag einzeln erhalten, ohne eine nicht belegte Wirkung zu erfinden.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-25",
+      "reference": "russmedia-frontend-nuxt3 · MR 1361",
+      "sources": [
+        "CodeRabbit"
       ]
     },
     {
@@ -1779,6 +2073,32 @@
       ]
     },
     {
+      "id": "readers-suggestions#7",
+      "task": "Lesertipps können Vienna.at korrekt zugeordnet werden",
+      "description": "Der Lesertipp-Dienst kennt nun auch Vienna.at als eigenen Principal. Eingehende Vorschläge lassen sich dadurch dem richtigen Portal und Berechtigungskontext zuordnen.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-28",
+      "reference": "readers-suggestions · MR 7",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1362",
+      "task": "Checkout-Tracking wiederhergestellt",
+      "description": "Das frühere Tracking für den Checkout wurde wieder eingebaut. Checkout-Schritte und Abschlüsse können damit wieder wie vorgesehen in der Erfolgsmessung erfasst werden.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-28",
+      "reference": "russmedia-frontend-nuxt3 · MR 1362",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
       "id": "russmedia-frontend-nuxt3#1364",
       "task": "Bugsnag-Warnungen im Frontend reduziert",
       "description": "Bereinigt mehrere in Bugsnag auffällige Warnungen. Damit wird die Laufzeit stabiler und das Monitoring konzentriert sich stärker auf tatsächlich relevante Fehler; die betroffenen Nutzerabläufe sind im Bericht nicht näher bezeichnet.",
@@ -1786,6 +2106,19 @@
       "developer": "Web-Team",
       "date": "2026-09-28",
       "reference": "russmedia-frontend-nuxt3 · MR 1364",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#24",
+      "task": "Editor-Blöcke für aktuelle WordPress-Versionen modernisiert",
+      "description": "Block-API-Versionen und veraltete Editor-Schnittstellen wurden aktualisiert. Neu hinzu kommen ein Nordstern-Lead-Block und eine Wetter-Kategorie; außerdem funktionieren Video- und iFrame-Vorschauen sowie Topic- und SEO-Einstellungen robuster.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-28",
+      "reference": "stella · MR 24",
       "sources": [
         "CodeRabbit",
         "Teams"
@@ -1812,6 +2145,45 @@
       "developer": "Web-Team",
       "date": "2026-09-28",
       "reference": "stella · MR 26",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1365",
+      "task": "Hub kann auch ohne übergebene IDs angezeigt werden",
+      "description": "Eine leere ID-Liste verhindert die Hub-Darstellung nicht mehr. Der Hub bleibt dadurch auch in Fällen ohne vorab übergebene Inhalte nutzbar.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-09-29",
+      "reference": "russmedia-frontend-nuxt3 · MR 1365",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#29",
+      "task": "Admin-Funktionen laufen auch ohne initialisierten Bildschirmkontext stabil",
+      "description": "Der Aufruf von get_current_screen wird abgesichert. Dadurch entsteht kein Fehler mehr, wenn eine Stella-Funktion ausgeführt wird, bevor WordPress einen aktuellen Admin-Bildschirm bereitgestellt hat.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-29",
+      "reference": "stella · MR 29",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#31",
+      "task": "Editor-Design für WordPress 7 aktiviert",
+      "description": "Stella aktiviert ein Editor-Theme und übernimmt sinnvolle WordPress-Standardwerte. Damit behält der Block-Editor unter WordPress 7 das vorgesehene Erscheinungsbild, statt ungewollt auf eine Serifenschrift zurückzufallen.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-09-29",
+      "reference": "stella · MR 31",
       "sources": [
         "CodeRabbit",
         "Teams"
