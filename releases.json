@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-02T11:31:47+02:00",
+  "lastUpdated": "2026-10-13T07:50:31+02:00",
   "releases": [
     {
       "id": "google-play-vol-at-2026-07-01",
@@ -1652,6 +1652,18 @@
       ]
     },
     {
+      "id": "app-store-vol-at-4.19.13",
+      "task": "VOL.AT iOS 4.19.13 veröffentlicht",
+      "description": "Die im App Store bestätigte Produktionsversion enthält allgemeine Fehlerbehebungen und Verbesserungen.",
+      "platform": "Native Apps",
+      "developer": "App-Team",
+      "date": "2026-09-12",
+      "reference": "App Store · Version 4.19.13",
+      "sources": [
+        "App Store"
+      ]
+    },
+    {
       "id": "ci-templates-gitlab#101",
       "task": "Varnish-Telemetrie gezielter konfigurierbar",
       "description": "Ermöglicht frei konfigurierbare VSL-Filter für den OpenTelemetry-Collector und fixiert dessen Image auf einen getesteten Stand; dadurch lassen sich Diagnosen präziser eingrenzen und Deployments reproduzierbar betreiben.",
@@ -2197,6 +2209,211 @@
       "developer": "Web-Team",
       "date": "2026-10-01",
       "reference": "russmedia-frontend-nuxt3 · MR 1366",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "epaper-service#31",
+      "task": "QR-Code-Inhalte werden ohne störende Leerzeichen verarbeitet",
+      "description": "Der E-Paper-Dienst entfernt führende und nachfolgende Leerzeichen aus QR-Code-Inhalten, bevor er sie verarbeitet. Dadurch funktionieren auch Codes zuverlässig, deren Daten unbeabsichtigte Leerzeichen enthalten.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-10-05",
+      "reference": "epaper-service · MR 31",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "wordpress-webpapers#975",
+      "task": "VOL.AT+-Artikel wieder im E-Paper verfügbar",
+      "description": "Stellt die Verarbeitung bestimmter VOL.AT+-Artikel im Webpaper wieder her. Betroffene Plus-Inhalte können dadurch erneut in der E-Paper-Ausgabe erscheinen.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-10-05",
+      "reference": "wordpress-webpapers · MR 975",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "wordpress-webpapers#976",
+      "task": "Wetterbereich aus dem OVB-E-Paper entfernt",
+      "description": "Entfernt den nicht mehr vorgesehenen Wetterbereich aus der OVB-Webpaper-Ausgabe. Die E-Paper-Navigation zeigt damit nur noch die vorgesehenen Inhalte.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-10-05",
+      "reference": "wordpress-webpapers · MR 976",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "wordpress-webpapers#977",
+      "task": "Bugsnag-Warnungen im Webpaper bereinigt",
+      "description": "Bereinigt im Betrieb aufgefallene Bugsnag-Warnungen. Dadurch wird die Webpaper-Verarbeitung robuster und das Monitoring enthält weniger vermeidbare technische Meldungen.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-10-05",
+      "reference": "wordpress-webpapers · MR 977",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "wordpress-webpapers#978",
+      "task": "Piano-Empfehlungen auf NEUE entfernt",
+      "description": "Entfernt die Piano-Empfehlungen aus der NEUE-Webpaper-Ausgabe. Leserinnen und Leser sehen dort keine unpassenden automatischen Empfehlungen mehr.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-10-05",
+      "reference": "wordpress-webpapers · MR 978",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1368",
+      "task": "Frontend-Anpassung aus MR 1368",
+      "description": "CodeRabbit bestätigt diesen Merge als eigenen Frontend-MR. Der vollständige Bericht enthält jedoch weder Titel noch Change-Liste; der Eintrag bleibt deshalb separat sichtbar, ohne eine unbelegte Wirkung zu erfinden.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-10-06",
+      "reference": "russmedia-frontend-nuxt3 · MR 1368",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1369",
+      "task": "Interne Frontend-Anfragen erhalten einen eindeutigen User-Agent",
+      "description": "Interne Requests des Nuxt-Frontends senden nun einen festgelegten User-Agent. Nachgelagerte Dienste können diese Zugriffe dadurch zuverlässig erkennen, auswerten und bei Bedarf gesondert behandeln.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-10-06",
+      "reference": "russmedia-frontend-nuxt3 · MR 1369",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1370",
+      "task": "Nicht gefundene Seiten liefern wieder einen echten 404-Status",
+      "description": "Fehlende Inhalte enden nicht mehr auf einer leeren Seite, sondern liefern die vorgesehene 404-Antwort. Das verbessert die Orientierung für Nutzer und die korrekte Erkennung ungültiger Seiten durch Suchmaschinen und Monitoring.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-10-06",
+      "reference": "russmedia-frontend-nuxt3 · MR 1370",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#34",
+      "task": "Stella-Anpassung aus MR 34",
+      "description": "CodeRabbit bestätigt diesen Merge als eigenen Stella-MR. Der vollständige Bericht enthält jedoch weder Titel noch konkrete Change-Liste; der Eintrag bleibt deshalb separat erhalten, ohne eine Funktion zu erfinden.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-10-06",
+      "reference": "stella · MR 34",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "stella#35",
+      "task": "Darstellung von Werbe-Promotions korrigiert",
+      "description": "Passt das Styling der Werbe-Promotion an. Die Promotion wird dadurch im vorgesehenen Layout und konsistenter mit dem übrigen Auftritt dargestellt.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-10-06",
+      "reference": "stella · MR 35",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#39",
+      "task": "Preview-Links werden unabhängig von HTTP oder HTTPS ersetzt",
+      "description": "Die Ersetzung von Vorschau-URLs funktioniert nun unabhängig davon, ob die ursprüngliche Adresse mit HTTP oder HTTPS beginnt. Vorschauen führen damit zuverlässiger auf das vorgesehene Ziel.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-10-06",
+      "reference": "stella · MR 39",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "vn-nordstern#832",
+      "task": "Token-SSO-Login über URL-Parameter ergänzt",
+      "description": "Nordstern kann einen übergebenen Token-SSO-Parameter für die Anmeldung verwenden. Berechtigte Nutzer gelangen dadurch aus verknüpften Abläufen ohne zusätzlichen manuellen Login in den vorgesehenen Bereich.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-10-06",
+      "reference": "vn-nordstern · MR 832",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "stella#38",
+      "task": "Bildzuschnitte entstehen auch bei Artikeln aus der REST-Schnittstelle",
+      "description": "Für über die REST-Schnittstelle eingefügte Beiträge werden die benötigten Bildzuschnitte direkt erzeugt. Ein zusätzliches manuelles Speichern im WordPress-Backend ist dafür nicht mehr nötig.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-10-07",
+      "reference": "stella · MR 38",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "vn-nordstern#833",
+      "task": "Kleine Nordstern-Anpassung aus MR 833",
+      "description": "CodeRabbit bestätigt den als kleine Änderung angekündigten Nordstern-Merge. Die verfügbaren Quellen enthalten keine weitere Change-Liste; der MR bleibt deshalb als eigener Eintrag sichtbar, ohne eine nicht belegte Wirkung zuzuordnen.",
+      "platform": "Nordstern",
+      "developer": "Web-Team",
+      "date": "2026-10-07",
+      "reference": "vn-nordstern · MR 833",
+      "sources": [
+        "CodeRabbit",
+        "Teams"
+      ]
+    },
+    {
+      "id": "russmedia-frontend-nuxt3#1373",
+      "task": "Frontend-Anpassung aus MR 1373",
+      "description": "CodeRabbit bestätigt diesen Merge als eigenen Frontend-MR. Der vollständige Bericht enthält jedoch weder Titel noch Change-Liste und im Teams-Kanal liegt kein ergänzender Kontext vor; der Eintrag bleibt deshalb einzeln erhalten, ohne eine Wirkung zu erfinden.",
+      "platform": "VOL.AT",
+      "developer": "Web-Team",
+      "date": "2026-10-12",
+      "reference": "russmedia-frontend-nuxt3 · MR 1373",
+      "sources": [
+        "CodeRabbit"
+      ]
+    },
+    {
+      "id": "stella#33",
+      "task": "PHPStan-Fehler bereinigt und nicht benötigtes Plugin entfernt",
+      "description": "Behebt mehrere durch die statische Analyse gemeldete kleinere Fehler und entfernt ein nicht mehr benötigtes Plugin. Das reduziert technische Altlasten und macht die Stella-Codebasis robuster und leichter wartbar.",
+      "platform": "Sonstige",
+      "developer": "Web-Team",
+      "date": "2026-10-12",
+      "reference": "stella · MR 33",
       "sources": [
         "CodeRabbit",
         "Teams"
